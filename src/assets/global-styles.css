@@ -1,217 +1,241 @@
 @font-face {
-    font-family: TradeGothicBold;
-    src: url("Trade Gothic LT Bold.ttf");
+	font-family: TradeGothicBold;
+	src: url("Trade Gothic LT Bold.ttf");
 }
 
 @font-face {
-    font-family: RobotoRegular;
-    src: url("roboto/Roboto-Regular.ttf");
+	font-family: RobotoRegular;
+	src: url("roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
-    font-family: RobotoBold;
-    src: url("roboto/Roboto-Bold.ttf");
+	font-family: RobotoBold;
+	src: url("roboto/Roboto-Bold.ttf");
 }
 
 @font-face {
-    font-family: SourceSerif;
-    src: url("source-serif-pro/SourceSerifPro-Regular.otf");
+	font-family: SourceSerif;
+	src: url("source-serif-pro/SourceSerifPro-Regular.otf");
 }
 
 :root {
-    font-family: Roboto, sans-serif;
-    --brandDarkBlue: #1E3765;
-    --brandMedBlue: #007FA3;
-    --brandLightBlue: #6FC7EA;
-    --brandPurple: #6D247A;
-    --brandPink: #AB1368;
-    --brandDarkGreen: #0D534D;
-    --brandMedGreen: #00A189;
-    --brandLightGreen: #8DBF2E;
-    --brandRed: #DC4633;
-    --brandYellow: #F1C500;
-    --brandBlack: #000000;
-    --brandWhite: #ffffff;
-    --brandGray: #D0D1C9;
-    --brandGray70: #4d4d4d;
-    --brandGray80: #333333;
-    --brandGray90: #191919;
+	font-family: Roboto, sans-serif;
+	--brandDarkBlue: #1E3765;
+	--brandMedBlue: #007FA3;
+	--brandLightBlue: #6FC7EA;
+	--brandPurple: #6D247A;
+	--brandPink: #AB1368;
+	--brandDarkGreen: #0D534D;
+	--brandMedGreen: #00A189;
+	--brandLightGreen: #8DBF2E;
+	--brandRed: #DC4633;
+	--brandYellow: #F1C500;
+	--brandBlack: #000000;
+	--brandWhite: #ffffff;
+	--brandGray: #D0D1C9;
+	--brandGray70: #4d4d4d;
+	--brandGray80: #333333;
+	--brandGray90: #191919;
 }
 
 body {
-    padding: 0px;
-    margin: 0px;
-    background-color: var(--brandWhite);
-    overflow-x: hidden;
+	padding: 0px;
+	margin: 0px;
+	background-color: #01062f;
+	overflow-x: hidden;
 }
 @media (max-width: 400px) {
-    body {
-        overflow-x: scroll;
-    }
+	body {
+		overflow-x: scroll;
+	}
 }
 
 main {
-    margin: 0 auto;
-    padding: 0px;
-    width: calc(100%);
-    min-width: 360px;
-    max-width: 1920px;
-    margin-bottom: 100px;
-    position: relative;
-    background: var(--brandWhite);
+	margin: 0 auto;
+	padding: 0px;
+	width: calc(100%);
+	min-width: 360px;
+	max-width: 1920px;
+	margin-bottom: 100px;
+	position: relative;
+	background: #01062f;
 }
 
 .intro {
-    position: relative;
-    max-height: 67vh;
-    overflow: hidden;
-    border-bottom: solid 1px var(--brandGray);
+	position: relative;
+	max-height: 67vh;
+	overflow: hidden;
+	border-bottom: solid 1px var(--brandBlack);
 }
 
 .intro video {
-    width: 100%;
-    height: auto;
-    min-height: 500px;
-    display: block; 
-    object-fit: cover; 
+	width: 100%;
+	height: auto;
+	min-height: 500px;
+	display: block; 
+	object-fit: cover; 
 }
 .intro::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.42);
-    z-index: 1; 
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.42);
+	z-index: 1; 
 }
 .intro-overlay {
-    position: absolute;
-    max-width: 700px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-    color: white; 
-    z-index: 2; 
+	position: absolute;
+	max-width: 700px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+	color: white; 
+	z-index: 2; 
 }
 
 .intro-overlay h1 {
-    margin: 0;
+	margin: 0;
 }
 
 .title {
-    background-color: none;
-    max-width: 700px;
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 0px;
-    border-bottom: solid 1px var(--brandBlack);
-    position: relative;
+	background-color: none;
+	max-width: 700px;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 0px;
+	border-bottom: solid 1px var(--brandGray70);
+	position: relative;
 }
 
 .title p {
-    line-height: 25px;
-    font-size: 15px;
+	line-height: 25px;
+	font-size: 15px;
 }
 
 .text {
-    background-color: none;
-    max-width: 700px;
-    margin: 0 auto;
-    position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
+	background-color: none;
+	max-width: 700px;
+	margin: 0 auto;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
+.img1000px {
+	margin: 0 auto;
+	position: relative;
+	max-width: 1000px;
+}
+
+.img1000px img {
+	margin: 0 auto;
+	width: 1000px;
+	transform-origin: center;
+}
+
+@media screen and (max-width: 500px) {
+	.img1000px {
+		/* margin: 0 auto; */
+		/* position: relative; */
+		height: 1000px;
+		/* max-width: 300px; */
+		transform: rotate(90deg);
+	}
+	
+}
+
+
 .top-image {
-    padding-top: 100px;
-    max-width: 1200px;
-    margin: 0 auto;
+	padding-top: 100px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 .top-image img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .bottom-image {
-    border-top: solid 1px var(--brandGray);
-    padding-top: 50px;
-    max-width: 700px;
-    margin: 0 auto;
-    margin-top: 35px;
+	border-top: solid 1px var(--brandGray);
+	padding-top: 50px;
+	max-width: 700px;
+	margin: 0 auto;
+	margin-top: 35px;
 }
 .bottom-image img {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 h1 {
-    margin: 0px;
-    font-family: TradeGothicBold;
-    font-size: 50px;
-    color: var(--brandBlack);
-    opacity: 0.7;
-    /* border-bottom: solid 1px var(--brandGray); */
-    text-decoration: none;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 3px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	margin: 0px;
+	font-family: TradeGothicBold;
+	font-size: 50px;
+	color: var(--brandWhite);
+	opacity: 0.7;
+	/* border-bottom: solid 1px var(--brandGray); */
+	text-decoration: none;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 3px;
+	text-shadow: 0 0 10px #00da9c;
 }
 
 @media (max-width: 500px) {
-    h1 {
-        font-size: 40px;
-    }
+	h1 {
+		font-size: 40px;
+	}
 }
 
 @media (max-height: 500px) {
-    h1 {
-        font-size: 40px;
-        padding-top: 25px;
-    }
+	h1 {
+		font-size: 40px;
+		padding-top: 25px;
+	}
 }
 
 h2 {
-    text-align: left;
-    font-family: TradeGothicBold;
-    font-size: 32px;
-    border-bottom: solid 1px var(--brandBlack);
-    margin-top: 0px;
-    color: var(--brandBlack);
+	text-align: left;
+	font-family: SourceSerif;
+	font-size: 34px;
+	/* text-decoration: underline; */
+	margin-top: 0px;
+	color: var(--brandWhite);
 }
 
 h3 {
-    text-align: left;
-    font-family: TradeGothicBold;
-    font-size: 25px;
-    border-bottom: solid 1px var(--brandGray);
-    color: var(--brandBlack);
+	text-align: left;
+	font-family: TradeGothicBold;
+	font-size: 25px;
+	border-bottom: solid 1px var(--brandGray);
+	color: var(--brandWhite);
 }
 
 p {
-    font-family: SourceSerif;
-    color: var(--brandBlack);
-    text-align: left;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    font-size: 18px;
-    line-height: 30px;
+	font-family: SourceSerif;
+	color: var(--brandWhite);
+	text-align: left;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 19px;
+	line-height: 30px;
 }
 
 .notes {
-    font-size: 14px;
-    line-height: 24px;
+	font-size: 14px;
+	line-height: 24px;
 }
 
 a {
-    color: var(--brandDarkBlue);
-    text-decoration: underline;
-    font-family: SourceSerif;
+	color: var(--brandLightBlue);
+	text-decoration: underline;
+	font-family: SourceSerif;
 }
 
 a:hover {
-    color: var(--brandMedBlue);
+	color: var(--brandYellow);
 }
