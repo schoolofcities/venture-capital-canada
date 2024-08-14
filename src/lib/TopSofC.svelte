@@ -27,16 +27,16 @@
 		overflow: hidden;
    		top: 0px;
 		height: 50px;
-		background-color: var(--brandWhite);
+		background-color: #01062f;
 		margin-bottom: 20px;
-		border-bottom: 1px solid var(--brandGray);
+		border-bottom: 1px solid #4b4d5a;
 		width: 100%;
 		min-width: 200px;
 		padding-left: 0px;
 		padding-right: 0px;
 		z-index: 99999;
 		opacity: 0.98;
-		box-shadow: 0 2px 0 0 rgba(224, 224, 224, 0.268);
+		box-shadow: 0 2px 0 0 rgba(49, 49, 49, 0.268);
 	}
 
 	#logo {

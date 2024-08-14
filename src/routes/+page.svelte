@@ -2,12 +2,13 @@
 
 	import TopSofC from "../lib/TopSofC.svelte";
 	import Bubble from "../lib/Bubble.svelte";
+	import Globe from "../lib/Globe.svelte";
 
 	import cartoInvestmentCanada from "../assets/carto-investment-canada.svg";
 	import cartoInvestmentStates from "../assets/carto-investment-us.svg";
+	import cartoDealsCanada from "../assets/carto-deals-canada.svg";
 
 	import "../assets/global-styles.css";
-	import topVideo from "../assets/videoTest2.mp4";
 
 </script>
 
@@ -28,16 +29,26 @@
 
 <main>
 
-	<div class='intro'>
+	<!-- <div class='intro'>
 		<video src={topVideo}  muted preload autoplay loop playsinline></video> 
-		<!-- poster='img.png' -->
 		<div class='intro-overlay'>
-			<h1>Canada’s High-Tech Startup Cities</h1>
+			
 		</div>
-	</div>
+	</div> -->
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<Globe/>
 	
 	<div class="text">
 		<div class="title">
+			<h1>Canada’s High-Tech Startup Cities</h1>
+			<h3>The geography of venture capital investment across metro areas</h3>
+			<br>
+			<br>
 			<!-- <h1>How reducing air pollution could extend thousands of lives</h1> -->
 			<p><b><u>Research</u></b> Richard Florida & Karen King<br>
 			<b><u>Maps & Graphics</u></b>: Jeff Allen</p>
@@ -58,10 +69,10 @@
 		<br>
 		<br>
 		<!-- <Bubble/> -->
-		 <h2>The geography of venture capital investment</h2>
+		 <h2>The geography of venture capital <u>investment</u></h2>
 
 		 <p>
-			The figure below shows that have at least $100 million in VC investment from 2019 through 2021. These fourteens metros account for more than 90 percent of venture capital investment in Canada.
+			The figure below shows that have at least $100 million in VC investment from 2019 through 2021. These fourteen metros account for more than 90 percent of venture capital investment in Canada.
 		 </p>
 		 <p>
 			Toronto leads with roughly one third of venture capital investment, followed by Vancouver with slightly less than a quarter, and Montreal with roughly 14 percent.
@@ -82,32 +93,55 @@
 		</p>
 	</div>
 
-	<div class="img1000px">
+	<div class="img1000px" id="SF">
 		<img src={cartoInvestmentStates} alt="SVG Image" />
 	</div>
 
 	<div class="text">
 		<h2>
-			The geography of venture capital deals
+			The geography of venture capital <u>deals</u>
 		</h2>
 		<p>
-			We now turn to the geography of venture capital deals (see Table 2). This measure is essentially a count of individual venture capital investments in high tech startups. It is useful because our previous measure of the level of venture capital investment can be biased toward larger, more established high-tech startup hubs, where startups tend to attract much higher levels of investment. 
+			We now turn to the geography of venture capital deals. This measure is essentially a count of individual venture capital investments in high tech startups. It is useful because our previous measure of the level of venture capital investment can be biased toward larger, more established high-tech startup hubs, where startups tend to attract much higher levels of investment. 
+		</p>
+	</div>
+
+	<div class="img1000px">
+		<img src={cartoDealsCanada} alt="SVG Image" />
+	</div>
+
+	<div class="text">
+		<p>
+			Venture capital deals are also concentrated, though not as much as investment. The top ten metros account for more than 80 percent of all venture capital deals. Toronto again leads with more than 30 percent, followed by Vancouver with 17 percent and Montreal with 11 percent. The top three Canadian metros account for nearly 60 percent of venture capital deals – which is considerably higher than for the top three U.S. metros, which account for less than 40 percent (37 percent).
+		</p>
+		<p>
+			Again, Canada’s leading metros trail U.S. metros by a large margin. San Francisco had 7,271 deals, New York had 5,787 deals, and Los Angeles had 3,344 deals – while no Canadian city had more than 1,000.
+			
+			<!-- Toronto accounts for less than 30 percent of Los Angeles’ venture capital deals, 17 percent of New York, and 13 percent of San Francisco. Vancouver’s is less that 20 percent of Los Angeles, 10 percent of New York, and 8 percent of San Francisco. Montreal is a little bit more than 10 percent of Los Angeles, 6 percent of New York, and 5 percent of San Francisco. Venture capital deals for the three leading Canadian metros make up less than 12 percent (11.6 percent) that of their three leading U.S. counterparts. -->
+		</p>
+		<br>
+		<br>
+
+		<h2>
+			The geography of <u>per capita investment</u>
+		</h2>
+		<p>
+			We now turn to venture capital investment on a per capita basis. Both of our previous measures – investments and venture capital deals– reflect the size of metro areas: larger metros are likely to have higher levels of investment simply by virtue of their larger size. To control for this, we now look at venture capital investment on a per capita basis. The pattern is rather different.
+		</p>
+		<p>
+			Vancouver tops the list with just over $2,000 in venture capital investment per capita, followed by Kitchener-Cambridge-Waterloo and Fredericton, then Toronto. Montreal, while third in overall investment, falls to eighth in this ranking. 
+		</p>
+		<p>
+			These amounts are just a fraction of leading U.S. metros. Per capita venture capital investment is over $5k in San Francisco (18 times greater than that of Vancouver), $24k in San Jose, and $13k in Boulder.
 		</p>
 	</div>
 
 	
 
-	
-
-	<!-- Map Canada $ -->
-
-	<!-- Bubble Chart comparing to US $ -->
 
 
 
 	<!-- Map Canada N -->
-
-	<!-- Bubble Chart comparing to US N -->
 
 
 	<!-- Per capita ranking -->
@@ -118,8 +152,60 @@
 
 </main>
 
+
+
 <style>
 
+.img1000px {
+	margin: 0 auto;
+	position: relative;
+	max-width: 1000px;
+}
+
+.img1000px img {
+	margin: 0 auto;
+	width: 1000px;
+	/* height: 320px; */
+	transform-origin: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.img1000px {
+		width: 1000px;
+		height: 1000px;
+		overflow: hidden;
+	}
+
+	.img1000px img {
+		width: 1000px;
+		height: 1000px;
+		transform: rotate(45deg) translateY(-50%);
+		transform-origin: center left;
+		position: absolute;
+		top: 0px;
+		left: -250px;
+	}
+	#SF {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.img1000px {
+		width: 340px;
+		height: 1000px;
+		overflow: hidden;
+	}
+	.img1000px img {
+		width: 1000px;
+		height: 340px;
+		transform: rotate(90deg) translateY(-100%);
+		transform-origin: center left;
+		position: absolute;
+		top: -150px;
+		left: -150px;
+	}
+}
 	
 </style>
 
