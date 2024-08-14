@@ -3,6 +3,7 @@
 	import TopSofC from "../lib/TopSofC.svelte";
 	import Bubble from "../lib/Bubble.svelte";
 	import Globe from "../lib/Globe.svelte";
+	import PerCapitaBar from "../lib/PerCapitaBar.svelte";
 
 	import cartoInvestmentCanada from "../assets/carto-investment-canada.svg";
 	import cartoInvestmentStates from "../assets/carto-investment-us.svg";
@@ -128,11 +129,15 @@
 		<p>
 			We now turn to venture capital investment on a per capita basis. Both of our previous measures – investments and venture capital deals– reflect the size of metro areas: larger metros are likely to have higher levels of investment simply by virtue of their larger size. To control for this, we now look at venture capital investment on a per capita basis. The pattern is rather different.
 		</p>
+
+		<br>
+		<PerCapitaBar/>
+
 		<p>
 			Vancouver tops the list with just over $2,000 in venture capital investment per capita, followed by Kitchener-Cambridge-Waterloo and Fredericton, then Toronto. Montreal, while third in overall investment, falls to eighth in this ranking. 
 		</p>
 		<p>
-			These amounts are just a fraction of leading U.S. metros. Per capita venture capital investment is over $5k in San Francisco (18 times greater than that of Vancouver), $24k in San Jose, and $13k in Boulder.
+			These amounts are just a fraction of leading U.S. metros. Per capita venture capital investment is over $35k in San Francisco (18 times greater than that of Vancouver), $24k in San Jose, and $13k in Boulder.
 		</p>
 	</div>
 
@@ -142,9 +147,6 @@
 
 
 	<!-- Map Canada N -->
-
-
-	<!-- Per capita ranking -->
 
 
 	<!-- Change over time ranking -->
