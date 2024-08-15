@@ -8,6 +8,7 @@
 	import cartoInvestmentCanada from "../assets/carto-investment-canada.svg";
 	import cartoInvestmentStates from "../assets/carto-investment-us.svg";
 	import cartoDealsCanada from "../assets/carto-deals-canada.svg";
+	import barChange from "../assets/bar-change.svg";
 
 	import "../assets/global-styles.css";
 
@@ -48,11 +49,10 @@
 		<div class="title">
 			<h1>Canada’s High-Tech Startup Cities</h1>
 			<h3>The geography of venture capital investment across metro areas</h3>
-			<br>
-			<br>
+			
 			<!-- <h1>How reducing air pollution could extend thousands of lives</h1> -->
-			<p><b><u>Research</u></b> Richard Florida & Karen King<br>
-			<b><u>Maps & Graphics</u></b>: Jeff Allen</p>
+			<p>Research: Richard Florida & Karen King<br>
+			Maps & Graphics: <a href="">Jeff Allen</a></p>
 		</div>
 		<p>
 			<br>
@@ -131,6 +131,7 @@
 		</p>
 
 		<br>
+
 		<PerCapitaBar/>
 
 		<p>
@@ -140,16 +141,63 @@
 			These amounts are just a fraction of leading U.S. metros. Per capita venture capital investment is over $35k in San Francisco (18 times greater than that of Vancouver), $24k in San Jose, and $13k in Boulder.
 		</p>
 	</div>
-
 	
+	<div class="text">
 
+		<br>
+		<br>
+		<h2>
+			Geographic <u>shifts</u> in venture capital investment
+		</h2>
+		<p>
+			But which metropolitan areas have gained venture capital investment and where has it declined? This chart tracks the change in venture capital investment across metros for the period 2009-11 to 2019-21. There are clear winners and losers. 
+		</p>
+		<br>
+		<div class="img350px">
+			<img src={barChange} alt="SVG Image"/>
+		</div>
+		<p>
+			The biggest winner is Vancouver, which has seen its share of venture capital investment nearly double from 12 percent to nearly 24 percent. Quebec is the only other metro that has seen a significant increase in share of venture capital investment, increasing by nearly three percentage points. 
+		</p>
+		<p>
+			The biggest losers are Toronto and Montreal. Toronto has witnessed a nearly 5 percentage point decline in its share of venture capital investment, while 8 percentage points.  Montreal ranks dead last on this metric, and Toronto is next to last of all 33 Canadian metros. A study by Richard Florida and Ian Hathaway placed Toronto in the third tier of advanced global startup hubs and Vancouver and Montreal in the fourth tier of distinguished global startup bubs. If anything, Toronto and Montreal have seen their status diminish as Vancouver’s has risen.
+		</p>
+	</div>
 
+	<div class="text">
+		<br>
+		<br>
+		<h2>
+			Key takeaways
+		</h2>
+		<p>
+			Several key findings emerge from our analysis. 
+		</p>
+		<p>
+			First and foremost, venture capital investment in Canada is extremely concentrated, even more so than in the United States. The top three Canadian metros account for more than 70 percent of venture investment and nearly 60 percent of venture capital deals compared to roughly 50 percent and less than 40 percent respectively for the top three in the United States.
+		</p>
+		<p>
+			While Toronto leads in overall venture capital investment and venture capital deals, this is mainly due to its larger economic size. It ranks fourth in venture capital investment per capita behind Vancouver, Kitchener-Cambridge-Waterloo, and Fredericton. 
+		</p>
+		<p>
+			Across Canada, Vancouver has been the biggest winner in venture capital investment over the past decade, while both Toronto and Montreal have seen the share of venture capital investment decline substantially.
+		</p>
+		<p>
+			Venture capital investment in Canadian metros is but a fraction of their U.S. counterparts. Venture investment in Canada’s three leading metros comprises just five percent of America’s three leading metros. The trend is even more startling when we consider per capita venture investment. And not just for leading centers like San Francisco –per capita venture investment in the U.S. college town of Boulder is more than six times that of Vancouver and ten times that of Toronto.
+		</p>
+	</div>
 
+	<br>
+	<br>
+	<div class="text" >
+		<p class="notes">
+			<a href="">Richard Florida</a> is University Professor at the University of Toronto’s Rotman School of Management and Distinguished Scholar in Residence at the School of Cities.  <br><br><a href="">Karen King</a> is a Senior Research Associate at the University of Toronto’s Rotman School of Management and School of Cities.
+		</p>
+		<br>
+		<br>
+	</div>
 
 	<!-- Map Canada N -->
-
-
-	<!-- Change over time ranking -->
 
 
 </main>
@@ -157,6 +205,13 @@
 
 
 <style>
+
+.img350px {
+	margin: 0 auto;
+	position: relative;
+	height: 1100px;
+	max-width: 350px;
+}
 
 .img1000px {
 	margin: 0 auto;

@@ -18,6 +18,11 @@
 	src: url("source-serif-pro/SourceSerifPro-Regular.otf");
 }
 
+@font-face {
+	font-family: SourceSerifBold;
+	src: url("source-serif-pro/SourceSerifPro-SemiBold.otf");
+}
+
 :root {
 	font-family: Roboto, sans-serif;
 	--brandDarkBlue: #1E3765;
@@ -116,7 +121,7 @@ main {
 
 .title p {
 	line-height: 25px;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 .text {
@@ -155,11 +160,12 @@ main {
 h1 {
 	margin: 0 auto;
 	font-family: SourceSerif;
-	font-size: 75px;
+	font-weight: normal;
+	font-size: 66px;
 	line-height: 90px;
 	color: var(--brandWhite);
 	text-align: center;
-	max-width: 450px;
+	max-width: 700px;
 	opacity: 1;
 	/* border-bottom: solid 1px var(--brandGray); */
 	text-decoration: none;
@@ -172,9 +178,10 @@ h1 {
 
 h2 {
 	text-align: left;
-	font-family: SourceSerif;
-	font-size: 34px;
-	/* text-decoration: underline; */
+	font-family: RobotoBold;
+	text-rendering: optimizeLegibility;
+	font-weight: bold;
+	font-size: 28px;
 	margin-top: 0px;
 	color: var(--brandWhite);
 }
@@ -182,6 +189,7 @@ h2 {
 h3 {
 	text-align: left;
 	font-family: SourceSerif;
+	font-weight: normal;
 	font-size: 24px;
 	/* border-bottom: solid 1px var(--brandGray); */
 	color: var(--brandWhite);
@@ -198,13 +206,15 @@ p {
 }
 
 .notes {
-	font-size: 14px;
+	border-top: solid 1px var(--brandGray70);
+	padding-top: 20px;
+	font-size: 17px;
 	line-height: 24px;
 }
 
 a {
 	color: var(--brandLightBlue);
-	text-decoration: underline;
+	text-decoration: none;
 	font-family: SourceSerif;
 }
 
