@@ -72,7 +72,7 @@
 		 <h2>The geography of venture capital <u>investment</u></h2>
 
 		 <p>
-			The figure below shows that have at least $100 million in VC investment from 2019 through 2021. These fourteen metros account for more than 90 percent of venture capital investment in Canada.
+			The figure below shows metros that had at least $100 million in venture capital investment from 2019 through 2021. These fourteen metros account for more than 90 percent of venture capital investment in Canada.
 		 </p>
 		 <p>
 			Toronto leads with roughly one third of venture capital investment, followed by Vancouver with slightly less than a quarter, and Montreal with roughly 14 percent.
