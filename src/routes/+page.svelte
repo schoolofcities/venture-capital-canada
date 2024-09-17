@@ -30,14 +30,6 @@
 
 <main>
 
-	<!-- <div class='intro'>
-		<video src={topVideo}  muted preload autoplay loop playsinline></video> 
-		<div class='intro-overlay'>
-			
-		</div>
-	</div> -->
-
-
 	<div class="top-image">
 		<img src="./top.png"/>
 	</div>
@@ -58,13 +50,13 @@
 			<span id="drop-cap">V</span>enture capital is the financial fuel that powers innovation and economic growth. This unique form of equity financing — which exchanges capital for shares in the enterprises they provide — has fueled the rise of revolutionary companies like Intel in semiconductors, Apple in personal computing, Genentech in biotech, Google in search, Twitter/X in social media, ChatGPT in artificial intelligence, and many more. 
 		</p>
 		<p>
-			This report examines trends in the geography of venture capital across Canada for the decade spanning the 2010s and 2020s. Our data on venture capital comes from <a href="https://pitchbook.com/" target="_blank">PitchBook</a>, a leading research firm that tracks venture capital investment. We group the data in multi-year periods, 2009-11 and 2019-21, to limit annual fluctuations that can occur because of outsized investments in individual firms and/or metros in any given year.
+			This study examines recent trends in the geography of venture capital across Canada. Our data on venture capital comes from <a href="https://pitchbook.com/" target="_blank">PitchBook</a>, a leading research firm that tracks venture capital investment. We group the data in multi-year periods, 2009-11 and 2019-21, to limit annual fluctuations that can occur because of outsized investments in individual firms and/or metros in any given year.
 		</p>
 		<p>
 			Venture capital investment provides a measure of commercially relevant innovation. It offers a more direct gauge of such innovation than patents, which are commonly used by economists and economic geographers to measure innovation. Patents cover both basic scientific discoveries as well as commercial inventions. Many important commercial innovations are never patented, and many commercial patents are used for defensive purposes, to block competitors from gaining access to such innovations. As a measure of actual investment in high-growth startups, venture capital captures innovations with the potential to impact markets and change industries. 
 		</p>
 		<p>
-			Our analysis employs several metrics for venture capital. The volume of venture capital investment provides an overall measure of the market value of venture capital. We look at counts of venture capital deals to account for the fact that more established high-tech centres tend to generate more competitive startups and attract larger venture investments. Because larger metro areas are likely to receive higher levels of venture capital simply as a result of their size, we examine venture capital investment on a per capita basis. We also look at the change in venture capital, investment over the decade-long period 2009-11 to 2019-2021 to identify metros which are gaining venture capital as opposed to those where it is declining. 
+			Our analysis employs several metrics for venture capital. The volume of venture capital investment provides an overall measure of the market value of venture capital. We look at counts of venture capital deals to account for the fact that more established high-tech centres tend to generate more competitive startups and attract larger venture investments. Because larger metro areas are likely to receive higher levels of venture capital simply as a result of their size, we also examine venture capital investment on a per capita basis. We also look at the change in venture capital investment over the decade-long period 2009-11 to 2019-2021. 
 		</p>
 		<br>
 		<br>
@@ -89,7 +81,7 @@
 			Venture capital investment in Canada is more concentrated than in the United States. The top three Canadian metros account for more than 70 percent (71.2 percent) of venture investment, compared to roughly 50 percent for the top three U.S. metros.
 		</p>
 		<p>
-			That said, Canadian metros trail considerably behind the leading U.S. metros. Venture capital investment in Toronto is less than ten percent of that of New York and less than five percent of San Francisco. Venture investment in Vancouver is less than ten percent that of Boston, 6 percent of New York, and 3 percent of San Francisco. Montreal’s is less than 5 percent of Boston, 4 percent of New York, and 2 percent of San Francisco. Venture capital investment in the three leading Canadian metros comprises just five percent (5.2 percent) of the venture capital investment in their three leading U.S. counterparts.
+			That said, Canadian metros trail considerably behind the leading U.S. metros. Venture capital investment in Toronto is less than ten percent of that of New York and less than five percent of San Francisco. Venture investment in Vancouver is less than 3 percent of San Francisco’s, while Montreal’s is less than 2 percent of San Francisco’s. Venture capital investment in the three leading Canadian metros comprises just five percent (5.2 percent) of the venture capital investment in their three leading U.S. counterparts.
 		</p>
 	</div>
 
@@ -102,7 +94,7 @@
 			The geography of venture capital <u>deals</u>
 		</h2>
 		<p>
-			We now turn to the geography of venture capital deals. This measure is essentially a count of individual venture capital investments in high tech startups. It is useful because our previous measure of the level of venture capital investment can be biased toward larger, more established high-tech startup hubs, where startups tend to attract much higher levels of investment. 
+			We now turn to the geography of venture capital deals, i.e., individual venture capital investments in high tech startups. 
 		</p>
 	</div>
 
@@ -159,7 +151,7 @@
 			The biggest winner is Vancouver, which has seen its share of venture capital investment nearly double from 12 percent to nearly 24 percent. Quebec is the only other metro that has seen a significant increase in share of venture capital investment, increasing by nearly three percentage points. 
 		</p>
 		<p>
-			The biggest losers are Toronto and Montreal. Toronto has witnessed a nearly 5 percentage point decline in its share of venture capital investment, while 8 percentage points.  Montreal ranks dead last on this metric, and Toronto is next to last of all 33 Canadian metros. A study by Richard Florida and Ian Hathaway placed Toronto in the third tier of advanced global startup hubs and Vancouver and Montreal in the fourth tier of distinguished global startup bubs. If anything, Toronto and Montreal have seen their status diminish as Vancouver’s has risen.
+			The biggest losers are Toronto and Montreal. Toronto has witnessed a nearly 5 percentage point decline in its share of venture capital investment, while Montreal saw a loss of 8 percentage points.
 		</p>
 	</div>
 
@@ -176,13 +168,13 @@
 			First and foremost, venture capital investment in Canada is extremely concentrated, even more so than in the United States. The top three Canadian metros account for more than 70 percent of venture investment and nearly 60 percent of venture capital deals compared to roughly 50 percent and less than 40 percent respectively for the top three in the United States.
 		</p>
 		<p>
-			While Toronto leads in overall venture capital investment and venture capital deals, this is mainly due to its larger economic size. It ranks fourth in venture capital investment per capita behind Vancouver, Kitchener-Cambridge-Waterloo, and Fredericton. 
+			While Toronto leads in overall venture capital investment and venture capital deals, this is partly due to its larger economic size. It ranks fourth in venture capital investment per capita behind Vancouver, Kitchener-Cambridge-Waterloo, and Fredericton.
 		</p>
 		<p>
-			Across Canada, Vancouver has been the biggest winner in venture capital investment over the past decade, while both Toronto and Montreal have seen the share of venture capital investment decline substantially.
+			Across Canada, comparing 2019-2021 to a decade earlier, Vancouver has been the biggest winner in venture capital, while both Toronto and Montreal have seen slightly declines in their share.
 		</p>
 		<p>
-			Venture capital investment in Canadian metros is but a fraction of their U.S. counterparts. Venture investment in Canada’s three leading metros comprises just five percent of America’s three leading metros. The trend is even more startling when we consider per capita venture investment. And not just for leading centers like San Francisco –per capita venture investment in the U.S. college town of Boulder is more than six times that of Vancouver and ten times that of Toronto.
+			Venture capital investment in Canadian metros is but a fraction of their U.S. counterparts. Venture investment in Canada’s three leading metros comprises just five percent of that of America’s three leading metros. To become a global leader in tech, Canada will need to attract far more venture capital in the future.
 		</p>
 	</div>
 
