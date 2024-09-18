@@ -201,7 +201,9 @@
 	<br>
 	<div class="text" >
 		<p class="notes">
-			<a href="">Richard Florida</a> is University Professor at the University of Toronto’s Rotman School of Management and Distinguished Scholar in Residence at the School of Cities.  <br><br><a href="">Karen King</a> is a Senior Research Associate at the University of Toronto’s Rotman School of Management and School of Cities.
+			<a href="">Richard Florida</a> is University Professor at the University of Toronto’s Rotman School of Management and Distinguished Scholar in Residence at the School of Cities.  
+			<br><br>
+			<a href="">Karen King</a> is a Senior Research Associate at the University of Toronto’s Rotman School of Management and School of Cities.
 		</p>
 		<br>
 		<br>
