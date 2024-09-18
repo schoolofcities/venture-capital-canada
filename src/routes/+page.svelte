@@ -9,7 +9,7 @@
 	import cartoInvestmentStates from "../assets/carto-investment-us.svg?raw";
 	import cartoDealsCanada from "../assets/carto-deals-canada.svg?raw";
 	import cartoDealsCanadaMobile from "../assets/carto-deals-canada-mobile.svg?raw";
-	import barChange from "../assets/bar-change.svg";
+	import barChange from "../assets/bar-change.svg?raw";
 
 	import "../assets/global-styles.css";
 
@@ -38,7 +38,6 @@
 		<img src="./top.png"/>
 	</div>
 
-	
 	<div class="text">
 
 		<div class="title">
@@ -165,7 +164,7 @@
 		</p>
 		<br>
 		<div class="img350px">
-			<img src={barChange} alt="SVG Image"/>
+			{@html barChange}
 		</div>
 		<p>
 			The biggest winner is Vancouver, which has seen its share of venture capital investment nearly double from 12 percent to nearly 24 percent. Quebec is the only other metro that has seen a significant increase in share of venture capital investment, increasing by nearly three percentage points. 
