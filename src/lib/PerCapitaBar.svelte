@@ -1,6 +1,5 @@
 <script>
 
-	import {group, sum, max} from 'd3-array';
 	import {scaleLinear} from 'd3-scale';
 
 	let data = [

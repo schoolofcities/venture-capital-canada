@@ -7,8 +7,8 @@
    viewBox="0 0 264.58332 92.604163"
    version="1.1"
    id="svg1"
-   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
    sodipodi:docname="carto-deals-canada.svg"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,39 +22,19 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     showgrid="true"
-     inkscape:zoom="1.9508187"
-     inkscape:cx="68.176506"
-     inkscape:cy="150.70596"
+     inkscape:zoom="1.03"
+     inkscape:cx="573.78641"
+     inkscape:cy="296.1165"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1">
-    <inkscape:grid
-       id="grid1"
-       units="px"
-       originx="0"
-       originy="0"
-       spacingx="2.6458332"
-       spacingy="2.6458332"
-       empcolor="#0099e5"
-       empopacity="0.30196078"
-       color="#0099e5"
-       opacity="0.14901961"
-       empspacing="5"
-       dotted="false"
-       gridanglex="30"
-       gridanglez="30"
-       visible="true" />
-  </sodipodi:namedview>
+     inkscape:current-layer="layer1" />
   <defs
      id="defs1">
     <linearGradient
-       id="swatch1"
-       inkscape:swatch="solid">
+       id="swatch1">
       <stop
          style="stop-color:#e4e4ed;stop-opacity:1;"
          offset="0"
@@ -62,8 +42,6 @@
     </linearGradient>
   </defs>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
      id="layer1">
     <rect
        style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.52899997;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal;stroke-opacity:1"
@@ -1611,7 +1589,7 @@
        rx="2.6458366"
        ry="2.6458366" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal;stroke-opacity:1"
        id="rect1-0-3-6-7-4-6-6"
        width="5.2916732"
        height="5.2916732"
@@ -1629,7 +1607,7 @@
        rx="2.6458366"
        ry="2.6458366" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal;stroke-opacity:1"
        id="rect1-0-3-6-7-4-6-65"
        width="5.2916732"
        height="5.2916732"
@@ -1647,7 +1625,7 @@
        rx="2.6458366"
        ry="2.6458366" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal;stroke-opacity:1"
        id="rect1-0-3-6-7-4-6-6-0"
        width="5.2916732"
        height="5.2916732"
@@ -1665,7 +1643,7 @@
        rx="2.6458366"
        ry="2.6458366" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal;stroke-opacity:1"
        id="rect1-0-3-6-7-4-6-65-2"
        width="5.2916732"
        height="5.2916732"
@@ -2291,9 +2269,8 @@
        x="21.268009"
        y="39.486992"
        id="text2"><tspan
-         sodipodi:role="line"
          id="tspan2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="21.268009"
          y="39.486992">Vancouver</tspan></text>
     <text
@@ -2302,9 +2279,8 @@
        x="44.979168"
        y="29.104166"
        id="text2-04"><tspan
-         sodipodi:role="line"
          id="tspan2-16"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="44.979168"
          y="29.104166">Kelowna</tspan></text>
     <text
@@ -2313,9 +2289,8 @@
        x="88.256889"
        y="6.879425"
        id="text2-8"><tspan
-         sodipodi:role="line"
          id="tspan2-49"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.7625px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.7625px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="88.849876"
          y="6.879425">= 10 venture capital deals (2019-2021) </tspan></text>
     <text
@@ -2325,9 +2300,8 @@
        y="26.881538"
        id="text2-0"
        transform="rotate(-45)"><tspan
-         sodipodi:role="line"
          id="tspan2-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#77767b;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#77767b;stroke-width:0.264583"
          x="-5.7066836"
          y="26.881538">BRITISH COLUMBIA</tspan></text>
     <text
@@ -2336,12 +2310,9 @@
        x="31.74432"
        y="56.284462"
        id="text2-0-0"
-       inkscape:transform-center-x="-0.26096597"
-       inkscape:transform-center-y="-7.748364"
        transform="rotate(-45)"><tspan
-         sodipodi:role="line"
          id="tspan2-4-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#77767b;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#77767b;stroke-width:0.264583"
          x="31.74432"
          y="56.284462">ALBERTA</tspan></text>
     <text
@@ -2350,12 +2321,9 @@
        x="69.15593"
        y="93.69355"
        id="text2-0-0-1"
-       inkscape:transform-center-x="-0.88289182"
-       inkscape:transform-center-y="-9.5025204"
        transform="rotate(-45)"><tspan
-         sodipodi:role="line"
          id="tspan2-4-5-0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#77767b;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#77767b;stroke-width:0.264583"
          x="69.15593"
          y="93.69355">ONTARIO</tspan></text>
     <text
@@ -2364,12 +2332,9 @@
        x="132.76207"
        y="156.49605"
        id="text2-0-0-1-5"
-       inkscape:transform-center-x="-0.88289182"
-       inkscape:transform-center-y="-9.5025204"
        transform="rotate(-45)"><tspan
-         sodipodi:role="line"
          id="tspan2-4-5-0-6"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#77767b;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#77767b;stroke-width:0.264583"
          x="132.76207"
          y="156.49605">QUEBEC</tspan></text>
     <text
@@ -2378,12 +2343,9 @@
        x="162.62704"
        y="189.07927"
        id="text2-0-0-1-5-7"
-       inkscape:transform-center-x="-0.88289182"
-       inkscape:transform-center-y="-9.5025204"
        transform="rotate(-45)"><tspan
-         sodipodi:role="line"
          id="tspan2-4-5-0-6-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#77767b;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#77767b;stroke-width:0.264583"
          x="162.62704"
          y="189.07927">MARITIMES</tspan></text>
     <text
@@ -2393,9 +2355,8 @@
        y="79.602669"
        id="text2-0-0-1-2"
        transform="rotate(-45)"><tspan
-         sodipodi:role="line"
          id="tspan2-4-5-0-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#77767b;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#77767b;stroke-width:0.264583"
          x="48.394588"
          y="79.602669">SASKATCHEWAN</tspan></text>
     <text
@@ -2404,9 +2365,8 @@
        x="61.024548"
        y="55.251862"
        id="text2-2"><tspan
-         sodipodi:role="line"
          id="tspan2-13"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="61.024548"
          y="55.251862">Calgary</tspan></text>
     <text
@@ -2415,9 +2375,8 @@
        x="89.992622"
        y="55.602036"
        id="text2-2-6"><tspan
-         sodipodi:role="line"
          id="tspan2-13-3"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="89.992622"
          y="55.602036">Saskatoon</tspan></text>
     <text
@@ -2426,9 +2385,8 @@
        x="63.110783"
        y="34.362244"
        id="text2-2-5"><tspan
-         sodipodi:role="line"
          id="tspan2-13-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="63.110783"
          y="34.362244">Edmonton</tspan></text>
     <text
@@ -2437,18 +2395,15 @@
        x="113.98337"
        y="48.35881"
        id="text2-2-5-4"><tspan
-         sodipodi:role="line"
          id="tspan2-13-9-2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="113.98337"
          y="48.35881">Kitchener</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="113.98337"
          y="51.843006"
          id="tspan3">Cambridge</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="113.98337"
          y="55.327206"
          id="tspan4">Waterloo</tspan></text>
@@ -2458,8 +2413,7 @@
        x="156.38855"
        y="19.326481"
        id="text2-2-5-4-5-8"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="156.38855"
          y="19.326481"
          id="tspan4-0-8">Toronto</tspan></text>
@@ -2469,18 +2423,15 @@
        x="188.09871"
        y="30.965897"
        id="text2-2-5-4-5-8-9"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="188.09871"
          y="30.965897"
          id="tspan4-0-8-2">Ottawa</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="188.09871"
          y="34.450092"
          id="tspan7">Gatineau</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="188.09871"
          y="37.934292"
          id="tspan6" /></text>
@@ -2490,8 +2441,7 @@
        x="208.73076"
        y="35.204174"
        id="text2-2-5-4-5-8-9-2"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="208.73076"
          y="35.204174"
          id="tspan4-0-8-2-2">Montreal</tspan></text>
@@ -2501,8 +2451,7 @@
        x="230.02086"
        y="42.399242"
        id="text2-2-5-4-5-8-9-2-2"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="230.02086"
          y="42.399242"
          id="tspan4-0-8-2-2-1">Quebec</tspan></text>
@@ -2513,8 +2462,7 @@
        y="228.68666"
        id="text2-2-5-4-5-8-9-2-2-9"
        transform="rotate(-90)"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="-81.741486"
          y="228.68666"
          id="tspan4-0-8-2-2-1-2">Sherbrooke</tspan></text>
@@ -2525,8 +2473,7 @@
        y="244.67558"
        id="text2-2-5-4-5-8-9-2-2-9-5"
        transform="rotate(-90)"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="-48.889206"
          y="244.67558"
          id="tspan4-0-8-2-2-1-2-4">Fredricton</tspan></text>
@@ -2537,8 +2484,7 @@
        y="260.64377"
        id="text2-2-5-4-5-8-9-2-2-9-5-7"
        transform="rotate(-90)"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="-49.172199"
          y="260.64377"
          id="tspan4-0-8-2-2-1-2-4-0">St. John's</tspan></text>
@@ -2547,11 +2493,8 @@
        style="font-size:3.43958px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;text-anchor:middle;fill:#f6f5f4;stroke-width:0.264583"
        x="248.90237"
        y="89.892181"
-       id="text2-2-5-4-5-8-9-2-2-9-5-9-3"
-       inkscape:transform-center-x="2.9039546"
-       inkscape:transform-center-y="-2.1515468"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+       id="text2-2-5-4-5-8-9-2-2-9-5-9-3"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="248.90237"
          y="89.892181"
          id="tspan4-0-8-2-2-1-2-4-7-5">Halifax</tspan></text>
@@ -2561,11 +2504,8 @@
        x="-59.666508"
        y="128.23155"
        id="text2-2-5-4-5-6"
-       transform="rotate(-90)"
-       inkscape:transform-center-x="0.14397057"
-       inkscape:transform-center-y="-3.3827603"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+       transform="rotate(-90)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;line-height:1;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="-59.666508"
          y="128.23155"
          id="tspan4-0-3">Hamilton</tspan></text>
@@ -2576,9 +2516,8 @@
        y="6.4202833"
        id="text2-7"
        transform="rotate(-90)"><tspan
-         sodipodi:role="line"
          id="tspan2-1"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="-49.450714"
          y="6.4202833">Victoria</tspan></text>
     <text
@@ -2587,9 +2526,8 @@
        x="31.705494"
        y="89.958336"
        id="text2-24"><tspan
-         sodipodi:role="line"
          id="tspan2-12"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="31.705494"
          y="89.958336">557 Deals</tspan></text>
     <text
@@ -2598,9 +2536,8 @@
        x="66.710838"
        y="102.9232"
        id="text2-24-5"><tspan
-         sodipodi:role="line"
          id="tspan2-12-0"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="66.710838"
          y="102.9232">193 Deals</tspan></text>
     <text
@@ -2609,9 +2546,8 @@
        x="113.75641"
        y="102.85705"
        id="text2-24-5-3"><tspan
-         sodipodi:role="line"
          id="tspan2-12-0-8"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="113.75641"
          y="102.85705">102 Deals</tspan></text>
     <text
@@ -2620,9 +2556,8 @@
        x="156.29573"
        y="89.892181"
        id="text2-24-5-3-0"><tspan
-         sodipodi:role="line"
          id="tspan2-12-0-8-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="156.29573"
          y="89.892181">983 Deals</tspan></text>
     <text
@@ -2631,9 +2566,8 @@
        x="188.13608"
        y="102.9232"
        id="text2-24-5-3-0-5"><tspan
-         sodipodi:role="line"
          id="tspan2-12-0-8-4-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="188.13608"
          y="102.9232">122 Deals</tspan></text>
     <text
@@ -2642,9 +2576,8 @@
        x="209.09908"
        y="89.892181"
        id="text2-24-5-3-0-5-0"><tspan
-         sodipodi:role="line"
          id="tspan2-12-0-8-4-4-6"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:Roboto;-inkscape-font-specification:Roboto;fill:#f6f5f4;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43958px;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;fill:#f6f5f4;stroke-width:0.264583"
          x="209.09908"
          y="89.892181">362 Deals</tspan></text>
     <rect

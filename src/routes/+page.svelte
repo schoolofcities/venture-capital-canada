@@ -4,12 +4,16 @@
 
 	import PerCapitaBar from "../lib/PerCapitaBar.svelte";
 
-	import cartoInvestmentCanada from "../assets/carto-investment-canada.svg";
-	import cartoInvestmentStates from "../assets/carto-investment-us.svg";
-	import cartoDealsCanada from "../assets/carto-deals-canada.svg";
+	import cartoInvestmentCanada from "../assets/carto-investment-canada.svg?raw";
+	import cartoInvestmentCanadaMobile from "../assets/carto-investment-canada-mobile.svg?raw";
+	import cartoInvestmentStates from "../assets/carto-investment-us.svg?raw";
+	import cartoDealsCanada from "../assets/carto-deals-canada.svg?raw";
+	import cartoDealsCanadaMobile from "../assets/carto-deals-canada-mobile.svg?raw";
 	import barChange from "../assets/bar-change.svg";
 
 	import "../assets/global-styles.css";
+
+	let width = 1200;
 
 </script>
 
@@ -28,7 +32,7 @@
 
 <TopSofC/>
 
-<main>
+<main bind:offsetWidth={width}>
 
 	<div class="top-image">
 		<img src="./top.png"/>
@@ -43,7 +47,7 @@
 			
 			<!-- <h1>How reducing air pollution could extend thousands of lives</h1> -->
 			<p>Research:  <a href="">Richard Florida</a> & <a href="">Karen King</a><br>
-			Maps & Graphics: <a href="">Jeff Allen</a></p>
+			Maps & Graphics: <a href="https://jamaps.github.io/" target="_blank">Jeff Allen</a></p>
 		</div>
 		<p>
 			<br>
@@ -73,7 +77,13 @@
 	</div>
 
 	<div class="img1000px">
-		<img src={cartoInvestmentCanada} alt="SVG Image" />
+
+		{#if width > 1000}
+			{@html cartoInvestmentCanada}
+		{:else}
+			{@html cartoInvestmentCanadaMobile}
+		{/if}
+		
 	</div>
 
 	<div class="text">
@@ -85,9 +95,11 @@
 		</p>
 	</div>
 
-	<div class="img1000px" id="SF">
-		<img src={cartoInvestmentStates} alt="SVG Image" />
-	</div>
+	{#if width > 1000}
+		<div class="img1000px">
+			{@html cartoInvestmentStates}
+		</div>
+	{/if}
 
 	<div class="text">
 		<h2>
@@ -98,8 +110,18 @@
 		</p>
 	</div>
 
-	<div class="img1000px">
+	<!-- <div class="img1000px">
 		<img src={cartoDealsCanada} alt="SVG Image" />
+	</div> -->
+
+	<div class="img1000px">
+
+		{#if width > 1000}
+			{@html cartoDealsCanada}
+		{:else}
+			{@html cartoDealsCanadaMobile}
+		{/if}
+		
 	</div>
 
 	<div class="text">
@@ -108,8 +130,6 @@
 		</p>
 		<p>
 			Again, Canada’s leading metros trail U.S. metros by a large margin. San Francisco had 7,271 deals, New York had 5,787 deals, and Los Angeles had 3,344 deals – while no Canadian city had more than 1,000.
-			
-			<!-- Toronto accounts for less than 30 percent of Los Angeles’ venture capital deals, 17 percent of New York, and 13 percent of San Francisco. Vancouver’s is less that 20 percent of Los Angeles, 10 percent of New York, and 8 percent of San Francisco. Montreal is a little bit more than 10 percent of Los Angeles, 6 percent of New York, and 5 percent of San Francisco. Venture capital deals for the three leading Canadian metros make up less than 12 percent (11.6 percent) that of their three leading U.S. counterparts. -->
 		</p>
 		<br>
 		<br>
@@ -217,35 +237,15 @@
 	transform-origin: center;
 }
 
+
 @media screen and (max-width: 1000px) {
 	.img1000px {
-		width: 1000px;
-		height: 1000px;
-		overflow: hidden;
-	}
-
-	.img1000px img {
-		width: 1000px;
-		height: 1000px;
-		transform: rotate(45deg) translateY(-50%);
-		transform-origin: center left;
-		position: absolute;
-		top: 0px;
-		left: -250px;
-	}
-	#SF {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 860px) {
-	.img1000px {
 		width: 340px;
-		height: 1000px;
+		height: 1100px;
 		overflow: hidden;
 	}
 	.img1000px img {
-		width: 1000px;
+		width: 1100px;
 		height: 340px;
 		transform: rotate(90deg) translateY(-100%);
 		transform-origin: center left;
