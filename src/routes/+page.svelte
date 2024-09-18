@@ -26,24 +26,6 @@
 		content="width=device-width, initial-scale=1, minimum-scale=1"
 	/>
 
-	<title>Venture Capital Canada | School of Cities</title>
-    <meta name="description" content="Visualizing the geography of venture capital investment across Canadian metro areas">
-    <meta name="author" content="Jeff Allen">
-
-	<meta property="og:title" content="Venture Capital Canada" />
-    <meta property="og:description" content="Visualizing the geography of venture capital investment across Canadian metro areas" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://schoolofcities.github.io/venture-capital-canada/" />
-    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/venture-capital-canada/main/static/web-card.png" />
-    <meta property="og:locale" content="en_CA">
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="https://schoolofcities.github.io/venture-capital-canada/" />
-    <meta name="twitter:creator" content="@JeffAllenMaps" />
-    <meta name="twitter:title" content="Venture Capital Canada" />
-    <meta name="twitter:description" content="Visualizing the geography of venture capital investment across Canadian metro areas" />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/venture-capital-canada/main/static/web-card.png" /> 
-
 </svelte:head>
 
 
@@ -61,8 +43,7 @@
 		<div class="title">
 			<h1>Canada’s High-Tech Startup Cities</h1>
 			<h3>The geography of venture capital investment across metro areas</h3>
-			
-			<!-- <h1>How reducing air pollution could extend thousands of lives</h1> -->
+
 			<p>Research:  <a href="">Richard Florida</a> & <a href="">Karen King</a><br>
 			Maps & Graphics: <a href="https://jamaps.github.io/" target="_blank">Jeff Allen</a></p>
 		</div>
