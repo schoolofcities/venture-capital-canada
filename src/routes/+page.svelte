@@ -26,6 +26,24 @@
 		content="width=device-width, initial-scale=1, minimum-scale=1"
 	/>
 
+	<title>Venture Capital Canada | School of Cities</title>
+    <meta name="description" content="Visualizing the geography of venture capital investment across Canadian metro areas">
+    <meta name="author" content="Jeff Allen">
+
+	<meta property="og:title" content="Venture Capital Canada" />
+    <meta property="og:description" content="Visualizing the geography of venture capital investment across Canadian metro areas" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://schoolofcities.github.io/venture-capital-canada/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/schoolofcities/venture-capital-canada/main/static/web-card.png" />
+    <meta property="og:locale" content="en_CA">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="https://schoolofcities.github.io/venture-capital-canada/" />
+    <meta name="twitter:creator" content="@JeffAllenMaps" />
+    <meta name="twitter:title" content="Venture Capital Canada" />
+    <meta name="twitter:description" content="Visualizing the geography of venture capital investment across Canadian metro areas" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/schoolofcities/venture-capital-canada/main/static/web-card.png" /> 
+
 </svelte:head>
 
 
