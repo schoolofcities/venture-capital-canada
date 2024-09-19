@@ -136,7 +136,7 @@
 			The geography of <u>per capita investment</u>
 		</h2>
 		<p>
-			We now turn to venture capital investment on a per capita basis. Both of our previous measures – investments and venture capital deals– reflect the size of metro areas: larger metros are likely to have higher levels of investment simply by virtue of their larger size. To control for this, we now look at venture capital investment on a per capita basis. The pattern is rather different.
+			We now turn to venture capital investment on a per capita basis. Both of our previous measures – investments and venture capital deals – reflect the size of metro areas: larger metros are likely to have higher levels of investment simply by virtue of their larger size. To control for this, we now look at venture capital investment on a per capita basis. The pattern is rather different.
 		</p>
 
 		<br>
@@ -189,7 +189,7 @@
 			While Toronto leads in overall venture capital investment and venture capital deals, this is partly due to its larger economic size. It ranks fourth in venture capital investment per capita behind Vancouver, Kitchener-Cambridge-Waterloo, and Fredericton.
 		</p>
 		<p>
-			Across Canada, comparing 2019-2021 to a decade earlier, Vancouver has been the biggest winner in venture capital, while both Toronto and Montreal have seen slightly declines in their share.
+			Across Canada, comparing 2019-2021 to a decade earlier, Vancouver has been the biggest winner in venture capital, while both Toronto and Montreal have seen slight declines in their share.
 		</p>
 		<p>
 			Venture capital investment in Canadian metros is but a fraction of their U.S. counterparts. Venture investment in Canada’s three leading metros comprises just five percent of that of America’s three leading metros. To become a global leader in tech, Canada will need to attract far more venture capital in the future.
