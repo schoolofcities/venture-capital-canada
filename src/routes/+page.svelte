@@ -44,7 +44,7 @@
 			<h1>Canada’s High-Tech Startup Cities</h1>
 			<h3>The geography of venture capital investment across metro areas</h3>
 
-			<p>Research:  <a href="">Richard Florida</a> & <a href="">Karen King</a><br>
+			<p>Research: <a href="https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/florida-richard/" target="_blank">Richard Florida</a> & <a href="https://discover.research.utoronto.ca/22831" target="_blank">Karen King</a><br>
 			Maps & Graphics: <a href="https://jamaps.github.io/" target="_blank">Jeff Allen</a></p>
 		</div>
 		<p>
@@ -195,14 +195,14 @@
 			Venture capital investment in Canadian metros is but a fraction of their U.S. counterparts. Venture investment in Canada’s three leading metros comprises just five percent of that of America’s three leading metros. To become a global leader in tech, Canada will need to attract far more venture capital in the future.
 		</p>
 	</div>
-
+	
 	<br>
 	<br>
 	<div class="text" >
 		<p class="notes">
-			<a href="">Richard Florida</a> is University Professor at the University of Toronto’s Rotman School of Management and Distinguished Scholar in Residence at the School of Cities.  
+			<a href="https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/florida-richard/" target="_blank">Richard Florida</a> is University Professor at the University of Toronto’s Rotman School of Management and Distinguished Scholar in Residence at the School of Cities.  
 			<br><br>
-			<a href="">Karen King</a> is a Senior Research Associate at the University of Toronto’s Rotman School of Management and School of Cities.
+			<a href="https://discover.research.utoronto.ca/22831" target="_blank">Karen King</a> is a Senior Research Associate at the University of Toronto’s Rotman School of Management and School of Cities.
 		</p>
 		<br>
 		<br>
