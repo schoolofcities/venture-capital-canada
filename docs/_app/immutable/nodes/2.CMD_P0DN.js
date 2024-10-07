@@ -73,7 +73,12 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        x="3.2434635"
        y="10.494026"
        id="tspan14"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;text-align:start;text-anchor:start">investment:</tspan></text><text
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;text-align:start;text-anchor:start">investment in</tspan><tspan
+       sodipodi:role="line"
+       x="3.2434635"
+       y="14.494026"
+       id="tspan14"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:RobotoRegular;-inkscape-font-specification:RobotoRegular;text-align:start;text-anchor:start">Canada:</tspan></text><text
      xml:space="preserve"
      style="font-size:3.70417px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;text-anchor:middle;display:inline;fill:#f6f5f4;stroke-width:0.264583"
      x="12.240904"
