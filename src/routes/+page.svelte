@@ -53,7 +53,7 @@
 			<span id="drop-cap">V</span>enture capital is the financial fuel that powers innovation and economic growth. This unique form of equity financing — which exchanges capital for shares in the enterprises they provide — has fueled the rise of revolutionary companies like Intel in semiconductors, Apple in personal computing, Genentech in biotech, Google in search, Twitter/X in social media, ChatGPT in artificial intelligence, and many more. 
 		</p>
 		<p>
-			Venture capital in Canada exploded from C$3.1 billion in the three year period of 2009-2011 to $23.5 billion in 2019-2021 -- a nearly eightfold increase. But the benefits accrued to just a handful of cities who benefited from mega deals.
+			Venture capital in Canada exploded from C$3.1 billion in the three year period of 2009-2011, to $23.5 billion in 2019-2021 — a nearly eightfold increase. But the benefits accrued to just a handful of cities who benefited from mega deals.
 		</p>
 		<div class="img350px">
 			{@html bubbleChange}

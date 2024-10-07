@@ -1,4 +1,4 @@
-import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as Jt,i as Xt,e as m,c as x,d as T,y as R,g as v,o as h,p as _r,j as B,k as y,z as Yt,A as $e,b as Je,m as G,B as Se,f as Xe,C as Mr,s as u,u as Cr,H as fe,D as kn,h as w,v as Tr,E as ce,w as $r,t as Sr,a as Nr,x as Ar}from"../chunks/index.CIjXlAOi.js";function Ge(e){return(e==null?void 0:e.length)!==void 0?e:Array.from(e)}const fn=!0,Bi=Object.freeze(Object.defineProperty({__proto__:null,prerender:fn},Symbol.toStringTag,{value:"Module"})),cn=""+new URL("../assets/top-logo-full.BnB_mwd3.svg",import.meta.url).href;function hn(e){let t,r,n,i=`<img src="${cn}" alt="School of Cities" class="svelte-1ftsgd6"/>`,o;return{c(){t=m("div"),r=m("div"),n=m("a"),n.innerHTML=i,this.h()},l(l){t=x(l,"DIV",{id:!0,class:!0});var s=T(t);r=x(s,"DIV",{id:!0,style:!0,class:!0});var k=T(r);n=x(k,"A",{href:!0,class:!0,"data-svelte-h":!0}),R(n)!=="svelte-jgj3rt"&&(n.innerHTML=i),k.forEach(v),s.forEach(v),this.h()},h(){h(n,"href","https://www.schoolofcities.utoronto.ca/"),h(n,"class","svelte-1ftsgd6"),h(r,"id","logo"),_r(r,"width",e[1]+"px"),h(r,"class","svelte-1ftsgd6"),h(t,"id","bar"),h(t,"class","svelte-1ftsgd6"),Qt(()=>e[2].call(t))},m(l,s){B(l,t,s),y(t,r),y(r,n),o=Yt(t,e[2].bind(t))},p(l,[s]){s&2&&_r(r,"width",l[1]+"px")},i:Ze,o:Ze,d(l){l&&v(t),o()}}}function pn(e,t,r){let n,i=262;function o(){n=this.clientWidth,r(0,n)}return e.$$.update=()=>{e.$$.dirty&1&&(n<500?r(1,i=262):r(1,i=383))},[n,i,o]}class mn extends Jt{constructor(t){super(),Xt(this,t,pn,hn,Kt,{})}}function Ye(e,t){return e==null||t==null?NaN:e<t?-1:e>t?1:e>=t?0:NaN}function xn(e,t){return e==null||t==null?NaN:t<e?-1:t>e?1:t>=e?0:NaN}function tn(e){let t,r,n;e.length!==2?(t=Ye,r=(s,k)=>Ye(e(s),k),n=(s,k)=>e(s)-k):(t=e===Ye||e===xn?e:un,r=e,n=e);function i(s,k,a=0,f=s.length){if(a<f){if(t(k,k)!==0)return f;do{const d=a+f>>>1;r(s[d],k)<0?a=d+1:f=d}while(a<f)}return a}function o(s,k,a=0,f=s.length){if(a<f){if(t(k,k)!==0)return f;do{const d=a+f>>>1;r(s[d],k)<=0?a=d+1:f=d}while(a<f)}return a}function l(s,k,a=0,f=s.length){const d=i(s,k,a,f-1);return d>a&&n(s[d-1],k)>-n(s[d],k)?d-1:d}return{left:i,center:l,right:o}}function un(){return 0}function wn(e){return e===null?NaN:+e}const gn=tn(Ye),vn=gn.right;tn(wn).center;const bn=Math.sqrt(50),qn=Math.sqrt(10),Rn=Math.sqrt(2);function et(e,t,r){const n=(t-e)/Math.max(0,r),i=Math.floor(Math.log10(n)),o=n/Math.pow(10,i),l=o>=bn?10:o>=qn?5:o>=Rn?2:1;let s,k,a;return i<0?(a=Math.pow(10,-i)/l,s=Math.round(e*a),k=Math.round(t*a),s/a<e&&++s,k/a>t&&--k,a=-a):(a=Math.pow(10,i)*l,s=Math.round(e/a),k=Math.round(t/a),s*a<e&&++s,k*a>t&&--k),k<s&&.5<=r&&r<2?et(e,t,r*2):[s,k,a]}function zn(e,t,r){if(t=+t,e=+e,r=+r,!(r>0))return[];if(e===t)return[e];const n=t<e,[i,o,l]=n?et(t,e,r):et(e,t,r);if(!(o>=i))return[];const s=o-i+1,k=new Array(s);if(n)if(l<0)for(let a=0;a<s;++a)k[a]=(o-a)/-l;else for(let a=0;a<s;++a)k[a]=(o-a)*l;else if(l<0)for(let a=0;a<s;++a)k[a]=(i+a)/-l;else for(let a=0;a<s;++a)k[a]=(i+a)*l;return k}function Ft(e,t,r){return t=+t,e=+e,r=+r,et(e,t,r)[2]}function Un(e,t,r){t=+t,e=+e,r=+r;const n=t<e,i=n?Ft(t,e,r):Ft(e,t,r);return(n?-1:1)*(i<0?1/-i:i)}function _n(e,t){switch(arguments.length){case 0:break;case 1:this.range(e);break;default:this.range(t).domain(e);break}return this}function Zt(e,t,r){e.prototype=t.prototype=r,r.constructor=e}function rn(e,t){var r=Object.create(e.prototype);for(var n in t)r[n]=t[n];return r}function Ve(){}var je=.7,tt=1/je,Ne="\\s*([+-]?\\d+)\\s*",He="\\s*([+-]?(?:\\d*\\.)?\\d+(?:[eE][+-]?\\d+)?)\\s*",O="\\s*([+-]?(?:\\d*\\.)?\\d+(?:[eE][+-]?\\d+)?)%\\s*",Mn=/^#([0-9a-f]{3,8})$/,Cn=new RegExp(`^rgb\\(${Ne},${Ne},${Ne}\\)$`),Tn=new RegExp(`^rgb\\(${O},${O},${O}\\)$`),$n=new RegExp(`^rgba\\(${Ne},${Ne},${Ne},${He}\\)$`),Sn=new RegExp(`^rgba\\(${O},${O},${O},${He}\\)$`),Nn=new RegExp(`^hsl\\(${He},${O},${O}\\)$`),An=new RegExp(`^hsla\\(${He},${O},${O},${He}\\)$`),Ir={aliceblue:15792383,antiquewhite:16444375,aqua:65535,aquamarine:8388564,azure:15794175,beige:16119260,bisque:16770244,black:0,blanchedalmond:16772045,blue:255,blueviolet:9055202,brown:10824234,burlywood:14596231,cadetblue:6266528,chartreuse:8388352,chocolate:13789470,coral:16744272,cornflowerblue:6591981,cornsilk:16775388,crimson:14423100,cyan:65535,darkblue:139,darkcyan:35723,darkgoldenrod:12092939,darkgray:11119017,darkgreen:25600,darkgrey:11119017,darkkhaki:12433259,darkmagenta:9109643,darkolivegreen:5597999,darkorange:16747520,darkorchid:10040012,darkred:9109504,darksalmon:15308410,darkseagreen:9419919,darkslateblue:4734347,darkslategray:3100495,darkslategrey:3100495,darkturquoise:52945,darkviolet:9699539,deeppink:16716947,deepskyblue:49151,dimgray:6908265,dimgrey:6908265,dodgerblue:2003199,firebrick:11674146,floralwhite:16775920,forestgreen:2263842,fuchsia:16711935,gainsboro:14474460,ghostwhite:16316671,gold:16766720,goldenrod:14329120,gray:8421504,green:32768,greenyellow:11403055,grey:8421504,honeydew:15794160,hotpink:16738740,indianred:13458524,indigo:4915330,ivory:16777200,khaki:15787660,lavender:15132410,lavenderblush:16773365,lawngreen:8190976,lemonchiffon:16775885,lightblue:11393254,lightcoral:15761536,lightcyan:14745599,lightgoldenrodyellow:16448210,lightgray:13882323,lightgreen:9498256,lightgrey:13882323,lightpink:16758465,lightsalmon:16752762,lightseagreen:2142890,lightskyblue:8900346,lightslategray:7833753,lightslategrey:7833753,lightsteelblue:11584734,lightyellow:16777184,lime:65280,limegreen:3329330,linen:16445670,magenta:16711935,maroon:8388608,mediumaquamarine:6737322,mediumblue:205,mediumorchid:12211667,mediumpurple:9662683,mediumseagreen:3978097,mediumslateblue:8087790,mediumspringgreen:64154,mediumturquoise:4772300,mediumvioletred:13047173,midnightblue:1644912,mintcream:16121850,mistyrose:16770273,moccasin:16770229,navajowhite:16768685,navy:128,oldlace:16643558,olive:8421376,olivedrab:7048739,orange:16753920,orangered:16729344,orchid:14315734,palegoldenrod:15657130,palegreen:10025880,paleturquoise:11529966,palevioletred:14381203,papayawhip:16773077,peachpuff:16767673,peru:13468991,pink:16761035,plum:14524637,powderblue:11591910,purple:8388736,rebeccapurple:6697881,red:16711680,rosybrown:12357519,royalblue:4286945,saddlebrown:9127187,salmon:16416882,sandybrown:16032864,seagreen:3050327,seashell:16774638,sienna:10506797,silver:12632256,skyblue:8900331,slateblue:6970061,slategray:7372944,slategrey:7372944,snow:16775930,springgreen:65407,steelblue:4620980,tan:13808780,teal:32896,thistle:14204888,tomato:16737095,turquoise:4251856,violet:15631086,wheat:16113331,white:16777215,whitesmoke:16119285,yellow:16776960,yellowgreen:10145074};Zt(Ve,Ee,{copy(e){return Object.assign(new this.constructor,this,e)},displayable(){return this.rgb().displayable()},hex:jr,formatHex:jr,formatHex8:In,formatHsl:jn,formatRgb:Hr,toString:Hr});function jr(){return this.rgb().formatHex()}function In(){return this.rgb().formatHex8()}function jn(){return nn(this).formatHsl()}function Hr(){return this.rgb().formatRgb()}function Ee(e){var t,r;return e=(e+"").trim().toLowerCase(),(t=Mn.exec(e))?(r=t[1].length,t=parseInt(t[1],16),r===6?Er(t):r===3?new V(t>>8&15|t>>4&240,t>>4&15|t&240,(t&15)<<4|t&15,1):r===8?We(t>>24&255,t>>16&255,t>>8&255,(t&255)/255):r===4?We(t>>12&15|t>>8&240,t>>8&15|t>>4&240,t>>4&15|t&240,((t&15)<<4|t&15)/255):null):(t=Cn.exec(e))?new V(t[1],t[2],t[3],1):(t=Tn.exec(e))?new V(t[1]*255/100,t[2]*255/100,t[3]*255/100,1):(t=$n.exec(e))?We(t[1],t[2],t[3],t[4]):(t=Sn.exec(e))?We(t[1]*255/100,t[2]*255/100,t[3]*255/100,t[4]):(t=Nn.exec(e))?Dr(t[1],t[2]/100,t[3]/100,1):(t=An.exec(e))?Dr(t[1],t[2]/100,t[3]/100,t[4]):Ir.hasOwnProperty(e)?Er(Ir[e]):e==="transparent"?new V(NaN,NaN,NaN,0):null}function Er(e){return new V(e>>16&255,e>>8&255,e&255,1)}function We(e,t,r,n){return n<=0&&(e=t=r=NaN),new V(e,t,r,n)}function Hn(e){return e instanceof Ve||(e=Ee(e)),e?(e=e.rgb(),new V(e.r,e.g,e.b,e.opacity)):new V}function Ot(e,t,r,n){return arguments.length===1?Hn(e):new V(e,t,r,n??1)}function V(e,t,r,n){this.r=+e,this.g=+t,this.b=+r,this.opacity=+n}Zt(V,Ot,rn(Ve,{brighter(e){return e=e==null?tt:Math.pow(tt,e),new V(this.r*e,this.g*e,this.b*e,this.opacity)},darker(e){return e=e==null?je:Math.pow(je,e),new V(this.r*e,this.g*e,this.b*e,this.opacity)},rgb(){return this},clamp(){return new V(ke(this.r),ke(this.g),ke(this.b),rt(this.opacity))},displayable(){return-.5<=this.r&&this.r<255.5&&-.5<=this.g&&this.g<255.5&&-.5<=this.b&&this.b<255.5&&0<=this.opacity&&this.opacity<=1},hex:Vr,formatHex:Vr,formatHex8:En,formatRgb:Br,toString:Br}));function Vr(){return`#${ye(this.r)}${ye(this.g)}${ye(this.b)}`}function En(){return`#${ye(this.r)}${ye(this.g)}${ye(this.b)}${ye((isNaN(this.opacity)?1:this.opacity)*255)}`}function Br(){const e=rt(this.opacity);return`${e===1?"rgb(":"rgba("}${ke(this.r)}, ${ke(this.g)}, ${ke(this.b)}${e===1?")":`, ${e})`}`}function rt(e){return isNaN(e)?1:Math.max(0,Math.min(1,e))}function ke(e){return Math.max(0,Math.min(255,Math.round(e)||0))}function ye(e){return e=ke(e),(e<16?"0":"")+e.toString(16)}function Dr(e,t,r,n){return n<=0?e=t=r=NaN:r<=0||r>=1?e=t=NaN:t<=0&&(e=NaN),new P(e,t,r,n)}function nn(e){if(e instanceof P)return new P(e.h,e.s,e.l,e.opacity);if(e instanceof Ve||(e=Ee(e)),!e)return new P;if(e instanceof P)return e;e=e.rgb();var t=e.r/255,r=e.g/255,n=e.b/255,i=Math.min(t,r,n),o=Math.max(t,r,n),l=NaN,s=o-i,k=(o+i)/2;return s?(t===o?l=(r-n)/s+(r<n)*6:r===o?l=(n-t)/s+2:l=(t-r)/s+4,s/=k<.5?o+i:2-o-i,l*=60):s=k>0&&k<1?0:l,new P(l,s,k,e.opacity)}function Vn(e,t,r,n){return arguments.length===1?nn(e):new P(e,t,r,n??1)}function P(e,t,r,n){this.h=+e,this.s=+t,this.l=+r,this.opacity=+n}Zt(P,Vn,rn(Ve,{brighter(e){return e=e==null?tt:Math.pow(tt,e),new P(this.h,this.s,this.l*e,this.opacity)},darker(e){return e=e==null?je:Math.pow(je,e),new P(this.h,this.s,this.l*e,this.opacity)},rgb(){var e=this.h%360+(this.h<0)*360,t=isNaN(e)||isNaN(this.s)?0:this.s,r=this.l,n=r+(r<.5?r:1-r)*t,i=2*r-n;return new V(Pt(e>=240?e-240:e+120,i,n),Pt(e,i,n),Pt(e<120?e+240:e-120,i,n),this.opacity)},clamp(){return new P(Pr(this.h),Ke(this.s),Ke(this.l),rt(this.opacity))},displayable(){return(0<=this.s&&this.s<=1||isNaN(this.s))&&0<=this.l&&this.l<=1&&0<=this.opacity&&this.opacity<=1},formatHsl(){const e=rt(this.opacity);return`${e===1?"hsl(":"hsla("}${Pr(this.h)}, ${Ke(this.s)*100}%, ${Ke(this.l)*100}%${e===1?")":`, ${e})`}`}}));function Pr(e){return e=(e||0)%360,e<0?e+360:e}function Ke(e){return Math.max(0,Math.min(1,e||0))}function Pt(e,t,r){return(e<60?t+(r-t)*e/60:e<180?r:e<240?t+(r-t)*(240-e)/60:t)*255}const er=e=>()=>e;function Bn(e,t){return function(r){return e+r*t}}function Dn(e,t,r){return e=Math.pow(e,r),t=Math.pow(t,r)-e,r=1/r,function(n){return Math.pow(e+n*t,r)}}function Pn(e){return(e=+e)==1?on:function(t,r){return r-t?Dn(t,r,e):er(isNaN(t)?r:t)}}function on(e,t){var r=t-e;return r?Bn(e,r):er(isNaN(e)?t:e)}const Lr=function e(t){var r=Pn(t);function n(i,o){var l=r((i=Ot(i)).r,(o=Ot(o)).r),s=r(i.g,o.g),k=r(i.b,o.b),a=on(i.opacity,o.opacity);return function(f){return i.r=l(f),i.g=s(f),i.b=k(f),i.opacity=a(f),i+""}}return n.gamma=e,n}(1);function Ln(e,t){t||(t=[]);var r=e?Math.min(t.length,e.length):0,n=t.slice(),i;return function(o){for(i=0;i<r;++i)n[i]=e[i]*(1-o)+t[i]*o;return n}}function Fn(e){return ArrayBuffer.isView(e)&&!(e instanceof DataView)}function On(e,t){var r=t?t.length:0,n=e?Math.min(r,e.length):0,i=new Array(n),o=new Array(r),l;for(l=0;l<n;++l)i[l]=tr(e[l],t[l]);for(;l<r;++l)o[l]=t[l];return function(s){for(l=0;l<n;++l)o[l]=i[l](s);return o}}function Gn(e,t){var r=new Date;return e=+e,t=+t,function(n){return r.setTime(e*(1-n)+t*n),r}}function nt(e,t){return e=+e,t=+t,function(r){return e*(1-r)+t*r}}function Wn(e,t){var r={},n={},i;(e===null||typeof e!="object")&&(e={}),(t===null||typeof t!="object")&&(t={});for(i in t)i in e?r[i]=tr(e[i],t[i]):n[i]=t[i];return function(o){for(i in r)n[i]=r[i](o);return n}}var Gt=/[-+]?(?:\d+\.?\d*|\.?\d+)(?:[eE][-+]?\d+)?/g,Lt=new RegExp(Gt.source,"g");function Kn(e){return function(){return e}}function Qn(e){return function(t){return e(t)+""}}function Jn(e,t){var r=Gt.lastIndex=Lt.lastIndex=0,n,i,o,l=-1,s=[],k=[];for(e=e+"",t=t+"";(n=Gt.exec(e))&&(i=Lt.exec(t));)(o=i.index)>r&&(o=t.slice(r,o),s[l]?s[l]+=o:s[++l]=o),(n=n[0])===(i=i[0])?s[l]?s[l]+=i:s[++l]=i:(s[++l]=null,k.push({i:l,x:nt(n,i)})),r=Lt.lastIndex;return r<t.length&&(o=t.slice(r),s[l]?s[l]+=o:s[++l]=o),s.length<2?k[0]?Qn(k[0].x):Kn(t):(t=k.length,function(a){for(var f=0,d;f<t;++f)s[(d=k[f]).i]=d.x(a);return s.join("")})}function tr(e,t){var r=typeof t,n;return t==null||r==="boolean"?er(t):(r==="number"?nt:r==="string"?(n=Ee(t))?(t=n,Lr):Jn:t instanceof Ee?Lr:t instanceof Date?Gn:Fn(t)?Ln:Array.isArray(t)?On:typeof t.valueOf!="function"&&typeof t.toString!="function"||isNaN(t)?Wn:nt)(e,t)}function Xn(e,t){return e=+e,t=+t,function(r){return Math.round(e*(1-r)+t*r)}}function Yn(e){return function(){return e}}function Zn(e){return+e}var Fr=[0,1];function Ce(e){return e}function Wt(e,t){return(t-=e=+e)?function(r){return(r-e)/t}:Yn(isNaN(t)?NaN:.5)}function ei(e,t){var r;return e>t&&(r=e,e=t,t=r),function(n){return Math.max(e,Math.min(t,n))}}function ti(e,t,r){var n=e[0],i=e[1],o=t[0],l=t[1];return i<n?(n=Wt(i,n),o=r(l,o)):(n=Wt(n,i),o=r(o,l)),function(s){return o(n(s))}}function ri(e,t,r){var n=Math.min(e.length,t.length)-1,i=new Array(n),o=new Array(n),l=-1;for(e[n]<e[0]&&(e=e.slice().reverse(),t=t.slice().reverse());++l<n;)i[l]=Wt(e[l],e[l+1]),o[l]=r(t[l],t[l+1]);return function(s){var k=vn(e,s,1,n)-1;return o[k](i[k](s))}}function ni(e,t){return t.domain(e.domain()).range(e.range()).interpolate(e.interpolate()).clamp(e.clamp()).unknown(e.unknown())}function ii(){var e=Fr,t=Fr,r=tr,n,i,o,l=Ce,s,k,a;function f(){var p=Math.min(e.length,t.length);return l!==Ce&&(l=ei(e[0],e[p-1])),s=p>2?ri:ti,k=a=null,d}function d(p){return p==null||isNaN(p=+p)?o:(k||(k=s(e.map(n),t,r)))(n(l(p)))}return d.invert=function(p){return l(i((a||(a=s(t,e.map(n),nt)))(p)))},d.domain=function(p){return arguments.length?(e=Array.from(p,Zn),f()):e.slice()},d.range=function(p){return arguments.length?(t=Array.from(p),f()):t.slice()},d.rangeRound=function(p){return t=Array.from(p),r=Xn,f()},d.clamp=function(p){return arguments.length?(l=p?!0:Ce,f()):l!==Ce},d.interpolate=function(p){return arguments.length?(r=p,f()):r},d.unknown=function(p){return arguments.length?(o=p,d):o},function(p,c){return n=p,i=c,f()}}function oi(){return ii()(Ce,Ce)}function li(e){return Math.abs(e=Math.round(e))>=1e21?e.toLocaleString("en").replace(/,/g,""):e.toString(10)}function it(e,t){if((r=(e=t?e.toExponential(t-1):e.toExponential()).indexOf("e"))<0)return null;var r,n=e.slice(0,r);return[n.length>1?n[0]+n.slice(2):n,+e.slice(r+1)]}function Ae(e){return e=it(Math.abs(e)),e?e[1]:NaN}function ai(e,t){return function(r,n){for(var i=r.length,o=[],l=0,s=e[0],k=0;i>0&&s>0&&(k+s+1>n&&(s=Math.max(1,n-k)),o.push(r.substring(i-=s,i+s)),!((k+=s+1)>n));)s=e[l=(l+1)%e.length];return o.reverse().join(t)}}function si(e){return function(t){return t.replace(/[0-9]/g,function(r){return e[+r]})}}var di=/^(?:(.)?([<>=^]))?([+\-( ])?([$#])?(0)?(\d+)?(,)?(\.\d+)?(~)?([a-z%])?$/i;function ot(e){if(!(t=di.exec(e)))throw new Error("invalid format: "+e);var t;return new rr({fill:t[1],align:t[2],sign:t[3],symbol:t[4],zero:t[5],width:t[6],comma:t[7],precision:t[8]&&t[8].slice(1),trim:t[9],type:t[10]})}ot.prototype=rr.prototype;function rr(e){this.fill=e.fill===void 0?" ":e.fill+"",this.align=e.align===void 0?">":e.align+"",this.sign=e.sign===void 0?"-":e.sign+"",this.symbol=e.symbol===void 0?"":e.symbol+"",this.zero=!!e.zero,this.width=e.width===void 0?void 0:+e.width,this.comma=!!e.comma,this.precision=e.precision===void 0?void 0:+e.precision,this.trim=!!e.trim,this.type=e.type===void 0?"":e.type+""}rr.prototype.toString=function(){return this.fill+this.align+this.sign+this.symbol+(this.zero?"0":"")+(this.width===void 0?"":Math.max(1,this.width|0))+(this.comma?",":"")+(this.precision===void 0?"":"."+Math.max(0,this.precision|0))+(this.trim?"~":"")+this.type};function yi(e){e:for(var t=e.length,r=1,n=-1,i;r<t;++r)switch(e[r]){case".":n=i=r;break;case"0":n===0&&(n=r),i=r;break;default:if(!+e[r])break e;n>0&&(n=0);break}return n>0?e.slice(0,n)+e.slice(i+1):e}var ln;function ki(e,t){var r=it(e,t);if(!r)return e+"";var n=r[0],i=r[1],o=i-(ln=Math.max(-8,Math.min(8,Math.floor(i/3)))*3)+1,l=n.length;return o===l?n:o>l?n+new Array(o-l+1).join("0"):o>0?n.slice(0,o)+"."+n.slice(o):"0."+new Array(1-o).join("0")+it(e,Math.max(0,t+o-1))[0]}function Or(e,t){var r=it(e,t);if(!r)return e+"";var n=r[0],i=r[1];return i<0?"0."+new Array(-i).join("0")+n:n.length>i+1?n.slice(0,i+1)+"."+n.slice(i+1):n+new Array(i-n.length+2).join("0")}const Gr={"%":(e,t)=>(e*100).toFixed(t),b:e=>Math.round(e).toString(2),c:e=>e+"",d:li,e:(e,t)=>e.toExponential(t),f:(e,t)=>e.toFixed(t),g:(e,t)=>e.toPrecision(t),o:e=>Math.round(e).toString(8),p:(e,t)=>Or(e*100,t),r:Or,s:ki,X:e=>Math.round(e).toString(16).toUpperCase(),x:e=>Math.round(e).toString(16)};function Wr(e){return e}var Kr=Array.prototype.map,Qr=["y","z","a","f","p","n","µ","m","","k","M","G","T","P","E","Z","Y"];function fi(e){var t=e.grouping===void 0||e.thousands===void 0?Wr:ai(Kr.call(e.grouping,Number),e.thousands+""),r=e.currency===void 0?"":e.currency[0]+"",n=e.currency===void 0?"":e.currency[1]+"",i=e.decimal===void 0?".":e.decimal+"",o=e.numerals===void 0?Wr:si(Kr.call(e.numerals,String)),l=e.percent===void 0?"%":e.percent+"",s=e.minus===void 0?"−":e.minus+"",k=e.nan===void 0?"NaN":e.nan+"";function a(d){d=ot(d);var p=d.fill,c=d.align,_=d.sign,$=d.symbol,D=d.zero,Q=d.width,te=d.comma,H=d.precision,re=d.trim,S=d.type;S==="n"?(te=!0,S="g"):Gr[S]||(H===void 0&&(H=12),re=!0,S="g"),(D||p==="0"&&c==="=")&&(D=!0,p="0",c="=");var J=$==="$"?r:$==="#"&&/[boxX]/.test(S)?"0"+S.toLowerCase():"",Be=$==="$"?n:/[%p]/.test(S)?l:"",he=Gr[S],X=/[defgprs%]/.test(S);H=H===void 0?6:/[gprs]/.test(S)?Math.max(1,Math.min(21,H)):Math.max(0,Math.min(20,H));function Ie(g){var E=J,I=Be,L,pe,Y;if(S==="c")I=he(g)+I,g="";else{g=+g;var Z=g<0||1/g<0;if(g=isNaN(g)?k:he(Math.abs(g),H),re&&(g=yi(g)),Z&&+g==0&&_!=="+"&&(Z=!1),E=(Z?_==="("?_:s:_==="-"||_==="("?"":_)+E,I=(S==="s"?Qr[8+ln/3]:"")+I+(Z&&_==="("?")":""),X){for(L=-1,pe=g.length;++L<pe;)if(Y=g.charCodeAt(L),48>Y||Y>57){I=(Y===46?i+g.slice(L+1):g.slice(L))+I,g=g.slice(0,L);break}}}te&&!D&&(g=t(g,1/0));var ee=E.length+g.length+I.length,N=ee<Q?new Array(Q-ee+1).join(p):"";switch(te&&D&&(g=t(N+g,N.length?Q-I.length:1/0),N=""),c){case"<":g=E+g+I+N;break;case"=":g=E+N+g+I;break;case"^":g=N.slice(0,ee=N.length>>1)+E+g+I+N.slice(ee);break;default:g=N+E+g+I;break}return o(g)}return Ie.toString=function(){return d+""},Ie}function f(d,p){var c=a((d=ot(d),d.type="f",d)),_=Math.max(-8,Math.min(8,Math.floor(Ae(p)/3)))*3,$=Math.pow(10,-_),D=Qr[8+_/3];return function(Q){return c($*Q)+D}}return{format:a,formatPrefix:f}}var Qe,an,sn;ci({thousands:",",grouping:[3],currency:["$",""]});function ci(e){return Qe=fi(e),an=Qe.format,sn=Qe.formatPrefix,Qe}function hi(e){return Math.max(0,-Ae(Math.abs(e)))}function pi(e,t){return Math.max(0,Math.max(-8,Math.min(8,Math.floor(Ae(t)/3)))*3-Ae(Math.abs(e)))}function mi(e,t){return e=Math.abs(e),t=Math.abs(t)-e,Math.max(0,Ae(t)-Ae(e))+1}function xi(e,t,r,n){var i=Un(e,t,r),o;switch(n=ot(n??",f"),n.type){case"s":{var l=Math.max(Math.abs(e),Math.abs(t));return n.precision==null&&!isNaN(o=pi(i,l))&&(n.precision=o),sn(n,l)}case"":case"e":case"g":case"p":case"r":{n.precision==null&&!isNaN(o=mi(i,Math.max(Math.abs(e),Math.abs(t))))&&(n.precision=o-(n.type==="e"));break}case"f":case"%":{n.precision==null&&!isNaN(o=hi(i))&&(n.precision=o-(n.type==="%")*2);break}}return an(n)}function ui(e){var t=e.domain;return e.ticks=function(r){var n=t();return zn(n[0],n[n.length-1],r??10)},e.tickFormat=function(r,n){var i=t();return xi(i[0],i[i.length-1],r??10,n)},e.nice=function(r){r==null&&(r=10);var n=t(),i=0,o=n.length-1,l=n[i],s=n[o],k,a,f=10;for(s<l&&(a=l,l=s,s=a,a=i,i=o,o=a);f-- >0;){if(a=Ft(l,s,r),a===k)return n[i]=l,n[o]=s,t(n);if(a>0)l=Math.floor(l/a)*a,s=Math.ceil(s/a)*a;else if(a<0)l=Math.ceil(l*a)/a,s=Math.floor(s*a)/a;else break;k=a}return e},e}function dn(){var e=oi();return e.copy=function(){return ni(e,dn())},_n.apply(e,arguments),ui(e)}function Jr(e,t,r){const n=e.slice();return n[5]=t[r],n[7]=r,n}function Xr(e,t,r){const n=e.slice();return n[8]=t[r],n}function Yr(e){let t,r,n;return{c(){t=$e("line"),this.h()},l(i){t=Se(i,"line",{x1:!0,y1:!0,x2:!0,y2:!0,stroke:!0,"stroke-width":!0,"stroke-opacity":!0}),T(t).forEach(v),this.h()},h(){h(t,"x1",r=e[2](e[8])),h(t,"y1",gi),h(t,"x2",n=e[2](e[8])),h(t,"y2",yn-bi),h(t,"stroke","white"),h(t,"stroke-width","4"),h(t,"stroke-opacity","0.12")},m(i,o){B(i,t,o)},p(i,o){o&4&&r!==(r=i[2](i[8]))&&h(t,"x1",r),o&4&&n!==(n=i[2](i[8]))&&h(t,"x2",n)},d(i){i&&v(t)}}}function Zr(e){let t,r,n,i=e[5].City+"",o,l,s,k=e[5].percapita+"",a,f;return{c(){t=$e("rect"),n=$e("text"),o=Je(i),l=$e("text"),s=Je("$"),a=Je(k),this.h()},l(d){t=Se(d,"rect",{id:!0,x:!0,y:!0,height:!0,width:!0,class:!0}),T(t).forEach(v),n=Se(d,"text",{x:!0,y:!0,id:!0,"text-anchor":!0,class:!0});var p=T(n);o=Xe(p,i),p.forEach(v),l=Se(d,"text",{x:!0,y:!0,id:!0,"text-anchor":!0,class:!0});var c=T(l);s=Xe(c,"$"),a=Xe(c,k),c.forEach(v),this.h()},h(){h(t,"id","bar"),h(t,"x",Te),h(t,"y",e[7]*40+60),h(t,"height",8),h(t,"width",r=e[2](e[5].percapita)),h(t,"class","svelte-54a4tb"),h(n,"x",Te),h(n,"y",e[7]*40+55),h(n,"id","labelBar"),h(n,"text-anchor","start"),h(n,"class","svelte-54a4tb"),h(l,"x",f=e[2](e[5].percapita)+Te+3),h(l,"y",e[7]*40+70),h(l,"id","labelBar"),h(l,"text-anchor","start"),h(l,"class","svelte-54a4tb")},m(d,p){B(d,t,p),B(d,n,p),y(n,o),B(d,l,p),y(l,s),y(l,a)},p(d,p){p&4&&r!==(r=d[2](d[5].percapita))&&h(t,"width",r),p&4&&f!==(f=d[2](d[5].percapita)+Te+3)&&h(l,"x",f)},d(d){d&&(v(t),v(n),v(l))}}}function wi(e){let t,r,n,i,o,l,s=Ge([5,500,1e3,1500,2e3]),k=[];for(let d=0;d<5;d+=1)k[d]=Yr(Xr(e,s,d));let a=Ge(e[3]),f=[];for(let d=0;d<a.length;d+=1)f[d]=Zr(Jr(e,a,d));return{c(){t=m("div"),r=$e("svg"),n=$e("text"),i=Je("Venture Capital Investment Per Person");for(let d=0;d<5;d+=1)k[d].c();o=G();for(let d=0;d<f.length;d+=1)f[d].c();this.h()},l(d){t=x(d,"DIV",{id:!0});var p=T(t);r=Se(p,"svg",{height:!0,width:!0,id:!0});var c=T(r);n=Se(c,"text",{x:!0,y:!0,id:!0,"text-anchor":!0,class:!0});var _=T(n);i=Xe(_,"Venture Capital Investment Per Person"),_.forEach(v);for(let $=0;$<5;$+=1)k[$].l(c);o=G();for(let $=0;$<f.length;$+=1)f[$].l(c);c.forEach(v),p.forEach(v),this.h()},h(){h(n,"x",Te),h(n,"y",20),h(n,"id","labelTitle"),h(n,"text-anchor","start"),h(n,"class","svelte-54a4tb"),h(r,"height",yn),h(r,"width",e[1]),h(r,"id","svgChart"),h(t,"id","barChart"),Qt(()=>e[4].call(t))},m(d,p){B(d,t,p),y(t,r),y(r,n),y(n,i);for(let c=0;c<5;c+=1)k[c]&&k[c].m(r,null);y(r,o);for(let c=0;c<f.length;c+=1)f[c]&&f[c].m(r,null);l=Yt(t,e[4].bind(t))},p(d,[p]){if(p&4){s=Ge([5,500,1e3,1500,2e3]);let c;for(c=0;c<5;c+=1){const _=Xr(d,s,c);k[c]?k[c].p(_,p):(k[c]=Yr(_),k[c].c(),k[c].m(r,o))}for(;c<5;c+=1)k[c].d(1)}if(p&12){a=Ge(d[3]);let c;for(c=0;c<a.length;c+=1){const _=Jr(d,a,c);f[c]?f[c].p(_,p):(f[c]=Zr(_),f[c].c(),f[c].m(r,null))}for(;c<f.length;c+=1)f[c].d(1);f.length=a.length}p&2&&h(r,"width",d[1])},i:Ze,o:Ze,d(d){d&&v(t),Mr(k,d),Mr(f,d),l()}}}const yn=450,gi=55,vi=50,bi=20,Te=0;function qi(e,t,r){let n,i,o=[{City:"Vancouver",percapita:2032},{City:"Kitchener-Cambridge-Waterloo",percapita:1603},{City:"Fredericton",percapita:1239},{City:"Toronto",percapita:1224},{City:"Québec",percapita:939},{City:"Ottawa-Gatineau",percapita:885},{City:"Saskatoon",percapita:746},{City:"Montreal",percapita:739},{City:"Guelph",percapita:556},{City:"Calgary",percapita:533}],l;function s(){l=this.offsetWidth,r(0,l)}return e.$$.update=()=>{e.$$.dirty&1&&r(1,n=l),e.$$.dirty&2&&r(2,i=dn().domain([0,2100]).range([0,n-vi-Te]))},[l,n,i,o,s]}class Ri extends Jt{constructor(t){super(),Xt(this,t,qi,wi,Kt,{})}}const zi=`<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as Jt,i as Xt,e as m,c as x,d as T,y as R,g as v,o as h,p as _r,j as B,k as f,z as Yt,A as $e,b as Je,m as G,B as Se,f as Xe,C as Mr,s as u,u as Cr,H as ke,D as yn,h as w,v as Tr,E as ce,w as $r,t as Sr,a as Nr,x as Ar}from"../chunks/index.CIjXlAOi.js";function Ge(e){return(e==null?void 0:e.length)!==void 0?e:Array.from(e)}const kn=!0,Bi=Object.freeze(Object.defineProperty({__proto__:null,prerender:kn},Symbol.toStringTag,{value:"Module"})),cn=""+new URL("../assets/top-logo-full.BnB_mwd3.svg",import.meta.url).href;function hn(e){let t,r,n,i=`<img src="${cn}" alt="School of Cities" class="svelte-1ftsgd6"/>`,o;return{c(){t=m("div"),r=m("div"),n=m("a"),n.innerHTML=i,this.h()},l(l){t=x(l,"DIV",{id:!0,class:!0});var s=T(t);r=x(s,"DIV",{id:!0,style:!0,class:!0});var y=T(r);n=x(y,"A",{href:!0,class:!0,"data-svelte-h":!0}),R(n)!=="svelte-jgj3rt"&&(n.innerHTML=i),y.forEach(v),s.forEach(v),this.h()},h(){h(n,"href","https://www.schoolofcities.utoronto.ca/"),h(n,"class","svelte-1ftsgd6"),h(r,"id","logo"),_r(r,"width",e[1]+"px"),h(r,"class","svelte-1ftsgd6"),h(t,"id","bar"),h(t,"class","svelte-1ftsgd6"),Qt(()=>e[2].call(t))},m(l,s){B(l,t,s),f(t,r),f(r,n),o=Yt(t,e[2].bind(t))},p(l,[s]){s&2&&_r(r,"width",l[1]+"px")},i:Ze,o:Ze,d(l){l&&v(t),o()}}}function pn(e,t,r){let n,i=262;function o(){n=this.clientWidth,r(0,n)}return e.$$.update=()=>{e.$$.dirty&1&&(n<500?r(1,i=262):r(1,i=383))},[n,i,o]}class mn extends Jt{constructor(t){super(),Xt(this,t,pn,hn,Kt,{})}}function Ye(e,t){return e==null||t==null?NaN:e<t?-1:e>t?1:e>=t?0:NaN}function xn(e,t){return e==null||t==null?NaN:t<e?-1:t>e?1:t>=e?0:NaN}function tn(e){let t,r,n;e.length!==2?(t=Ye,r=(s,y)=>Ye(e(s),y),n=(s,y)=>e(s)-y):(t=e===Ye||e===xn?e:un,r=e,n=e);function i(s,y,a=0,k=s.length){if(a<k){if(t(y,y)!==0)return k;do{const d=a+k>>>1;r(s[d],y)<0?a=d+1:k=d}while(a<k)}return a}function o(s,y,a=0,k=s.length){if(a<k){if(t(y,y)!==0)return k;do{const d=a+k>>>1;r(s[d],y)<=0?a=d+1:k=d}while(a<k)}return a}function l(s,y,a=0,k=s.length){const d=i(s,y,a,k-1);return d>a&&n(s[d-1],y)>-n(s[d],y)?d-1:d}return{left:i,center:l,right:o}}function un(){return 0}function wn(e){return e===null?NaN:+e}const gn=tn(Ye),vn=gn.right;tn(wn).center;const bn=Math.sqrt(50),qn=Math.sqrt(10),Rn=Math.sqrt(2);function et(e,t,r){const n=(t-e)/Math.max(0,r),i=Math.floor(Math.log10(n)),o=n/Math.pow(10,i),l=o>=bn?10:o>=qn?5:o>=Rn?2:1;let s,y,a;return i<0?(a=Math.pow(10,-i)/l,s=Math.round(e*a),y=Math.round(t*a),s/a<e&&++s,y/a>t&&--y,a=-a):(a=Math.pow(10,i)*l,s=Math.round(e/a),y=Math.round(t/a),s*a<e&&++s,y*a>t&&--y),y<s&&.5<=r&&r<2?et(e,t,r*2):[s,y,a]}function zn(e,t,r){if(t=+t,e=+e,r=+r,!(r>0))return[];if(e===t)return[e];const n=t<e,[i,o,l]=n?et(t,e,r):et(e,t,r);if(!(o>=i))return[];const s=o-i+1,y=new Array(s);if(n)if(l<0)for(let a=0;a<s;++a)y[a]=(o-a)/-l;else for(let a=0;a<s;++a)y[a]=(o-a)*l;else if(l<0)for(let a=0;a<s;++a)y[a]=(i+a)/-l;else for(let a=0;a<s;++a)y[a]=(i+a)*l;return y}function Ft(e,t,r){return t=+t,e=+e,r=+r,et(e,t,r)[2]}function Un(e,t,r){t=+t,e=+e,r=+r;const n=t<e,i=n?Ft(t,e,r):Ft(e,t,r);return(n?-1:1)*(i<0?1/-i:i)}function _n(e,t){switch(arguments.length){case 0:break;case 1:this.range(e);break;default:this.range(t).domain(e);break}return this}function Zt(e,t,r){e.prototype=t.prototype=r,r.constructor=e}function rn(e,t){var r=Object.create(e.prototype);for(var n in t)r[n]=t[n];return r}function Ve(){}var je=.7,tt=1/je,Ne="\\s*([+-]?\\d+)\\s*",He="\\s*([+-]?(?:\\d*\\.)?\\d+(?:[eE][+-]?\\d+)?)\\s*",O="\\s*([+-]?(?:\\d*\\.)?\\d+(?:[eE][+-]?\\d+)?)%\\s*",Mn=/^#([0-9a-f]{3,8})$/,Cn=new RegExp(`^rgb\\(${Ne},${Ne},${Ne}\\)$`),Tn=new RegExp(`^rgb\\(${O},${O},${O}\\)$`),$n=new RegExp(`^rgba\\(${Ne},${Ne},${Ne},${He}\\)$`),Sn=new RegExp(`^rgba\\(${O},${O},${O},${He}\\)$`),Nn=new RegExp(`^hsl\\(${He},${O},${O}\\)$`),An=new RegExp(`^hsla\\(${He},${O},${O},${He}\\)$`),Ir={aliceblue:15792383,antiquewhite:16444375,aqua:65535,aquamarine:8388564,azure:15794175,beige:16119260,bisque:16770244,black:0,blanchedalmond:16772045,blue:255,blueviolet:9055202,brown:10824234,burlywood:14596231,cadetblue:6266528,chartreuse:8388352,chocolate:13789470,coral:16744272,cornflowerblue:6591981,cornsilk:16775388,crimson:14423100,cyan:65535,darkblue:139,darkcyan:35723,darkgoldenrod:12092939,darkgray:11119017,darkgreen:25600,darkgrey:11119017,darkkhaki:12433259,darkmagenta:9109643,darkolivegreen:5597999,darkorange:16747520,darkorchid:10040012,darkred:9109504,darksalmon:15308410,darkseagreen:9419919,darkslateblue:4734347,darkslategray:3100495,darkslategrey:3100495,darkturquoise:52945,darkviolet:9699539,deeppink:16716947,deepskyblue:49151,dimgray:6908265,dimgrey:6908265,dodgerblue:2003199,firebrick:11674146,floralwhite:16775920,forestgreen:2263842,fuchsia:16711935,gainsboro:14474460,ghostwhite:16316671,gold:16766720,goldenrod:14329120,gray:8421504,green:32768,greenyellow:11403055,grey:8421504,honeydew:15794160,hotpink:16738740,indianred:13458524,indigo:4915330,ivory:16777200,khaki:15787660,lavender:15132410,lavenderblush:16773365,lawngreen:8190976,lemonchiffon:16775885,lightblue:11393254,lightcoral:15761536,lightcyan:14745599,lightgoldenrodyellow:16448210,lightgray:13882323,lightgreen:9498256,lightgrey:13882323,lightpink:16758465,lightsalmon:16752762,lightseagreen:2142890,lightskyblue:8900346,lightslategray:7833753,lightslategrey:7833753,lightsteelblue:11584734,lightyellow:16777184,lime:65280,limegreen:3329330,linen:16445670,magenta:16711935,maroon:8388608,mediumaquamarine:6737322,mediumblue:205,mediumorchid:12211667,mediumpurple:9662683,mediumseagreen:3978097,mediumslateblue:8087790,mediumspringgreen:64154,mediumturquoise:4772300,mediumvioletred:13047173,midnightblue:1644912,mintcream:16121850,mistyrose:16770273,moccasin:16770229,navajowhite:16768685,navy:128,oldlace:16643558,olive:8421376,olivedrab:7048739,orange:16753920,orangered:16729344,orchid:14315734,palegoldenrod:15657130,palegreen:10025880,paleturquoise:11529966,palevioletred:14381203,papayawhip:16773077,peachpuff:16767673,peru:13468991,pink:16761035,plum:14524637,powderblue:11591910,purple:8388736,rebeccapurple:6697881,red:16711680,rosybrown:12357519,royalblue:4286945,saddlebrown:9127187,salmon:16416882,sandybrown:16032864,seagreen:3050327,seashell:16774638,sienna:10506797,silver:12632256,skyblue:8900331,slateblue:6970061,slategray:7372944,slategrey:7372944,snow:16775930,springgreen:65407,steelblue:4620980,tan:13808780,teal:32896,thistle:14204888,tomato:16737095,turquoise:4251856,violet:15631086,wheat:16113331,white:16777215,whitesmoke:16119285,yellow:16776960,yellowgreen:10145074};Zt(Ve,Ee,{copy(e){return Object.assign(new this.constructor,this,e)},displayable(){return this.rgb().displayable()},hex:jr,formatHex:jr,formatHex8:In,formatHsl:jn,formatRgb:Hr,toString:Hr});function jr(){return this.rgb().formatHex()}function In(){return this.rgb().formatHex8()}function jn(){return nn(this).formatHsl()}function Hr(){return this.rgb().formatRgb()}function Ee(e){var t,r;return e=(e+"").trim().toLowerCase(),(t=Mn.exec(e))?(r=t[1].length,t=parseInt(t[1],16),r===6?Er(t):r===3?new V(t>>8&15|t>>4&240,t>>4&15|t&240,(t&15)<<4|t&15,1):r===8?We(t>>24&255,t>>16&255,t>>8&255,(t&255)/255):r===4?We(t>>12&15|t>>8&240,t>>8&15|t>>4&240,t>>4&15|t&240,((t&15)<<4|t&15)/255):null):(t=Cn.exec(e))?new V(t[1],t[2],t[3],1):(t=Tn.exec(e))?new V(t[1]*255/100,t[2]*255/100,t[3]*255/100,1):(t=$n.exec(e))?We(t[1],t[2],t[3],t[4]):(t=Sn.exec(e))?We(t[1]*255/100,t[2]*255/100,t[3]*255/100,t[4]):(t=Nn.exec(e))?Dr(t[1],t[2]/100,t[3]/100,1):(t=An.exec(e))?Dr(t[1],t[2]/100,t[3]/100,t[4]):Ir.hasOwnProperty(e)?Er(Ir[e]):e==="transparent"?new V(NaN,NaN,NaN,0):null}function Er(e){return new V(e>>16&255,e>>8&255,e&255,1)}function We(e,t,r,n){return n<=0&&(e=t=r=NaN),new V(e,t,r,n)}function Hn(e){return e instanceof Ve||(e=Ee(e)),e?(e=e.rgb(),new V(e.r,e.g,e.b,e.opacity)):new V}function Ot(e,t,r,n){return arguments.length===1?Hn(e):new V(e,t,r,n??1)}function V(e,t,r,n){this.r=+e,this.g=+t,this.b=+r,this.opacity=+n}Zt(V,Ot,rn(Ve,{brighter(e){return e=e==null?tt:Math.pow(tt,e),new V(this.r*e,this.g*e,this.b*e,this.opacity)},darker(e){return e=e==null?je:Math.pow(je,e),new V(this.r*e,this.g*e,this.b*e,this.opacity)},rgb(){return this},clamp(){return new V(ye(this.r),ye(this.g),ye(this.b),rt(this.opacity))},displayable(){return-.5<=this.r&&this.r<255.5&&-.5<=this.g&&this.g<255.5&&-.5<=this.b&&this.b<255.5&&0<=this.opacity&&this.opacity<=1},hex:Vr,formatHex:Vr,formatHex8:En,formatRgb:Br,toString:Br}));function Vr(){return`#${fe(this.r)}${fe(this.g)}${fe(this.b)}`}function En(){return`#${fe(this.r)}${fe(this.g)}${fe(this.b)}${fe((isNaN(this.opacity)?1:this.opacity)*255)}`}function Br(){const e=rt(this.opacity);return`${e===1?"rgb(":"rgba("}${ye(this.r)}, ${ye(this.g)}, ${ye(this.b)}${e===1?")":`, ${e})`}`}function rt(e){return isNaN(e)?1:Math.max(0,Math.min(1,e))}function ye(e){return Math.max(0,Math.min(255,Math.round(e)||0))}function fe(e){return e=ye(e),(e<16?"0":"")+e.toString(16)}function Dr(e,t,r,n){return n<=0?e=t=r=NaN:r<=0||r>=1?e=t=NaN:t<=0&&(e=NaN),new P(e,t,r,n)}function nn(e){if(e instanceof P)return new P(e.h,e.s,e.l,e.opacity);if(e instanceof Ve||(e=Ee(e)),!e)return new P;if(e instanceof P)return e;e=e.rgb();var t=e.r/255,r=e.g/255,n=e.b/255,i=Math.min(t,r,n),o=Math.max(t,r,n),l=NaN,s=o-i,y=(o+i)/2;return s?(t===o?l=(r-n)/s+(r<n)*6:r===o?l=(n-t)/s+2:l=(t-r)/s+4,s/=y<.5?o+i:2-o-i,l*=60):s=y>0&&y<1?0:l,new P(l,s,y,e.opacity)}function Vn(e,t,r,n){return arguments.length===1?nn(e):new P(e,t,r,n??1)}function P(e,t,r,n){this.h=+e,this.s=+t,this.l=+r,this.opacity=+n}Zt(P,Vn,rn(Ve,{brighter(e){return e=e==null?tt:Math.pow(tt,e),new P(this.h,this.s,this.l*e,this.opacity)},darker(e){return e=e==null?je:Math.pow(je,e),new P(this.h,this.s,this.l*e,this.opacity)},rgb(){var e=this.h%360+(this.h<0)*360,t=isNaN(e)||isNaN(this.s)?0:this.s,r=this.l,n=r+(r<.5?r:1-r)*t,i=2*r-n;return new V(Pt(e>=240?e-240:e+120,i,n),Pt(e,i,n),Pt(e<120?e+240:e-120,i,n),this.opacity)},clamp(){return new P(Pr(this.h),Ke(this.s),Ke(this.l),rt(this.opacity))},displayable(){return(0<=this.s&&this.s<=1||isNaN(this.s))&&0<=this.l&&this.l<=1&&0<=this.opacity&&this.opacity<=1},formatHsl(){const e=rt(this.opacity);return`${e===1?"hsl(":"hsla("}${Pr(this.h)}, ${Ke(this.s)*100}%, ${Ke(this.l)*100}%${e===1?")":`, ${e})`}`}}));function Pr(e){return e=(e||0)%360,e<0?e+360:e}function Ke(e){return Math.max(0,Math.min(1,e||0))}function Pt(e,t,r){return(e<60?t+(r-t)*e/60:e<180?r:e<240?t+(r-t)*(240-e)/60:t)*255}const er=e=>()=>e;function Bn(e,t){return function(r){return e+r*t}}function Dn(e,t,r){return e=Math.pow(e,r),t=Math.pow(t,r)-e,r=1/r,function(n){return Math.pow(e+n*t,r)}}function Pn(e){return(e=+e)==1?on:function(t,r){return r-t?Dn(t,r,e):er(isNaN(t)?r:t)}}function on(e,t){var r=t-e;return r?Bn(e,r):er(isNaN(e)?t:e)}const Lr=function e(t){var r=Pn(t);function n(i,o){var l=r((i=Ot(i)).r,(o=Ot(o)).r),s=r(i.g,o.g),y=r(i.b,o.b),a=on(i.opacity,o.opacity);return function(k){return i.r=l(k),i.g=s(k),i.b=y(k),i.opacity=a(k),i+""}}return n.gamma=e,n}(1);function Ln(e,t){t||(t=[]);var r=e?Math.min(t.length,e.length):0,n=t.slice(),i;return function(o){for(i=0;i<r;++i)n[i]=e[i]*(1-o)+t[i]*o;return n}}function Fn(e){return ArrayBuffer.isView(e)&&!(e instanceof DataView)}function On(e,t){var r=t?t.length:0,n=e?Math.min(r,e.length):0,i=new Array(n),o=new Array(r),l;for(l=0;l<n;++l)i[l]=tr(e[l],t[l]);for(;l<r;++l)o[l]=t[l];return function(s){for(l=0;l<n;++l)o[l]=i[l](s);return o}}function Gn(e,t){var r=new Date;return e=+e,t=+t,function(n){return r.setTime(e*(1-n)+t*n),r}}function nt(e,t){return e=+e,t=+t,function(r){return e*(1-r)+t*r}}function Wn(e,t){var r={},n={},i;(e===null||typeof e!="object")&&(e={}),(t===null||typeof t!="object")&&(t={});for(i in t)i in e?r[i]=tr(e[i],t[i]):n[i]=t[i];return function(o){for(i in r)n[i]=r[i](o);return n}}var Gt=/[-+]?(?:\d+\.?\d*|\.?\d+)(?:[eE][-+]?\d+)?/g,Lt=new RegExp(Gt.source,"g");function Kn(e){return function(){return e}}function Qn(e){return function(t){return e(t)+""}}function Jn(e,t){var r=Gt.lastIndex=Lt.lastIndex=0,n,i,o,l=-1,s=[],y=[];for(e=e+"",t=t+"";(n=Gt.exec(e))&&(i=Lt.exec(t));)(o=i.index)>r&&(o=t.slice(r,o),s[l]?s[l]+=o:s[++l]=o),(n=n[0])===(i=i[0])?s[l]?s[l]+=i:s[++l]=i:(s[++l]=null,y.push({i:l,x:nt(n,i)})),r=Lt.lastIndex;return r<t.length&&(o=t.slice(r),s[l]?s[l]+=o:s[++l]=o),s.length<2?y[0]?Qn(y[0].x):Kn(t):(t=y.length,function(a){for(var k=0,d;k<t;++k)s[(d=y[k]).i]=d.x(a);return s.join("")})}function tr(e,t){var r=typeof t,n;return t==null||r==="boolean"?er(t):(r==="number"?nt:r==="string"?(n=Ee(t))?(t=n,Lr):Jn:t instanceof Ee?Lr:t instanceof Date?Gn:Fn(t)?Ln:Array.isArray(t)?On:typeof t.valueOf!="function"&&typeof t.toString!="function"||isNaN(t)?Wn:nt)(e,t)}function Xn(e,t){return e=+e,t=+t,function(r){return Math.round(e*(1-r)+t*r)}}function Yn(e){return function(){return e}}function Zn(e){return+e}var Fr=[0,1];function Ce(e){return e}function Wt(e,t){return(t-=e=+e)?function(r){return(r-e)/t}:Yn(isNaN(t)?NaN:.5)}function ei(e,t){var r;return e>t&&(r=e,e=t,t=r),function(n){return Math.max(e,Math.min(t,n))}}function ti(e,t,r){var n=e[0],i=e[1],o=t[0],l=t[1];return i<n?(n=Wt(i,n),o=r(l,o)):(n=Wt(n,i),o=r(o,l)),function(s){return o(n(s))}}function ri(e,t,r){var n=Math.min(e.length,t.length)-1,i=new Array(n),o=new Array(n),l=-1;for(e[n]<e[0]&&(e=e.slice().reverse(),t=t.slice().reverse());++l<n;)i[l]=Wt(e[l],e[l+1]),o[l]=r(t[l],t[l+1]);return function(s){var y=vn(e,s,1,n)-1;return o[y](i[y](s))}}function ni(e,t){return t.domain(e.domain()).range(e.range()).interpolate(e.interpolate()).clamp(e.clamp()).unknown(e.unknown())}function ii(){var e=Fr,t=Fr,r=tr,n,i,o,l=Ce,s,y,a;function k(){var p=Math.min(e.length,t.length);return l!==Ce&&(l=ei(e[0],e[p-1])),s=p>2?ri:ti,y=a=null,d}function d(p){return p==null||isNaN(p=+p)?o:(y||(y=s(e.map(n),t,r)))(n(l(p)))}return d.invert=function(p){return l(i((a||(a=s(t,e.map(n),nt)))(p)))},d.domain=function(p){return arguments.length?(e=Array.from(p,Zn),k()):e.slice()},d.range=function(p){return arguments.length?(t=Array.from(p),k()):t.slice()},d.rangeRound=function(p){return t=Array.from(p),r=Xn,k()},d.clamp=function(p){return arguments.length?(l=p?!0:Ce,k()):l!==Ce},d.interpolate=function(p){return arguments.length?(r=p,k()):r},d.unknown=function(p){return arguments.length?(o=p,d):o},function(p,c){return n=p,i=c,k()}}function oi(){return ii()(Ce,Ce)}function li(e){return Math.abs(e=Math.round(e))>=1e21?e.toLocaleString("en").replace(/,/g,""):e.toString(10)}function it(e,t){if((r=(e=t?e.toExponential(t-1):e.toExponential()).indexOf("e"))<0)return null;var r,n=e.slice(0,r);return[n.length>1?n[0]+n.slice(2):n,+e.slice(r+1)]}function Ae(e){return e=it(Math.abs(e)),e?e[1]:NaN}function ai(e,t){return function(r,n){for(var i=r.length,o=[],l=0,s=e[0],y=0;i>0&&s>0&&(y+s+1>n&&(s=Math.max(1,n-y)),o.push(r.substring(i-=s,i+s)),!((y+=s+1)>n));)s=e[l=(l+1)%e.length];return o.reverse().join(t)}}function si(e){return function(t){return t.replace(/[0-9]/g,function(r){return e[+r]})}}var di=/^(?:(.)?([<>=^]))?([+\-( ])?([$#])?(0)?(\d+)?(,)?(\.\d+)?(~)?([a-z%])?$/i;function ot(e){if(!(t=di.exec(e)))throw new Error("invalid format: "+e);var t;return new rr({fill:t[1],align:t[2],sign:t[3],symbol:t[4],zero:t[5],width:t[6],comma:t[7],precision:t[8]&&t[8].slice(1),trim:t[9],type:t[10]})}ot.prototype=rr.prototype;function rr(e){this.fill=e.fill===void 0?" ":e.fill+"",this.align=e.align===void 0?">":e.align+"",this.sign=e.sign===void 0?"-":e.sign+"",this.symbol=e.symbol===void 0?"":e.symbol+"",this.zero=!!e.zero,this.width=e.width===void 0?void 0:+e.width,this.comma=!!e.comma,this.precision=e.precision===void 0?void 0:+e.precision,this.trim=!!e.trim,this.type=e.type===void 0?"":e.type+""}rr.prototype.toString=function(){return this.fill+this.align+this.sign+this.symbol+(this.zero?"0":"")+(this.width===void 0?"":Math.max(1,this.width|0))+(this.comma?",":"")+(this.precision===void 0?"":"."+Math.max(0,this.precision|0))+(this.trim?"~":"")+this.type};function fi(e){e:for(var t=e.length,r=1,n=-1,i;r<t;++r)switch(e[r]){case".":n=i=r;break;case"0":n===0&&(n=r),i=r;break;default:if(!+e[r])break e;n>0&&(n=0);break}return n>0?e.slice(0,n)+e.slice(i+1):e}var ln;function yi(e,t){var r=it(e,t);if(!r)return e+"";var n=r[0],i=r[1],o=i-(ln=Math.max(-8,Math.min(8,Math.floor(i/3)))*3)+1,l=n.length;return o===l?n:o>l?n+new Array(o-l+1).join("0"):o>0?n.slice(0,o)+"."+n.slice(o):"0."+new Array(1-o).join("0")+it(e,Math.max(0,t+o-1))[0]}function Or(e,t){var r=it(e,t);if(!r)return e+"";var n=r[0],i=r[1];return i<0?"0."+new Array(-i).join("0")+n:n.length>i+1?n.slice(0,i+1)+"."+n.slice(i+1):n+new Array(i-n.length+2).join("0")}const Gr={"%":(e,t)=>(e*100).toFixed(t),b:e=>Math.round(e).toString(2),c:e=>e+"",d:li,e:(e,t)=>e.toExponential(t),f:(e,t)=>e.toFixed(t),g:(e,t)=>e.toPrecision(t),o:e=>Math.round(e).toString(8),p:(e,t)=>Or(e*100,t),r:Or,s:yi,X:e=>Math.round(e).toString(16).toUpperCase(),x:e=>Math.round(e).toString(16)};function Wr(e){return e}var Kr=Array.prototype.map,Qr=["y","z","a","f","p","n","µ","m","","k","M","G","T","P","E","Z","Y"];function ki(e){var t=e.grouping===void 0||e.thousands===void 0?Wr:ai(Kr.call(e.grouping,Number),e.thousands+""),r=e.currency===void 0?"":e.currency[0]+"",n=e.currency===void 0?"":e.currency[1]+"",i=e.decimal===void 0?".":e.decimal+"",o=e.numerals===void 0?Wr:si(Kr.call(e.numerals,String)),l=e.percent===void 0?"%":e.percent+"",s=e.minus===void 0?"−":e.minus+"",y=e.nan===void 0?"NaN":e.nan+"";function a(d){d=ot(d);var p=d.fill,c=d.align,_=d.sign,$=d.symbol,D=d.zero,Q=d.width,te=d.comma,H=d.precision,re=d.trim,S=d.type;S==="n"?(te=!0,S="g"):Gr[S]||(H===void 0&&(H=12),re=!0,S="g"),(D||p==="0"&&c==="=")&&(D=!0,p="0",c="=");var J=$==="$"?r:$==="#"&&/[boxX]/.test(S)?"0"+S.toLowerCase():"",Be=$==="$"?n:/[%p]/.test(S)?l:"",he=Gr[S],X=/[defgprs%]/.test(S);H=H===void 0?6:/[gprs]/.test(S)?Math.max(1,Math.min(21,H)):Math.max(0,Math.min(20,H));function Ie(g){var E=J,I=Be,L,pe,Y;if(S==="c")I=he(g)+I,g="";else{g=+g;var Z=g<0||1/g<0;if(g=isNaN(g)?y:he(Math.abs(g),H),re&&(g=fi(g)),Z&&+g==0&&_!=="+"&&(Z=!1),E=(Z?_==="("?_:s:_==="-"||_==="("?"":_)+E,I=(S==="s"?Qr[8+ln/3]:"")+I+(Z&&_==="("?")":""),X){for(L=-1,pe=g.length;++L<pe;)if(Y=g.charCodeAt(L),48>Y||Y>57){I=(Y===46?i+g.slice(L+1):g.slice(L))+I,g=g.slice(0,L);break}}}te&&!D&&(g=t(g,1/0));var ee=E.length+g.length+I.length,N=ee<Q?new Array(Q-ee+1).join(p):"";switch(te&&D&&(g=t(N+g,N.length?Q-I.length:1/0),N=""),c){case"<":g=E+g+I+N;break;case"=":g=E+N+g+I;break;case"^":g=N.slice(0,ee=N.length>>1)+E+g+I+N.slice(ee);break;default:g=N+E+g+I;break}return o(g)}return Ie.toString=function(){return d+""},Ie}function k(d,p){var c=a((d=ot(d),d.type="f",d)),_=Math.max(-8,Math.min(8,Math.floor(Ae(p)/3)))*3,$=Math.pow(10,-_),D=Qr[8+_/3];return function(Q){return c($*Q)+D}}return{format:a,formatPrefix:k}}var Qe,an,sn;ci({thousands:",",grouping:[3],currency:["$",""]});function ci(e){return Qe=ki(e),an=Qe.format,sn=Qe.formatPrefix,Qe}function hi(e){return Math.max(0,-Ae(Math.abs(e)))}function pi(e,t){return Math.max(0,Math.max(-8,Math.min(8,Math.floor(Ae(t)/3)))*3-Ae(Math.abs(e)))}function mi(e,t){return e=Math.abs(e),t=Math.abs(t)-e,Math.max(0,Ae(t)-Ae(e))+1}function xi(e,t,r,n){var i=Un(e,t,r),o;switch(n=ot(n??",f"),n.type){case"s":{var l=Math.max(Math.abs(e),Math.abs(t));return n.precision==null&&!isNaN(o=pi(i,l))&&(n.precision=o),sn(n,l)}case"":case"e":case"g":case"p":case"r":{n.precision==null&&!isNaN(o=mi(i,Math.max(Math.abs(e),Math.abs(t))))&&(n.precision=o-(n.type==="e"));break}case"f":case"%":{n.precision==null&&!isNaN(o=hi(i))&&(n.precision=o-(n.type==="%")*2);break}}return an(n)}function ui(e){var t=e.domain;return e.ticks=function(r){var n=t();return zn(n[0],n[n.length-1],r??10)},e.tickFormat=function(r,n){var i=t();return xi(i[0],i[i.length-1],r??10,n)},e.nice=function(r){r==null&&(r=10);var n=t(),i=0,o=n.length-1,l=n[i],s=n[o],y,a,k=10;for(s<l&&(a=l,l=s,s=a,a=i,i=o,o=a);k-- >0;){if(a=Ft(l,s,r),a===y)return n[i]=l,n[o]=s,t(n);if(a>0)l=Math.floor(l/a)*a,s=Math.ceil(s/a)*a;else if(a<0)l=Math.ceil(l*a)/a,s=Math.floor(s*a)/a;else break;y=a}return e},e}function dn(){var e=oi();return e.copy=function(){return ni(e,dn())},_n.apply(e,arguments),ui(e)}function Jr(e,t,r){const n=e.slice();return n[5]=t[r],n[7]=r,n}function Xr(e,t,r){const n=e.slice();return n[8]=t[r],n}function Yr(e){let t,r,n;return{c(){t=$e("line"),this.h()},l(i){t=Se(i,"line",{x1:!0,y1:!0,x2:!0,y2:!0,stroke:!0,"stroke-width":!0,"stroke-opacity":!0}),T(t).forEach(v),this.h()},h(){h(t,"x1",r=e[2](e[8])),h(t,"y1",gi),h(t,"x2",n=e[2](e[8])),h(t,"y2",fn-bi),h(t,"stroke","white"),h(t,"stroke-width","4"),h(t,"stroke-opacity","0.12")},m(i,o){B(i,t,o)},p(i,o){o&4&&r!==(r=i[2](i[8]))&&h(t,"x1",r),o&4&&n!==(n=i[2](i[8]))&&h(t,"x2",n)},d(i){i&&v(t)}}}function Zr(e){let t,r,n,i=e[5].City+"",o,l,s,y=e[5].percapita+"",a,k;return{c(){t=$e("rect"),n=$e("text"),o=Je(i),l=$e("text"),s=Je("$"),a=Je(y),this.h()},l(d){t=Se(d,"rect",{id:!0,x:!0,y:!0,height:!0,width:!0,class:!0}),T(t).forEach(v),n=Se(d,"text",{x:!0,y:!0,id:!0,"text-anchor":!0,class:!0});var p=T(n);o=Xe(p,i),p.forEach(v),l=Se(d,"text",{x:!0,y:!0,id:!0,"text-anchor":!0,class:!0});var c=T(l);s=Xe(c,"$"),a=Xe(c,y),c.forEach(v),this.h()},h(){h(t,"id","bar"),h(t,"x",Te),h(t,"y",e[7]*40+60),h(t,"height",8),h(t,"width",r=e[2](e[5].percapita)),h(t,"class","svelte-54a4tb"),h(n,"x",Te),h(n,"y",e[7]*40+55),h(n,"id","labelBar"),h(n,"text-anchor","start"),h(n,"class","svelte-54a4tb"),h(l,"x",k=e[2](e[5].percapita)+Te+3),h(l,"y",e[7]*40+70),h(l,"id","labelBar"),h(l,"text-anchor","start"),h(l,"class","svelte-54a4tb")},m(d,p){B(d,t,p),B(d,n,p),f(n,o),B(d,l,p),f(l,s),f(l,a)},p(d,p){p&4&&r!==(r=d[2](d[5].percapita))&&h(t,"width",r),p&4&&k!==(k=d[2](d[5].percapita)+Te+3)&&h(l,"x",k)},d(d){d&&(v(t),v(n),v(l))}}}function wi(e){let t,r,n,i,o,l,s=Ge([5,500,1e3,1500,2e3]),y=[];for(let d=0;d<5;d+=1)y[d]=Yr(Xr(e,s,d));let a=Ge(e[3]),k=[];for(let d=0;d<a.length;d+=1)k[d]=Zr(Jr(e,a,d));return{c(){t=m("div"),r=$e("svg"),n=$e("text"),i=Je("Venture Capital Investment Per Person");for(let d=0;d<5;d+=1)y[d].c();o=G();for(let d=0;d<k.length;d+=1)k[d].c();this.h()},l(d){t=x(d,"DIV",{id:!0});var p=T(t);r=Se(p,"svg",{height:!0,width:!0,id:!0});var c=T(r);n=Se(c,"text",{x:!0,y:!0,id:!0,"text-anchor":!0,class:!0});var _=T(n);i=Xe(_,"Venture Capital Investment Per Person"),_.forEach(v);for(let $=0;$<5;$+=1)y[$].l(c);o=G();for(let $=0;$<k.length;$+=1)k[$].l(c);c.forEach(v),p.forEach(v),this.h()},h(){h(n,"x",Te),h(n,"y",20),h(n,"id","labelTitle"),h(n,"text-anchor","start"),h(n,"class","svelte-54a4tb"),h(r,"height",fn),h(r,"width",e[1]),h(r,"id","svgChart"),h(t,"id","barChart"),Qt(()=>e[4].call(t))},m(d,p){B(d,t,p),f(t,r),f(r,n),f(n,i);for(let c=0;c<5;c+=1)y[c]&&y[c].m(r,null);f(r,o);for(let c=0;c<k.length;c+=1)k[c]&&k[c].m(r,null);l=Yt(t,e[4].bind(t))},p(d,[p]){if(p&4){s=Ge([5,500,1e3,1500,2e3]);let c;for(c=0;c<5;c+=1){const _=Xr(d,s,c);y[c]?y[c].p(_,p):(y[c]=Yr(_),y[c].c(),y[c].m(r,o))}for(;c<5;c+=1)y[c].d(1)}if(p&12){a=Ge(d[3]);let c;for(c=0;c<a.length;c+=1){const _=Jr(d,a,c);k[c]?k[c].p(_,p):(k[c]=Zr(_),k[c].c(),k[c].m(r,null))}for(;c<k.length;c+=1)k[c].d(1);k.length=a.length}p&2&&h(r,"width",d[1])},i:Ze,o:Ze,d(d){d&&v(t),Mr(y,d),Mr(k,d),l()}}}const fn=450,gi=55,vi=50,bi=20,Te=0;function qi(e,t,r){let n,i,o=[{City:"Vancouver",percapita:2032},{City:"Kitchener-Cambridge-Waterloo",percapita:1603},{City:"Fredericton",percapita:1239},{City:"Toronto",percapita:1224},{City:"Québec",percapita:939},{City:"Ottawa-Gatineau",percapita:885},{City:"Saskatoon",percapita:746},{City:"Montreal",percapita:739},{City:"Guelph",percapita:556},{City:"Calgary",percapita:533}],l;function s(){l=this.offsetWidth,r(0,l)}return e.$$.update=()=>{e.$$.dirty&1&&r(1,n=l),e.$$.dirty&2&&r(2,i=dn().domain([0,2100]).range([0,n-vi-Te]))},[l,n,i,o,s]}class Ri extends Jt{constructor(t){super(),Xt(this,t,qi,wi,Kt,{})}}const zi=`<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
@@ -126,7 +126,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
   <g
      id="layer1">
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1"
        width="5.2916732"
        height="5.2916732"
@@ -135,7 +135,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-74"
        width="5.2916732"
        height="5.2916732"
@@ -144,7 +144,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#f6f5f4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#f6f5f4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-74-3"
        width="5.2916732"
        height="5.2916732"
@@ -153,7 +153,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2"
        width="5.2916732"
        height="5.2916732"
@@ -162,7 +162,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7"
        width="5.2916732"
        height="5.2916732"
@@ -171,7 +171,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0"
        width="5.2916732"
        height="5.2916732"
@@ -180,7 +180,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0"
        width="5.2916732"
        height="5.2916732"
@@ -189,7 +189,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6"
        width="5.2916732"
        height="5.2916732"
@@ -198,7 +198,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2"
        width="5.2916732"
        height="5.2916732"
@@ -207,7 +207,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6"
        width="5.2916732"
        height="5.2916732"
@@ -216,7 +216,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9"
        width="5.2916732"
        height="5.2916732"
@@ -225,7 +225,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2"
        width="5.2916732"
        height="5.2916732"
@@ -234,7 +234,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0"
        width="5.2916732"
        height="5.2916732"
@@ -243,7 +243,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2"
        width="5.2916732"
        height="5.2916732"
@@ -252,7 +252,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3"
        width="5.2916732"
        height="5.2916732"
@@ -261,7 +261,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7"
        width="5.2916732"
        height="5.2916732"
@@ -270,7 +270,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5"
        width="5.2916732"
        height="5.2916732"
@@ -279,7 +279,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9"
        width="5.2916732"
        height="5.2916732"
@@ -288,7 +288,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-12"
        width="5.2916732"
        height="5.2916732"
@@ -297,7 +297,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-22"
        width="5.2916732"
        height="5.2916732"
@@ -306,7 +306,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-46"
        width="5.2916732"
        height="5.2916732"
@@ -315,7 +315,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-0"
        width="5.2916732"
        height="5.2916732"
@@ -324,7 +324,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-2"
        width="5.2916732"
        height="5.2916732"
@@ -333,7 +333,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-39"
        width="5.2916732"
        height="5.2916732"
@@ -342,7 +342,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-86"
        width="5.2916732"
        height="5.2916732"
@@ -351,7 +351,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-8"
        width="5.2916732"
        height="5.2916732"
@@ -360,7 +360,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-6"
        width="5.2916732"
        height="5.2916732"
@@ -369,7 +369,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-97"
        width="5.2916732"
        height="5.2916732"
@@ -378,7 +378,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-2"
        width="5.2916732"
        height="5.2916732"
@@ -387,7 +387,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-6"
        width="5.2916732"
        height="5.2916732"
@@ -396,7 +396,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-8"
        width="5.2916732"
        height="5.2916732"
@@ -405,7 +405,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-97"
        width="5.2916732"
        height="5.2916732"
@@ -414,7 +414,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-3"
        width="5.2916732"
        height="5.2916732"
@@ -423,7 +423,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-6"
        width="5.2916732"
        height="5.2916732"
@@ -432,7 +432,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-1"
        width="5.2916732"
        height="5.2916732"
@@ -441,7 +441,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-2"
        width="5.2916732"
        height="5.2916732"
@@ -450,7 +450,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-9"
        width="5.2916732"
        height="5.2916732"
@@ -459,7 +459,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-3"
        width="5.2916732"
        height="5.2916732"
@@ -468,7 +468,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-1"
        width="5.2916732"
        height="5.2916732"
@@ -477,7 +477,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-8"
        width="5.2916732"
        height="5.2916732"
@@ -486,7 +486,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-4"
        width="5.2916732"
        height="5.2916732"
@@ -495,7 +495,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-5"
        width="5.2916732"
        height="5.2916732"
@@ -504,7 +504,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-0"
        width="5.2916732"
        height="5.2916732"
@@ -513,7 +513,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-36"
        width="5.2916732"
        height="5.2916732"
@@ -522,7 +522,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-97-4"
        width="5.2916732"
        height="5.2916732"
@@ -532,7 +532,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-3-8"
        width="5.2916732"
        height="5.2916732"
@@ -542,7 +542,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-6-6"
        width="5.2916732"
        height="5.2916732"
@@ -552,7 +552,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-1-66"
        width="5.2916732"
        height="5.2916732"
@@ -562,7 +562,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-2-6"
        width="5.2916732"
        height="5.2916732"
@@ -572,7 +572,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-8-1"
        width="5.2916732"
        height="5.2916732"
@@ -582,7 +582,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-4-7"
        width="5.2916732"
        height="5.2916732"
@@ -592,7 +592,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-5-8"
        width="5.2916732"
        height="5.2916732"
@@ -602,7 +602,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-5-8-4-2"
        width="5.2916732"
        height="5.2916732"
@@ -612,7 +612,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-0-2"
        width="5.2916732"
        height="5.2916732"
@@ -622,7 +622,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-36-9"
        width="5.2916732"
        height="5.2916732"
@@ -632,7 +632,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-1"
        width="5.2916732"
        height="5.2916732"
@@ -641,7 +641,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-0"
        width="5.2916732"
        height="5.2916732"
@@ -650,7 +650,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-6"
        width="5.2916732"
        height="5.2916732"
@@ -659,7 +659,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-96"
        width="5.2916732"
        height="5.2916732"
@@ -669,7 +669,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-45"
        width="5.2916732"
        height="5.2916732"
@@ -679,7 +679,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-54"
        width="5.2916732"
        height="5.2916732"
@@ -689,7 +689,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-7"
        width="5.2916732"
        height="5.2916732"
@@ -699,7 +699,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-05"
        width="5.2916732"
        height="5.2916732"
@@ -709,7 +709,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-76"
        width="5.2916732"
        height="5.2916732"
@@ -719,7 +719,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-4"
        width="5.2916732"
        height="5.2916732"
@@ -729,7 +729,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-3"
        width="5.2916732"
        height="5.2916732"
@@ -739,7 +739,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-5"
        width="5.2916732"
        height="5.2916732"
@@ -749,7 +749,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-3"
        width="5.2916732"
        height="5.2916732"
@@ -759,7 +759,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-7"
        width="5.2916732"
        height="5.2916732"
@@ -769,7 +769,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-32"
        width="5.2916732"
        height="5.2916732"
@@ -779,7 +779,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-96-6"
        width="5.2916732"
        height="5.2916732"
@@ -789,7 +789,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-45-8"
        width="5.2916732"
        height="5.2916732"
@@ -799,7 +799,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-54-9"
        width="5.2916732"
        height="5.2916732"
@@ -809,7 +809,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-7-6"
        width="5.2916732"
        height="5.2916732"
@@ -819,7 +819,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-5-3"
        width="5.2916732"
        height="5.2916732"
@@ -829,7 +829,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-5-3-0"
        width="5.2916732"
        height="5.2916732"
@@ -839,7 +839,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#57e389;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e389;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-5-3-0-6"
        width="5.2916732"
        height="5.2916732"
@@ -849,7 +849,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#57e389;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e389;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-5-3-0-4"
        width="5.2916732"
        height="5.2916732"
@@ -859,7 +859,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-3-9"
        width="5.2916732"
        height="5.2916732"
@@ -869,7 +869,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-7-6"
        width="5.2916732"
        height="5.2916732"
@@ -879,7 +879,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-32-9"
        width="5.2916732"
        height="5.2916732"
@@ -889,7 +889,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-8"
        width="5.2916732"
        height="5.2916732"
@@ -899,7 +899,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-3"
        width="5.2916732"
        height="5.2916732"
@@ -909,7 +909,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-0"
        width="5.2916732"
        height="5.2916732"
@@ -919,7 +919,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9-86"
        width="5.2916732"
        height="5.2916732"
@@ -929,7 +929,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-97-69"
        width="5.2916732"
        height="5.2916732"
@@ -939,7 +939,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-3-71"
        width="5.2916732"
        height="5.2916732"
@@ -949,7 +949,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-6-9"
        width="5.2916732"
        height="5.2916732"
@@ -959,7 +959,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-1-3"
        width="5.2916732"
        height="5.2916732"
@@ -969,7 +969,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-2-7"
        width="5.2916732"
        height="5.2916732"
@@ -979,7 +979,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-9-1"
        width="5.2916732"
        height="5.2916732"
@@ -989,7 +989,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-3-2"
        width="5.2916732"
        height="5.2916732"
@@ -999,7 +999,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-1-3"
        width="5.2916732"
        height="5.2916732"
@@ -1009,7 +1009,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-8-5"
        width="5.2916732"
        height="5.2916732"
@@ -1019,7 +1019,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-4-70"
        width="5.2916732"
        height="5.2916732"
@@ -1029,7 +1029,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-5-2"
        width="5.2916732"
        height="5.2916732"
@@ -1039,7 +1039,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-0-60"
        width="5.2916732"
        height="5.2916732"
@@ -1049,7 +1049,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-36-7"
        width="5.2916732"
        height="5.2916732"
@@ -1059,7 +1059,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-1-3"
        width="5.2916732"
        height="5.2916732"
@@ -1069,7 +1069,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-0-7"
        width="5.2916732"
        height="5.2916732"
@@ -1079,7 +1079,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-6-1"
        width="5.2916732"
        height="5.2916732"
@@ -1089,7 +1089,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(-90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-3"
        width="5.2916732"
        height="5.2916732"
@@ -1098,7 +1098,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-2"
        width="5.2916732"
        height="5.2916732"
@@ -1107,7 +1107,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-0"
        width="5.2916732"
        height="5.2916732"
@@ -1116,7 +1116,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-6"
        width="5.2916732"
        height="5.2916732"
@@ -1125,7 +1125,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-1"
        width="5.2916732"
        height="5.2916732"
@@ -1134,7 +1134,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-5"
        width="5.2916732"
        height="5.2916732"
@@ -1143,7 +1143,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-5"
        width="5.2916732"
        height="5.2916732"
@@ -1152,7 +1152,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9-4"
        width="5.2916732"
        height="5.2916732"
@@ -1161,7 +1161,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-97-7"
        width="5.2916732"
        height="5.2916732"
@@ -1170,7 +1170,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-3-6"
        width="5.2916732"
        height="5.2916732"
@@ -1179,7 +1179,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-6-5"
        width="5.2916732"
        height="5.2916732"
@@ -1188,7 +1188,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-1-6"
        width="5.2916732"
        height="5.2916732"
@@ -1197,7 +1197,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-2-9"
        width="5.2916732"
        height="5.2916732"
@@ -1206,7 +1206,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-9-3"
        width="5.2916732"
        height="5.2916732"
@@ -1215,7 +1215,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-3-7"
        width="5.2916732"
        height="5.2916732"
@@ -1224,7 +1224,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-1-4"
        width="5.2916732"
        height="5.2916732"
@@ -1233,7 +1233,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-4"
        width="5.2916732"
        height="5.2916732"
@@ -1242,7 +1242,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-7"
        width="5.2916732"
        height="5.2916732"
@@ -1251,7 +1251,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-4"
        width="5.2916732"
        height="5.2916732"
@@ -1260,7 +1260,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-4"
        width="5.2916732"
        height="5.2916732"
@@ -1269,7 +1269,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-30"
        width="5.2916732"
        height="5.2916732"
@@ -1278,7 +1278,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-78"
        width="5.2916732"
        height="5.2916732"
@@ -1287,7 +1287,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-6"
        width="5.2916732"
        height="5.2916732"
@@ -1296,7 +1296,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-8"
        width="5.2916732"
        height="5.2916732"
@@ -1305,7 +1305,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-27"
        width="5.2916732"
        height="5.2916732"
@@ -1314,7 +1314,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-20"
        width="5.2916732"
        height="5.2916732"
@@ -1323,7 +1323,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-1"
        width="5.2916732"
        height="5.2916732"
@@ -1332,7 +1332,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-61"
        width="5.2916732"
        height="5.2916732"
@@ -1341,7 +1341,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-9"
        width="5.2916732"
        height="5.2916732"
@@ -1350,7 +1350,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-4"
        width="5.2916732"
        height="5.2916732"
@@ -1359,7 +1359,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-9"
        width="5.2916732"
        height="5.2916732"
@@ -1368,7 +1368,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-96"
        width="5.2916732"
        height="5.2916732"
@@ -1377,7 +1377,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-9"
        width="5.2916732"
        height="5.2916732"
@@ -1386,7 +1386,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-42"
        width="5.2916732"
        height="5.2916732"
@@ -1395,7 +1395,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-02"
        width="5.2916732"
        height="5.2916732"
@@ -1404,7 +1404,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-3"
        width="5.2916732"
        height="5.2916732"
@@ -1413,7 +1413,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-6"
        width="5.2916732"
        height="5.2916732"
@@ -1422,7 +1422,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-8"
        width="5.2916732"
        height="5.2916732"
@@ -1431,7 +1431,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-92"
        width="5.2916732"
        height="5.2916732"
@@ -1440,7 +1440,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9-8"
        width="5.2916732"
        height="5.2916732"
@@ -1449,7 +1449,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-9-1"
        width="5.2916732"
        height="5.2916732"
@@ -1458,7 +1458,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-4-8"
        width="5.2916732"
        height="5.2916732"
@@ -1467,7 +1467,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-9-2"
        width="5.2916732"
        height="5.2916732"
@@ -1476,7 +1476,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-96-8"
        width="5.2916732"
        height="5.2916732"
@@ -1485,7 +1485,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-6-7"
        width="5.2916732"
        height="5.2916732"
@@ -1494,7 +1494,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-8-6"
        width="5.2916732"
        height="5.2916732"
@@ -1503,7 +1503,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-6-7-3"
        width="5.2916732"
        height="5.2916732"
@@ -1512,7 +1512,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-8-6-7"
        width="5.2916732"
        height="5.2916732"
@@ -1521,7 +1521,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#b0ddd7;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#b0ddd7;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-6-7-3-9"
        width="5.2916732"
        height="5.2916732"
@@ -1530,7 +1530,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#b0ddd7;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#b0ddd7;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-8-6-7-6"
        width="5.2916732"
        height="5.2916732"
@@ -1539,7 +1539,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-92-8"
        width="5.2916732"
        height="5.2916732"
@@ -1548,7 +1548,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9-8-4"
        width="5.2916732"
        height="5.2916732"
@@ -1557,7 +1557,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-97-6"
        width="5.2916732"
        height="5.2916732"
@@ -1566,7 +1566,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-3-7"
        width="5.2916732"
        height="5.2916732"
@@ -1575,7 +1575,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-6-3"
        width="5.2916732"
        height="5.2916732"
@@ -1584,7 +1584,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-1-53"
        width="5.2916732"
        height="5.2916732"
@@ -1593,7 +1593,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-2-5"
        width="5.2916732"
        height="5.2916732"
@@ -1602,7 +1602,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-9-9"
        width="5.2916732"
        height="5.2916732"
@@ -1611,7 +1611,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-3-5"
        width="5.2916732"
        height="5.2916732"
@@ -1620,7 +1620,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-1-9"
        width="5.2916732"
        height="5.2916732"
@@ -1629,7 +1629,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-8-7"
        width="5.2916732"
        height="5.2916732"
@@ -1638,7 +1638,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-4-9"
        width="5.2916732"
        height="5.2916732"
@@ -1647,7 +1647,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-5-9"
        width="5.2916732"
        height="5.2916732"
@@ -1656,7 +1656,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-0-0"
        width="5.2916732"
        height="5.2916732"
@@ -1665,7 +1665,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-36-5"
        width="5.2916732"
        height="5.2916732"
@@ -1674,7 +1674,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-1-2"
        width="5.2916732"
        height="5.2916732"
@@ -1683,7 +1683,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-0-1"
        width="5.2916732"
        height="5.2916732"
@@ -1692,7 +1692,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-6-0"
        width="5.2916732"
        height="5.2916732"
@@ -1701,7 +1701,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-3-2"
        width="5.2916732"
        height="5.2916732"
@@ -1710,7 +1710,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-2-0"
        width="5.2916732"
        height="5.2916732"
@@ -1719,7 +1719,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-0-6"
        width="5.2916732"
        height="5.2916732"
@@ -1728,7 +1728,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-6-36"
        width="5.2916732"
        height="5.2916732"
@@ -1737,7 +1737,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-1-94"
        width="5.2916732"
        height="5.2916732"
@@ -1746,7 +1746,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-5-8"
        width="5.2916732"
        height="5.2916732"
@@ -1755,7 +1755,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-5-4"
        width="5.2916732"
        height="5.2916732"
@@ -1764,7 +1764,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9-4-0"
        width="5.2916732"
        height="5.2916732"
@@ -1773,7 +1773,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-97-7-8"
        width="5.2916732"
        height="5.2916732"
@@ -1782,7 +1782,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-3-6-4"
        width="5.2916732"
        height="5.2916732"
@@ -1791,7 +1791,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-6-5-4"
        width="5.2916732"
        height="5.2916732"
@@ -1800,7 +1800,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-1-6-8"
        width="5.2916732"
        height="5.2916732"
@@ -1809,7 +1809,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-2-9-2"
        width="5.2916732"
        height="5.2916732"
@@ -1818,7 +1818,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-9-3-4"
        width="5.2916732"
        height="5.2916732"
@@ -1827,7 +1827,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-3-7-2"
        width="5.2916732"
        height="5.2916732"
@@ -1836,7 +1836,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-1-4-7"
        width="5.2916732"
        height="5.2916732"
@@ -1845,7 +1845,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-4-79"
        width="5.2916732"
        height="5.2916732"
@@ -1854,7 +1854,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-7-9"
        width="5.2916732"
        height="5.2916732"
@@ -1863,7 +1863,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-4-3"
        width="5.2916732"
        height="5.2916732"
@@ -1872,7 +1872,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-4-98"
        width="5.2916732"
        height="5.2916732"
@@ -1881,7 +1881,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-30-4"
        width="5.2916732"
        height="5.2916732"
@@ -1890,7 +1890,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-78-0"
        width="5.2916732"
        height="5.2916732"
@@ -1899,7 +1899,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-6-80"
        width="5.2916732"
        height="5.2916732"
@@ -1908,7 +1908,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-8-5"
        width="5.2916732"
        height="5.2916732"
@@ -1917,7 +1917,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-8"
        width="5.2916732"
        height="5.2916732"
@@ -1926,7 +1926,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-4"
        width="5.2916732"
        height="5.2916732"
@@ -1935,7 +1935,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-3"
        width="5.2916732"
        height="5.2916732"
@@ -1944,7 +1944,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-1"
        width="5.2916732"
        height="5.2916732"
@@ -1953,7 +1953,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-4"
        width="5.2916732"
        height="5.2916732"
@@ -1962,7 +1962,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-9"
        width="5.2916732"
        height="5.2916732"
@@ -1971,7 +1971,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-2"
        width="5.2916732"
        height="5.2916732"
@@ -1980,7 +1980,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9-0"
        width="5.2916732"
        height="5.2916732"
@@ -1989,7 +1989,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-4-7"
        width="5.2916732"
        height="5.2916732"
@@ -1998,7 +1998,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-7-5"
        width="5.2916732"
        height="5.2916732"
@@ -2007,7 +2007,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-4-9"
        width="5.2916732"
        height="5.2916732"
@@ -2016,7 +2016,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-4-6"
        width="5.2916732"
        height="5.2916732"
@@ -2025,7 +2025,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-30-2"
        width="5.2916732"
        height="5.2916732"
@@ -2034,7 +2034,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-78-1"
        width="5.2916732"
        height="5.2916732"
@@ -2043,7 +2043,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-6-7"
        width="5.2916732"
        height="5.2916732"
@@ -2052,7 +2052,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-8-8"
        width="5.2916732"
        height="5.2916732"
@@ -2061,7 +2061,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-8-5"
        width="5.2916732"
        height="5.2916732"
@@ -2070,7 +2070,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-4-7"
        width="5.2916732"
        height="5.2916732"
@@ -2079,7 +2079,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-3-4"
        width="5.2916732"
        height="5.2916732"
@@ -2088,7 +2088,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-1-1"
        width="5.2916732"
        height="5.2916732"
@@ -2097,7 +2097,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-4-8"
        width="5.2916732"
        height="5.2916732"
@@ -2106,7 +2106,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-9-5"
        width="5.2916732"
        height="5.2916732"
@@ -2115,7 +2115,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-2-9"
        width="5.2916732"
        height="5.2916732"
@@ -2456,7 +2456,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1"
        width="5.2916732"
        height="5.2916732"
@@ -2466,7 +2466,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-74"
        width="5.2916732"
        height="5.2916732"
@@ -2476,7 +2476,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#f6f5f4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#f6f5f4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-74-3"
        width="5.2916732"
        height="5.2916732"
@@ -2485,7 +2485,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2"
        width="5.2916732"
        height="5.2916732"
@@ -2495,7 +2495,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7"
        width="5.2916732"
        height="5.2916732"
@@ -2505,7 +2505,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0"
        width="5.2916732"
        height="5.2916732"
@@ -2515,7 +2515,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0"
        width="5.2916732"
        height="5.2916732"
@@ -2525,7 +2525,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6"
        width="5.2916732"
        height="5.2916732"
@@ -2535,7 +2535,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2"
        width="5.2916732"
        height="5.2916732"
@@ -2545,7 +2545,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6"
        width="5.2916732"
        height="5.2916732"
@@ -2555,7 +2555,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9"
        width="5.2916732"
        height="5.2916732"
@@ -2565,7 +2565,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2"
        width="5.2916732"
        height="5.2916732"
@@ -2575,7 +2575,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0"
        width="5.2916732"
        height="5.2916732"
@@ -2585,7 +2585,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2"
        width="5.2916732"
        height="5.2916732"
@@ -2595,7 +2595,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3"
        width="5.2916732"
        height="5.2916732"
@@ -2605,7 +2605,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7"
        width="5.2916732"
        height="5.2916732"
@@ -2615,7 +2615,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5"
        width="5.2916732"
        height="5.2916732"
@@ -2625,7 +2625,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9"
        width="5.2916732"
        height="5.2916732"
@@ -2635,7 +2635,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-12"
        width="5.2916732"
        height="5.2916732"
@@ -2645,7 +2645,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-22"
        width="5.2916732"
        height="5.2916732"
@@ -2655,7 +2655,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-46"
        width="5.2916732"
        height="5.2916732"
@@ -2665,7 +2665,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-0"
        width="5.2916732"
        height="5.2916732"
@@ -2675,7 +2675,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-2"
        width="5.2916732"
        height="5.2916732"
@@ -2685,7 +2685,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-39"
        width="5.2916732"
        height="5.2916732"
@@ -2695,7 +2695,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-86"
        width="5.2916732"
        height="5.2916732"
@@ -2705,7 +2705,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-8"
        width="5.2916732"
        height="5.2916732"
@@ -2715,7 +2715,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-6"
        width="5.2916732"
        height="5.2916732"
@@ -2725,7 +2725,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-97"
        width="5.2916732"
        height="5.2916732"
@@ -2735,7 +2735,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-2"
        width="5.2916732"
        height="5.2916732"
@@ -2745,7 +2745,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-6"
        width="5.2916732"
        height="5.2916732"
@@ -2755,7 +2755,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e3c9;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-8"
        width="5.2916732"
        height="5.2916732"
@@ -2765,7 +2765,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-97"
        width="5.2916732"
        height="5.2916732"
@@ -2775,7 +2775,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-3"
        width="5.2916732"
        height="5.2916732"
@@ -2785,7 +2785,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-6"
        width="5.2916732"
        height="5.2916732"
@@ -2795,7 +2795,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-1"
        width="5.2916732"
        height="5.2916732"
@@ -2805,7 +2805,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-2"
        width="5.2916732"
        height="5.2916732"
@@ -2815,7 +2815,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-9"
        width="5.2916732"
        height="5.2916732"
@@ -2825,7 +2825,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-3"
        width="5.2916732"
        height="5.2916732"
@@ -2835,7 +2835,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-1"
        width="5.2916732"
        height="5.2916732"
@@ -2845,7 +2845,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-8"
        width="5.2916732"
        height="5.2916732"
@@ -2855,7 +2855,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-4"
        width="5.2916732"
        height="5.2916732"
@@ -2865,7 +2865,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-5"
        width="5.2916732"
        height="5.2916732"
@@ -2875,7 +2875,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-0"
        width="5.2916732"
        height="5.2916732"
@@ -2885,7 +2885,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-36"
        width="5.2916732"
        height="5.2916732"
@@ -2895,7 +2895,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-97-4"
        width="5.2916732"
        height="5.2916732"
@@ -2905,7 +2905,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="scale(-1)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-3-8"
        width="5.2916732"
        height="5.2916732"
@@ -2915,7 +2915,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="scale(-1)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-6-6"
        width="5.2916732"
        height="5.2916732"
@@ -2925,7 +2925,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="scale(-1)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-1-66"
        width="5.2916732"
        height="5.2916732"
@@ -2935,7 +2935,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="scale(-1)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-2-6"
        width="5.2916732"
        height="5.2916732"
@@ -2945,7 +2945,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="scale(-1)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-8-1"
        width="5.2916732"
        height="5.2916732"
@@ -2955,7 +2955,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="scale(-1)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-4-7"
        width="5.2916732"
        height="5.2916732"
@@ -2965,7 +2965,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="scale(-1)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-5-8"
        width="5.2916732"
        height="5.2916732"
@@ -2975,7 +2975,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="scale(-1)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-5-8-4-2"
        width="5.2916732"
        height="5.2916732"
@@ -2985,7 +2985,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="scale(-1)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-0-2"
        width="5.2916732"
        height="5.2916732"
@@ -2995,7 +2995,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="scale(-1)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-36-9"
        width="5.2916732"
        height="5.2916732"
@@ -3005,7 +3005,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="scale(-1)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-1"
        width="5.2916732"
        height="5.2916732"
@@ -3015,7 +3015,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-0"
        width="5.2916732"
        height="5.2916732"
@@ -3025,7 +3025,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-6"
        width="5.2916732"
        height="5.2916732"
@@ -3035,7 +3035,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-96"
        width="5.2916732"
        height="5.2916732"
@@ -3044,7 +3044,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-45"
        width="5.2916732"
        height="5.2916732"
@@ -3053,7 +3053,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-54"
        width="5.2916732"
        height="5.2916732"
@@ -3062,7 +3062,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-7"
        width="5.2916732"
        height="5.2916732"
@@ -3071,7 +3071,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-05"
        width="5.2916732"
        height="5.2916732"
@@ -3080,7 +3080,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-76"
        width="5.2916732"
        height="5.2916732"
@@ -3089,7 +3089,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-4"
        width="5.2916732"
        height="5.2916732"
@@ -3098,7 +3098,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-3"
        width="5.2916732"
        height="5.2916732"
@@ -3107,7 +3107,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-5"
        width="5.2916732"
        height="5.2916732"
@@ -3116,7 +3116,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-3"
        width="5.2916732"
        height="5.2916732"
@@ -3125,7 +3125,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-7"
        width="5.2916732"
        height="5.2916732"
@@ -3134,7 +3134,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-32"
        width="5.2916732"
        height="5.2916732"
@@ -3143,7 +3143,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-96-6"
        width="5.2916732"
        height="5.2916732"
@@ -3152,7 +3152,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-45-8"
        width="5.2916732"
        height="5.2916732"
@@ -3161,7 +3161,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-54-9"
        width="5.2916732"
        height="5.2916732"
@@ -3170,7 +3170,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-7-6"
        width="5.2916732"
        height="5.2916732"
@@ -3179,7 +3179,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-5-3"
        width="5.2916732"
        height="5.2916732"
@@ -3188,7 +3188,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-5-3-0"
        width="5.2916732"
        height="5.2916732"
@@ -3197,7 +3197,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e389;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e389;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-5-3-0-6"
        width="5.2916732"
        height="5.2916732"
@@ -3206,7 +3206,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57e389;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57e389;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-5-3-0-4"
        width="5.2916732"
        height="5.2916732"
@@ -3215,7 +3215,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-3-9"
        width="5.2916732"
        height="5.2916732"
@@ -3224,7 +3224,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-7-6"
        width="5.2916732"
        height="5.2916732"
@@ -3233,7 +3233,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-32-9"
        width="5.2916732"
        height="5.2916732"
@@ -3242,7 +3242,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-8"
        width="5.2916732"
        height="5.2916732"
@@ -3251,7 +3251,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-3"
        width="5.2916732"
        height="5.2916732"
@@ -3260,7 +3260,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-0"
        width="5.2916732"
        height="5.2916732"
@@ -3269,7 +3269,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9-86"
        width="5.2916732"
        height="5.2916732"
@@ -3278,7 +3278,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-97-69"
        width="5.2916732"
        height="5.2916732"
@@ -3287,7 +3287,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-3-71"
        width="5.2916732"
        height="5.2916732"
@@ -3296,7 +3296,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-6-9"
        width="5.2916732"
        height="5.2916732"
@@ -3305,7 +3305,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-1-3"
        width="5.2916732"
        height="5.2916732"
@@ -3314,7 +3314,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-2-7"
        width="5.2916732"
        height="5.2916732"
@@ -3323,7 +3323,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-9-1"
        width="5.2916732"
        height="5.2916732"
@@ -3332,7 +3332,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-3-2"
        width="5.2916732"
        height="5.2916732"
@@ -3341,7 +3341,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-1-3"
        width="5.2916732"
        height="5.2916732"
@@ -3350,7 +3350,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-8-5"
        width="5.2916732"
        height="5.2916732"
@@ -3359,7 +3359,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-4-70"
        width="5.2916732"
        height="5.2916732"
@@ -3368,7 +3368,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-5-2"
        width="5.2916732"
        height="5.2916732"
@@ -3377,7 +3377,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-0-60"
        width="5.2916732"
        height="5.2916732"
@@ -3386,7 +3386,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-36-7"
        width="5.2916732"
        height="5.2916732"
@@ -3395,7 +3395,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-1-3"
        width="5.2916732"
        height="5.2916732"
@@ -3404,7 +3404,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-0-7"
        width="5.2916732"
        height="5.2916732"
@@ -3413,7 +3413,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0c8;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-6-1"
        width="5.2916732"
        height="5.2916732"
@@ -3422,7 +3422,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        rx="0"
        ry="0" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-3"
        width="5.2916732"
        height="5.2916732"
@@ -3432,7 +3432,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-2"
        width="5.2916732"
        height="5.2916732"
@@ -3442,7 +3442,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-0"
        width="5.2916732"
        height="5.2916732"
@@ -3452,7 +3452,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-6"
        width="5.2916732"
        height="5.2916732"
@@ -3462,7 +3462,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-1"
        width="5.2916732"
        height="5.2916732"
@@ -3472,7 +3472,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-5"
        width="5.2916732"
        height="5.2916732"
@@ -3482,7 +3482,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-5"
        width="5.2916732"
        height="5.2916732"
@@ -3492,7 +3492,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9-4"
        width="5.2916732"
        height="5.2916732"
@@ -3502,7 +3502,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-97-7"
        width="5.2916732"
        height="5.2916732"
@@ -3512,7 +3512,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-3-6"
        width="5.2916732"
        height="5.2916732"
@@ -3522,7 +3522,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-6-5"
        width="5.2916732"
        height="5.2916732"
@@ -3532,7 +3532,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-1-6"
        width="5.2916732"
        height="5.2916732"
@@ -3542,7 +3542,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-2-9"
        width="5.2916732"
        height="5.2916732"
@@ -3552,7 +3552,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-9-3"
        width="5.2916732"
        height="5.2916732"
@@ -3562,7 +3562,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-3-7"
        width="5.2916732"
        height="5.2916732"
@@ -3572,7 +3572,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-1-4"
        width="5.2916732"
        height="5.2916732"
@@ -3582,7 +3582,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-4"
        width="5.2916732"
        height="5.2916732"
@@ -3592,7 +3592,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-7"
        width="5.2916732"
        height="5.2916732"
@@ -3602,7 +3602,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-4"
        width="5.2916732"
        height="5.2916732"
@@ -3612,7 +3612,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-4"
        width="5.2916732"
        height="5.2916732"
@@ -3622,7 +3622,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-30"
        width="5.2916732"
        height="5.2916732"
@@ -3632,7 +3632,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-78"
        width="5.2916732"
        height="5.2916732"
@@ -3642,7 +3642,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-6"
        width="5.2916732"
        height="5.2916732"
@@ -3652,7 +3652,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-8"
        width="5.2916732"
        height="5.2916732"
@@ -3662,7 +3662,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-27"
        width="5.2916732"
        height="5.2916732"
@@ -3672,7 +3672,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-20"
        width="5.2916732"
        height="5.2916732"
@@ -3682,7 +3682,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-1"
        width="5.2916732"
        height="5.2916732"
@@ -3692,7 +3692,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-61"
        width="5.2916732"
        height="5.2916732"
@@ -3702,7 +3702,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-9"
        width="5.2916732"
        height="5.2916732"
@@ -3712,7 +3712,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-4"
        width="5.2916732"
        height="5.2916732"
@@ -3722,7 +3722,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-9"
        width="5.2916732"
        height="5.2916732"
@@ -3732,7 +3732,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-96"
        width="5.2916732"
        height="5.2916732"
@@ -3742,7 +3742,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-9"
        width="5.2916732"
        height="5.2916732"
@@ -3752,7 +3752,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-42"
        width="5.2916732"
        height="5.2916732"
@@ -3762,7 +3762,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-02"
        width="5.2916732"
        height="5.2916732"
@@ -3772,7 +3772,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-3"
        width="5.2916732"
        height="5.2916732"
@@ -3782,7 +3782,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-6"
        width="5.2916732"
        height="5.2916732"
@@ -3792,7 +3792,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-8"
        width="5.2916732"
        height="5.2916732"
@@ -3802,7 +3802,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-92"
        width="5.2916732"
        height="5.2916732"
@@ -3812,7 +3812,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9-8"
        width="5.2916732"
        height="5.2916732"
@@ -3822,7 +3822,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-9-1"
        width="5.2916732"
        height="5.2916732"
@@ -3832,7 +3832,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-4-8"
        width="5.2916732"
        height="5.2916732"
@@ -3842,7 +3842,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-9-2"
        width="5.2916732"
        height="5.2916732"
@@ -3852,7 +3852,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-96-8"
        width="5.2916732"
        height="5.2916732"
@@ -3862,7 +3862,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-6-7"
        width="5.2916732"
        height="5.2916732"
@@ -3872,7 +3872,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-8-6"
        width="5.2916732"
        height="5.2916732"
@@ -3882,7 +3882,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-6-7-3"
        width="5.2916732"
        height="5.2916732"
@@ -3892,7 +3892,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-8-6-7"
        width="5.2916732"
        height="5.2916732"
@@ -3902,7 +3902,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#b0ddd7;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#b0ddd7;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-6-7-3-9"
        width="5.2916732"
        height="5.2916732"
@@ -3912,7 +3912,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#b0ddd7;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#b0ddd7;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-8-6-7-6"
        width="5.2916732"
        height="5.2916732"
@@ -3922,7 +3922,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-92-8"
        width="5.2916732"
        height="5.2916732"
@@ -3932,7 +3932,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#99c1f1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#99c1f1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9-8-4"
        width="5.2916732"
        height="5.2916732"
@@ -3942,7 +3942,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-97-6"
        width="5.2916732"
        height="5.2916732"
@@ -3952,7 +3952,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-3-7"
        width="5.2916732"
        height="5.2916732"
@@ -3962,7 +3962,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-6-3"
        width="5.2916732"
        height="5.2916732"
@@ -3972,7 +3972,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-1-53"
        width="5.2916732"
        height="5.2916732"
@@ -3982,7 +3982,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-2-5"
        width="5.2916732"
        height="5.2916732"
@@ -3992,7 +3992,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-9-9"
        width="5.2916732"
        height="5.2916732"
@@ -4002,7 +4002,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-3-5"
        width="5.2916732"
        height="5.2916732"
@@ -4012,7 +4012,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-1-9"
        width="5.2916732"
        height="5.2916732"
@@ -4022,7 +4022,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-8-7"
        width="5.2916732"
        height="5.2916732"
@@ -4032,7 +4032,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-4-9"
        width="5.2916732"
        height="5.2916732"
@@ -4042,7 +4042,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-5-9"
        width="5.2916732"
        height="5.2916732"
@@ -4052,7 +4052,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-0-0"
        width="5.2916732"
        height="5.2916732"
@@ -4062,7 +4062,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-36-5"
        width="5.2916732"
        height="5.2916732"
@@ -4072,7 +4072,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-1-2"
        width="5.2916732"
        height="5.2916732"
@@ -4082,7 +4082,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-0-1"
        width="5.2916732"
        height="5.2916732"
@@ -4092,7 +4092,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-6-0"
        width="5.2916732"
        height="5.2916732"
@@ -4102,7 +4102,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-3-2"
        width="5.2916732"
        height="5.2916732"
@@ -4112,7 +4112,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-2-0"
        width="5.2916732"
        height="5.2916732"
@@ -4122,7 +4122,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-0-6"
        width="5.2916732"
        height="5.2916732"
@@ -4132,7 +4132,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-6-36"
        width="5.2916732"
        height="5.2916732"
@@ -4142,7 +4142,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-1-94"
        width="5.2916732"
        height="5.2916732"
@@ -4152,7 +4152,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-5-8"
        width="5.2916732"
        height="5.2916732"
@@ -4162,7 +4162,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-5-4"
        width="5.2916732"
        height="5.2916732"
@@ -4172,7 +4172,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9-4-0"
        width="5.2916732"
        height="5.2916732"
@@ -4182,7 +4182,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-97-7-8"
        width="5.2916732"
        height="5.2916732"
@@ -4192,7 +4192,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-3-6-4"
        width="5.2916732"
        height="5.2916732"
@@ -4202,7 +4202,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-6-5-4"
        width="5.2916732"
        height="5.2916732"
@@ -4212,7 +4212,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-1-6-8"
        width="5.2916732"
        height="5.2916732"
@@ -4222,7 +4222,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-2-9-2"
        width="5.2916732"
        height="5.2916732"
@@ -4232,7 +4232,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-9-3-4"
        width="5.2916732"
        height="5.2916732"
@@ -4242,7 +4242,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-3-7-2"
        width="5.2916732"
        height="5.2916732"
@@ -4252,7 +4252,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-1-4-7"
        width="5.2916732"
        height="5.2916732"
@@ -4262,7 +4262,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-4-79"
        width="5.2916732"
        height="5.2916732"
@@ -4272,7 +4272,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-7-9"
        width="5.2916732"
        height="5.2916732"
@@ -4282,7 +4282,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-4-3"
        width="5.2916732"
        height="5.2916732"
@@ -4292,7 +4292,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-4-98"
        width="5.2916732"
        height="5.2916732"
@@ -4302,7 +4302,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-30-4"
        width="5.2916732"
        height="5.2916732"
@@ -4312,7 +4312,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-78-0"
        width="5.2916732"
        height="5.2916732"
@@ -4322,7 +4322,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-6-80"
        width="5.2916732"
        height="5.2916732"
@@ -4332,7 +4332,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#8ff0a4;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-8-5"
        width="5.2916732"
        height="5.2916732"
@@ -4342,7 +4342,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-8"
        width="5.2916732"
        height="5.2916732"
@@ -4352,7 +4352,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-4"
        width="5.2916732"
        height="5.2916732"
@@ -4362,7 +4362,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-3"
        width="5.2916732"
        height="5.2916732"
@@ -4372,7 +4372,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-1"
        width="5.2916732"
        height="5.2916732"
@@ -4382,7 +4382,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-4"
        width="5.2916732"
        height="5.2916732"
@@ -4392,7 +4392,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-9"
        width="5.2916732"
        height="5.2916732"
@@ -4402,7 +4402,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-2"
        width="5.2916732"
        height="5.2916732"
@@ -4412,7 +4412,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-9-0"
        width="5.2916732"
        height="5.2916732"
@@ -4422,7 +4422,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-4-7"
        width="5.2916732"
        height="5.2916732"
@@ -4432,7 +4432,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-7-5"
        width="5.2916732"
        height="5.2916732"
@@ -4442,7 +4442,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-4-9"
        width="5.2916732"
        height="5.2916732"
@@ -4452,7 +4452,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-4-6"
        width="5.2916732"
        height="5.2916732"
@@ -4462,7 +4462,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-30-2"
        width="5.2916732"
        height="5.2916732"
@@ -4472,7 +4472,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-78-1"
        width="5.2916732"
        height="5.2916732"
@@ -4482,7 +4482,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-6-7"
        width="5.2916732"
        height="5.2916732"
@@ -4492,7 +4492,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-6-8-8"
        width="5.2916732"
        height="5.2916732"
@@ -4502,7 +4502,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-9-8-5"
        width="5.2916732"
        height="5.2916732"
@@ -4512,7 +4512,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-2-4-7"
        width="5.2916732"
        height="5.2916732"
@@ -4522,7 +4522,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-0-3-4"
        width="5.2916732"
        height="5.2916732"
@@ -4532,7 +4532,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-0-2-1-1"
        width="5.2916732"
        height="5.2916732"
@@ -4542,7 +4542,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-0-3-4-8"
        width="5.2916732"
        height="5.2916732"
@@ -4552,7 +4552,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-2-6-7-9-5"
        width="5.2916732"
        height="5.2916732"
@@ -4562,7 +4562,7 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
        ry="0"
        transform="rotate(90)" />
     <rect
-       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#3d3846;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
+       style="fill:#57dee3;fill-opacity:1;fill-rule:evenodd;stroke:#01062f;stroke-width:0.529167;stroke-linecap:square;stroke-miterlimit:5;stroke-dasharray:none;paint-order:normal"
        id="rect1-7-2-5-2-9"
        width="5.2916732"
        height="5.2916732"
@@ -27654,6 +27654,6 @@ import{s as Kt,k as Qt,n as Ze}from"../chunks/scheduler.BvLojk_z.js";import{S as
          x="-0.035847478"
          y="9.877821"
          id="tspan2">in Canada by metro </tspan></text></g></svg>
-`;function Si(e){let t,r;return{c(){t=new fe(!1),r=G(),this.h()},l(n){t=ce(n,!1),r=G(),this.h()},h(){t.a=r},m(n,i){t.m(_i,n,i),B(n,r,i)},d(n){n&&(v(r),t.d())}}}function Ni(e){let t,r;return{c(){t=new fe(!1),r=G(),this.h()},l(n){t=ce(n,!1),r=G(),this.h()},h(){t.a=r},m(n,i){t.m(Ui,n,i),B(n,r,i)},d(n){n&&(v(r),t.d())}}}function en(e){let t,r;return{c(){t=m("div"),r=new fe(!1),this.h()},l(n){t=x(n,"DIV",{class:!0});var i=T(t);r=ce(i,!1),i.forEach(v),this.h()},h(){r.a=null,h(t,"class","img1000px svelte-tz82xe")},m(n,i){B(n,t,i),r.m(Mi,t)},d(n){n&&v(t)}}}function Ai(e){let t,r;return{c(){t=new fe(!1),r=G(),this.h()},l(n){t=ce(n,!1),r=G(),this.h()},h(){t.a=r},m(n,i){t.m(Ti,n,i),B(n,r,i)},d(n){n&&(v(r),t.d())}}}function Ii(e){let t,r;return{c(){t=new fe(!1),r=G(),this.h()},l(n){t=ce(n,!1),r=G(),this.h()},h(){t.a=r},m(n,i){t.m(Ci,n,i),B(n,r,i)},d(n){n&&(v(r),t.d())}}}function ji(e){let t,r,n,i,o,l,s='<img src="./top.png"/>',k,a,f,d=`<h1>Canada’s High-Tech Startup Cities</h1> <h3>The geography of venture capital investment across metro areas</h3> <p>Research: <a href="https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/florida-richard/" target="_blank">Richard Florida</a> &amp; <a href="https://discover.research.utoronto.ca/22831" target="_blank">Karen King</a><br/>
-			Maps &amp; Graphics: <a href="https://jamaps.github.io/" target="_blank">Jeff Allen</a></p>`,p,c,_='<br/> <span id="drop-cap">V</span>enture capital is the financial fuel that powers innovation and economic growth. This unique form of equity financing — which exchanges capital for shares in the enterprises they provide — has fueled the rise of revolutionary companies like Intel in semiconductors, Apple in personal computing, Genentech in biotech, Google in search, Twitter/X in social media, ChatGPT in artificial intelligence, and many more.',$,D,Q="Venture capital in Canada exploded from C$3.1 billion in the three year period of 2009-2011 to $23.5 billion in 2019-2021 -- a nearly eightfold increase. But the benefits accrued to just a handful of cities who benefited from mega deals.",te,H,re,S,J,Be='This study examines recent trends in the geography of venture capital across Canada. Our data on venture capital comes from <a href="https://pitchbook.com/" target="_blank">PitchBook</a>, a leading research firm that tracks venture capital investment. We group the data in multi-year periods, 2009-11 and 2019-21, to limit annual fluctuations that can occur because of outsized investments in individual firms and/or metros in any given year.',he,X,Ie="Venture capital investment provides a measure of commercially relevant innovation. It offers a more direct gauge of such innovation than patents, which are commonly used by economists and economic geographers to measure innovation. Patents cover both basic scientific discoveries as well as commercial inventions. Many important commercial innovations are never patented, and many commercial patents are used for defensive purposes, to block competitors from gaining access to such innovations. As a measure of actual investment in high-growth startups, venture capital captures innovations with the potential to impact markets and change industries.",g,E,I="Our analysis employs several metrics for venture capital. The volume of venture capital investment provides an overall measure of the market value of venture capital. We look at counts of venture capital deals to account for the fact that more established high-tech centres tend to generate more competitive startups and attract larger venture investments. Because larger metro areas are likely to receive higher levels of venture capital simply as a result of their size, we also examine venture capital investment on a per capita basis. We also look at the change in venture capital investment over the decade-long period 2009-11 to 2019-2021.",L,pe,Y,Z,ee,N,nr="The geography of venture capital <u>investment</u>",lt,me,ir="The figure below shows metros that had at least $100 million in venture capital investment from 2019 through 2021. These fourteen metros account for more than 90 percent of venture capital investment in Canada.",at,xe,or="Toronto leads with roughly one third of venture capital investment, followed by Vancouver with slightly less than a quarter, and Montreal with roughly 14 percent.",st,ne,dt,ie,lr="<p>Venture capital investment in Canada is more concentrated than in the United States. The top three Canadian metros account for more than 70 percent (71.2 percent) of venture investment, compared to roughly 50 percent for the top three U.S. metros.</p> <p>That said, Canadian metros trail considerably behind the leading U.S. metros. Venture capital investment in Toronto is less than ten percent of that of New York and less than five percent of San Francisco. Venture investment in Vancouver is less than 3 percent of San Francisco’s, while Montreal’s is less than 2 percent of San Francisco’s. Venture capital investment in the three leading Canadian metros comprises just five percent (5.2 percent) of the venture capital investment in their three leading U.S. counterparts.</p>",yt,De,oe,ar="<h2>The geography of venture capital <u>deals</u></h2> <p>We now turn to the geography of venture capital deals, i.e., individual venture capital investments in high tech startups.</p>",kt,le,ft,z,ue,sr="Venture capital deals are also concentrated, though not as much as investment. The top ten metros account for more than 80 percent of all venture capital deals. Toronto again leads with more than 30 percent, followed by Vancouver with 17 percent and Montreal with 11 percent. The top three Canadian metros account for nearly 60 percent of venture capital deals – which is considerably higher than for the top three U.S. metros, which account for less than 40 percent (37 percent).",ct,we,dr="Again, Canada’s leading metros trail U.S. metros by a large margin. San Francisco had 7,271 deals, New York had 5,787 deals, and Los Angeles had 3,344 deals – while no Canadian city had more than 1,000.",ht,pt,mt,xt,ut,ge,yr="The geography of <u>per capita investment</u>",wt,ve,kr="We now turn to venture capital investment on a per capita basis. Both of our previous measures – investments and venture capital deals – reflect the size of metro areas: larger metros are likely to have higher levels of investment simply by virtue of their larger size. To control for this, we now look at venture capital investment on a per capita basis. The pattern is rather different.",gt,vt,bt,ae,qt,be,fr="Vancouver tops the list with just over $2,000 in venture capital investment per capita, followed by Kitchener-Cambridge-Waterloo and Fredericton, then Toronto. Montreal, while third in overall investment, falls to eighth in this ranking.",Rt,qe,cr="These amounts are just a fraction of leading U.S. metros. Per capita venture capital investment is over $35k in San Francisco (18 times greater than that of Vancouver), $24k in San Jose, and $13k in Boulder.",zt,M,Ut,_t,Mt,Ct,Re,hr="Geographic <u>shifts</u> in venture capital investment",Tt,ze,pr="But which metropolitan areas have gained venture capital investment and where has it declined? This chart tracks the change in venture capital investment across metros for the period 2009-11 to 2019-21. There are clear winners and losers.",$t,St,Nt,Ue,Pe,At,_e,mr="The biggest winner is Vancouver, which has seen its share of venture capital investment nearly double from 12 percent to nearly 24 percent. Quebec is the only other metro that has seen a significant increase in share of venture capital investment, increasing by nearly three percentage points.",It,Me,xr="The biggest losers are Toronto and Montreal. Toronto has witnessed a nearly 5 percentage point decline in its share of venture capital investment, while Montreal saw a loss of 8 percentage points.",jt,se,ur="<br/> <br/> <h2>Key takeaways</h2> <p>Several key findings emerge from our analysis.</p> <p>First and foremost, venture capital investment in Canada is extremely concentrated, even more so than in the United States. The top three Canadian metros account for more than 70 percent of venture investment and nearly 60 percent of venture capital deals compared to roughly 50 percent and less than 40 percent respectively for the top three in the United States.</p> <p>While Toronto leads in overall venture capital investment and venture capital deals, this is partly due to its larger economic size. It ranks fourth in venture capital investment per capita behind Vancouver, Kitchener-Cambridge-Waterloo, and Fredericton.</p> <p>Across Canada, comparing 2019-2021 to a decade earlier, Vancouver has been the biggest winner in venture capital, while both Toronto and Montreal have seen slight declines in their share.</p> <p>Venture capital investment in Canadian metros is but a fraction of their U.S. counterparts. Venture investment in Canada’s three leading metros comprises just five percent of that of America’s three leading metros. To become a global leader in tech, Canada will need to attract far more venture capital in the future.</p>",Ht,Et,Vt,Bt,Dt,de,wr=`<p class="notes"><a href="https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/florida-richard/" target="_blank">Richard Florida</a> is University Professor at the University of Toronto’s Rotman School of Management and Distinguished Scholar in Residence at the School of Cities.  
-			<br/><br/> <a href="https://discover.research.utoronto.ca/22831" target="_blank">Karen King</a> is a Senior Research Associate at the University of Toronto’s Rotman School of Management and School of Cities.</p> <br/> <br/>`,gr,Le;n=new mn({});function vr(b,F){return b[0]>1e3?Ni:Si}let Fe=vr(e),W=Fe(e),j=e[0]>1e3&&en();function br(b,F){return b[0]>1e3?Ii:Ai}let Oe=br(e),K=Oe(e);return ae=new Ri({}),{c(){t=m("meta"),r=u(),Cr(n.$$.fragment),i=u(),o=m("main"),l=m("div"),l.innerHTML=s,k=u(),a=m("div"),f=m("div"),f.innerHTML=d,p=u(),c=m("p"),c.innerHTML=_,$=u(),D=m("p"),D.textContent=Q,te=u(),H=m("div"),re=new fe(!1),S=u(),J=m("p"),J.innerHTML=Be,he=u(),X=m("p"),X.textContent=Ie,g=u(),E=m("p"),E.textContent=I,L=u(),pe=m("br"),Y=u(),Z=m("br"),ee=u(),N=m("h2"),N.innerHTML=nr,lt=u(),me=m("p"),me.textContent=ir,at=u(),xe=m("p"),xe.textContent=or,st=u(),ne=m("div"),W.c(),dt=u(),ie=m("div"),ie.innerHTML=lr,yt=u(),j&&j.c(),De=u(),oe=m("div"),oe.innerHTML=ar,kt=u(),le=m("div"),K.c(),ft=u(),z=m("div"),ue=m("p"),ue.textContent=sr,ct=u(),we=m("p"),we.textContent=dr,ht=u(),pt=m("br"),mt=u(),xt=m("br"),ut=u(),ge=m("h2"),ge.innerHTML=yr,wt=u(),ve=m("p"),ve.textContent=kr,gt=u(),vt=m("br"),bt=u(),Cr(ae.$$.fragment),qt=u(),be=m("p"),be.textContent=fr,Rt=u(),qe=m("p"),qe.textContent=cr,zt=u(),M=m("div"),Ut=m("br"),_t=u(),Mt=m("br"),Ct=u(),Re=m("h2"),Re.innerHTML=hr,Tt=u(),ze=m("p"),ze.textContent=pr,$t=u(),St=m("br"),Nt=u(),Ue=m("div"),Pe=new fe(!1),At=u(),_e=m("p"),_e.textContent=mr,It=u(),Me=m("p"),Me.textContent=xr,jt=u(),se=m("div"),se.innerHTML=ur,Ht=u(),Et=m("br"),Vt=u(),Bt=m("br"),Dt=u(),de=m("div"),de.innerHTML=wr,this.h()},l(b){const F=kn("svelte-gx8mnb",document.head);t=x(F,"META",{name:!0,content:!0}),F.forEach(v),r=w(b),Tr(n.$$.fragment,b),i=w(b),o=x(b,"MAIN",{});var q=T(o);l=x(q,"DIV",{class:!0,"data-svelte-h":!0}),R(l)!=="svelte-1zolqb"&&(l.innerHTML=s),k=w(q),a=x(q,"DIV",{class:!0});var U=T(a);f=x(U,"DIV",{class:!0,"data-svelte-h":!0}),R(f)!=="svelte-bpmaw8"&&(f.innerHTML=d),p=w(U),c=x(U,"P",{"data-svelte-h":!0}),R(c)!=="svelte-1eksgxp"&&(c.innerHTML=_),$=w(U),D=x(U,"P",{"data-svelte-h":!0}),R(D)!=="svelte-orvh28"&&(D.textContent=Q),te=w(U),H=x(U,"DIV",{class:!0});var qr=T(H);re=ce(qr,!1),qr.forEach(v),S=w(U),J=x(U,"P",{"data-svelte-h":!0}),R(J)!=="svelte-19a6248"&&(J.innerHTML=Be),he=w(U),X=x(U,"P",{"data-svelte-h":!0}),R(X)!=="svelte-14ier0z"&&(X.textContent=Ie),g=w(U),E=x(U,"P",{"data-svelte-h":!0}),R(E)!=="svelte-g7g5xn"&&(E.textContent=I),L=w(U),pe=x(U,"BR",{}),Y=w(U),Z=x(U,"BR",{}),ee=w(U),N=x(U,"H2",{"data-svelte-h":!0}),R(N)!=="svelte-nybcbj"&&(N.innerHTML=nr),lt=w(U),me=x(U,"P",{"data-svelte-h":!0}),R(me)!=="svelte-1p10g88"&&(me.textContent=ir),at=w(U),xe=x(U,"P",{"data-svelte-h":!0}),R(xe)!=="svelte-1eqwj9b"&&(xe.textContent=or),U.forEach(v),st=w(q),ne=x(q,"DIV",{class:!0});var Rr=T(ne);W.l(Rr),Rr.forEach(v),dt=w(q),ie=x(q,"DIV",{class:!0,"data-svelte-h":!0}),R(ie)!=="svelte-n43kn3"&&(ie.innerHTML=lr),yt=w(q),j&&j.l(q),De=w(q),oe=x(q,"DIV",{class:!0,"data-svelte-h":!0}),R(oe)!=="svelte-1cpjya1"&&(oe.innerHTML=ar),kt=w(q),le=x(q,"DIV",{class:!0});var zr=T(le);K.l(zr),zr.forEach(v),ft=w(q),z=x(q,"DIV",{class:!0});var C=T(z);ue=x(C,"P",{"data-svelte-h":!0}),R(ue)!=="svelte-ykso8v"&&(ue.textContent=sr),ct=w(C),we=x(C,"P",{"data-svelte-h":!0}),R(we)!=="svelte-1y4qbxk"&&(we.textContent=dr),ht=w(C),pt=x(C,"BR",{}),mt=w(C),xt=x(C,"BR",{}),ut=w(C),ge=x(C,"H2",{"data-svelte-h":!0}),R(ge)!=="svelte-1jjowcw"&&(ge.innerHTML=yr),wt=w(C),ve=x(C,"P",{"data-svelte-h":!0}),R(ve)!=="svelte-1miguzz"&&(ve.textContent=kr),gt=w(C),vt=x(C,"BR",{}),bt=w(C),Tr(ae.$$.fragment,C),qt=w(C),be=x(C,"P",{"data-svelte-h":!0}),R(be)!=="svelte-1jlmqam"&&(be.textContent=fr),Rt=w(C),qe=x(C,"P",{"data-svelte-h":!0}),R(qe)!=="svelte-ux2zf"&&(qe.textContent=cr),C.forEach(v),zt=w(q),M=x(q,"DIV",{class:!0});var A=T(M);Ut=x(A,"BR",{}),_t=w(A),Mt=x(A,"BR",{}),Ct=w(A),Re=x(A,"H2",{"data-svelte-h":!0}),R(Re)!=="svelte-6rs9pf"&&(Re.innerHTML=hr),Tt=w(A),ze=x(A,"P",{"data-svelte-h":!0}),R(ze)!=="svelte-1jhzsuq"&&(ze.textContent=pr),$t=w(A),St=x(A,"BR",{}),Nt=w(A),Ue=x(A,"DIV",{class:!0});var Ur=T(Ue);Pe=ce(Ur,!1),Ur.forEach(v),At=w(A),_e=x(A,"P",{"data-svelte-h":!0}),R(_e)!=="svelte-1cswclg"&&(_e.textContent=mr),It=w(A),Me=x(A,"P",{"data-svelte-h":!0}),R(Me)!=="svelte-1ss3ije"&&(Me.textContent=xr),A.forEach(v),jt=w(q),se=x(q,"DIV",{class:!0,"data-svelte-h":!0}),R(se)!=="svelte-3nzmf8"&&(se.innerHTML=ur),Ht=w(q),Et=x(q,"BR",{}),Vt=w(q),Bt=x(q,"BR",{}),Dt=w(q),de=x(q,"DIV",{class:!0,"data-svelte-h":!0}),R(de)!=="svelte-1ad574h"&&(de.innerHTML=wr),q.forEach(v),this.h()},h(){h(t,"name","viewport"),h(t,"content","width=device-width, initial-scale=1, minimum-scale=1"),h(l,"class","top-image"),h(f,"class","title"),re.a=null,h(H,"class","img350px svelte-tz82xe"),h(a,"class","text"),h(ne,"class","img1000px svelte-tz82xe"),h(ie,"class","text"),h(oe,"class","text"),h(le,"class","img1000px svelte-tz82xe"),h(z,"class","text"),Pe.a=null,h(Ue,"class","img350px svelte-tz82xe"),h(M,"class","text"),h(se,"class","text"),h(de,"class","text"),Qt(()=>e[1].call(o))},m(b,F){y(document.head,t),B(b,r,F),$r(n,b,F),B(b,i,F),B(b,o,F),y(o,l),y(o,k),y(o,a),y(a,f),y(a,p),y(a,c),y(a,$),y(a,D),y(a,te),y(a,H),re.m(zi,H),y(a,S),y(a,J),y(a,he),y(a,X),y(a,g),y(a,E),y(a,L),y(a,pe),y(a,Y),y(a,Z),y(a,ee),y(a,N),y(a,lt),y(a,me),y(a,at),y(a,xe),y(o,st),y(o,ne),W.m(ne,null),y(o,dt),y(o,ie),y(o,yt),j&&j.m(o,null),y(o,De),y(o,oe),y(o,kt),y(o,le),K.m(le,null),y(o,ft),y(o,z),y(z,ue),y(z,ct),y(z,we),y(z,ht),y(z,pt),y(z,mt),y(z,xt),y(z,ut),y(z,ge),y(z,wt),y(z,ve),y(z,gt),y(z,vt),y(z,bt),$r(ae,z,null),y(z,qt),y(z,be),y(z,Rt),y(z,qe),y(o,zt),y(o,M),y(M,Ut),y(M,_t),y(M,Mt),y(M,Ct),y(M,Re),y(M,Tt),y(M,ze),y(M,$t),y(M,St),y(M,Nt),y(M,Ue),Pe.m($i,Ue),y(M,At),y(M,_e),y(M,It),y(M,Me),y(o,jt),y(o,se),y(o,Ht),y(o,Et),y(o,Vt),y(o,Bt),y(o,Dt),y(o,de),gr=Yt(o,e[1].bind(o)),Le=!0},p(b,[F]){Fe!==(Fe=vr(b))&&(W.d(1),W=Fe(b),W&&(W.c(),W.m(ne,null))),b[0]>1e3?j||(j=en(),j.c(),j.m(o,De)):j&&(j.d(1),j=null),Oe!==(Oe=br(b))&&(K.d(1),K=Oe(b),K&&(K.c(),K.m(le,null)))},i(b){Le||(Sr(n.$$.fragment,b),Sr(ae.$$.fragment,b),Le=!0)},o(b){Nr(n.$$.fragment,b),Nr(ae.$$.fragment,b),Le=!1},d(b){b&&(v(r),v(i),v(o)),v(t),Ar(n,b),W.d(),j&&j.d(),K.d(),Ar(ae),gr()}}}function Hi(e,t,r){let n=1200;function i(){n=this.offsetWidth,r(0,n)}return[n,i]}class Di extends Jt{constructor(t){super(),Xt(this,t,Hi,ji,Kt,{})}}export{Di as component,Bi as universal};
+`;function Si(e){let t,r;return{c(){t=new ke(!1),r=G(),this.h()},l(n){t=ce(n,!1),r=G(),this.h()},h(){t.a=r},m(n,i){t.m(_i,n,i),B(n,r,i)},d(n){n&&(v(r),t.d())}}}function Ni(e){let t,r;return{c(){t=new ke(!1),r=G(),this.h()},l(n){t=ce(n,!1),r=G(),this.h()},h(){t.a=r},m(n,i){t.m(Ui,n,i),B(n,r,i)},d(n){n&&(v(r),t.d())}}}function en(e){let t,r;return{c(){t=m("div"),r=new ke(!1),this.h()},l(n){t=x(n,"DIV",{class:!0});var i=T(t);r=ce(i,!1),i.forEach(v),this.h()},h(){r.a=null,h(t,"class","img1000px svelte-tz82xe")},m(n,i){B(n,t,i),r.m(Mi,t)},d(n){n&&v(t)}}}function Ai(e){let t,r;return{c(){t=new ke(!1),r=G(),this.h()},l(n){t=ce(n,!1),r=G(),this.h()},h(){t.a=r},m(n,i){t.m(Ti,n,i),B(n,r,i)},d(n){n&&(v(r),t.d())}}}function Ii(e){let t,r;return{c(){t=new ke(!1),r=G(),this.h()},l(n){t=ce(n,!1),r=G(),this.h()},h(){t.a=r},m(n,i){t.m(Ci,n,i),B(n,r,i)},d(n){n&&(v(r),t.d())}}}function ji(e){let t,r,n,i,o,l,s='<img src="./top.png"/>',y,a,k,d=`<h1>Canada’s High-Tech Startup Cities</h1> <h3>The geography of venture capital investment across metro areas</h3> <p>Research: <a href="https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/florida-richard/" target="_blank">Richard Florida</a> &amp; <a href="https://discover.research.utoronto.ca/22831" target="_blank">Karen King</a><br/>
+			Maps &amp; Graphics: <a href="https://jamaps.github.io/" target="_blank">Jeff Allen</a></p>`,p,c,_='<br/> <span id="drop-cap">V</span>enture capital is the financial fuel that powers innovation and economic growth. This unique form of equity financing — which exchanges capital for shares in the enterprises they provide — has fueled the rise of revolutionary companies like Intel in semiconductors, Apple in personal computing, Genentech in biotech, Google in search, Twitter/X in social media, ChatGPT in artificial intelligence, and many more.',$,D,Q="Venture capital in Canada exploded from C$3.1 billion in the three year period of 2009-2011, to $23.5 billion in 2019-2021 — a nearly eightfold increase. But the benefits accrued to just a handful of cities who benefited from mega deals.",te,H,re,S,J,Be='This study examines recent trends in the geography of venture capital across Canada. Our data on venture capital comes from <a href="https://pitchbook.com/" target="_blank">PitchBook</a>, a leading research firm that tracks venture capital investment. We group the data in multi-year periods, 2009-11 and 2019-21, to limit annual fluctuations that can occur because of outsized investments in individual firms and/or metros in any given year.',he,X,Ie="Venture capital investment provides a measure of commercially relevant innovation. It offers a more direct gauge of such innovation than patents, which are commonly used by economists and economic geographers to measure innovation. Patents cover both basic scientific discoveries as well as commercial inventions. Many important commercial innovations are never patented, and many commercial patents are used for defensive purposes, to block competitors from gaining access to such innovations. As a measure of actual investment in high-growth startups, venture capital captures innovations with the potential to impact markets and change industries.",g,E,I="Our analysis employs several metrics for venture capital. The volume of venture capital investment provides an overall measure of the market value of venture capital. We look at counts of venture capital deals to account for the fact that more established high-tech centres tend to generate more competitive startups and attract larger venture investments. Because larger metro areas are likely to receive higher levels of venture capital simply as a result of their size, we also examine venture capital investment on a per capita basis. We also look at the change in venture capital investment over the decade-long period 2009-11 to 2019-2021.",L,pe,Y,Z,ee,N,nr="The geography of venture capital <u>investment</u>",lt,me,ir="The figure below shows metros that had at least $100 million in venture capital investment from 2019 through 2021. These fourteen metros account for more than 90 percent of venture capital investment in Canada.",at,xe,or="Toronto leads with roughly one third of venture capital investment, followed by Vancouver with slightly less than a quarter, and Montreal with roughly 14 percent.",st,ne,dt,ie,lr="<p>Venture capital investment in Canada is more concentrated than in the United States. The top three Canadian metros account for more than 70 percent (71.2 percent) of venture investment, compared to roughly 50 percent for the top three U.S. metros.</p> <p>That said, Canadian metros trail considerably behind the leading U.S. metros. Venture capital investment in Toronto is less than ten percent of that of New York and less than five percent of San Francisco. Venture investment in Vancouver is less than 3 percent of San Francisco’s, while Montreal’s is less than 2 percent of San Francisco’s. Venture capital investment in the three leading Canadian metros comprises just five percent (5.2 percent) of the venture capital investment in their three leading U.S. counterparts.</p>",ft,De,oe,ar="<h2>The geography of venture capital <u>deals</u></h2> <p>We now turn to the geography of venture capital deals, i.e., individual venture capital investments in high tech startups.</p>",yt,le,kt,z,ue,sr="Venture capital deals are also concentrated, though not as much as investment. The top ten metros account for more than 80 percent of all venture capital deals. Toronto again leads with more than 30 percent, followed by Vancouver with 17 percent and Montreal with 11 percent. The top three Canadian metros account for nearly 60 percent of venture capital deals – which is considerably higher than for the top three U.S. metros, which account for less than 40 percent (37 percent).",ct,we,dr="Again, Canada’s leading metros trail U.S. metros by a large margin. San Francisco had 7,271 deals, New York had 5,787 deals, and Los Angeles had 3,344 deals – while no Canadian city had more than 1,000.",ht,pt,mt,xt,ut,ge,fr="The geography of <u>per capita investment</u>",wt,ve,yr="We now turn to venture capital investment on a per capita basis. Both of our previous measures – investments and venture capital deals – reflect the size of metro areas: larger metros are likely to have higher levels of investment simply by virtue of their larger size. To control for this, we now look at venture capital investment on a per capita basis. The pattern is rather different.",gt,vt,bt,ae,qt,be,kr="Vancouver tops the list with just over $2,000 in venture capital investment per capita, followed by Kitchener-Cambridge-Waterloo and Fredericton, then Toronto. Montreal, while third in overall investment, falls to eighth in this ranking.",Rt,qe,cr="These amounts are just a fraction of leading U.S. metros. Per capita venture capital investment is over $35k in San Francisco (18 times greater than that of Vancouver), $24k in San Jose, and $13k in Boulder.",zt,M,Ut,_t,Mt,Ct,Re,hr="Geographic <u>shifts</u> in venture capital investment",Tt,ze,pr="But which metropolitan areas have gained venture capital investment and where has it declined? This chart tracks the change in venture capital investment across metros for the period 2009-11 to 2019-21. There are clear winners and losers.",$t,St,Nt,Ue,Pe,At,_e,mr="The biggest winner is Vancouver, which has seen its share of venture capital investment nearly double from 12 percent to nearly 24 percent. Quebec is the only other metro that has seen a significant increase in share of venture capital investment, increasing by nearly three percentage points.",It,Me,xr="The biggest losers are Toronto and Montreal. Toronto has witnessed a nearly 5 percentage point decline in its share of venture capital investment, while Montreal saw a loss of 8 percentage points.",jt,se,ur="<br/> <br/> <h2>Key takeaways</h2> <p>Several key findings emerge from our analysis.</p> <p>First and foremost, venture capital investment in Canada is extremely concentrated, even more so than in the United States. The top three Canadian metros account for more than 70 percent of venture investment and nearly 60 percent of venture capital deals compared to roughly 50 percent and less than 40 percent respectively for the top three in the United States.</p> <p>While Toronto leads in overall venture capital investment and venture capital deals, this is partly due to its larger economic size. It ranks fourth in venture capital investment per capita behind Vancouver, Kitchener-Cambridge-Waterloo, and Fredericton.</p> <p>Across Canada, comparing 2019-2021 to a decade earlier, Vancouver has been the biggest winner in venture capital, while both Toronto and Montreal have seen slight declines in their share.</p> <p>Venture capital investment in Canadian metros is but a fraction of their U.S. counterparts. Venture investment in Canada’s three leading metros comprises just five percent of that of America’s three leading metros. To become a global leader in tech, Canada will need to attract far more venture capital in the future.</p>",Ht,Et,Vt,Bt,Dt,de,wr=`<p class="notes"><a href="https://www.rotman.utoronto.ca/the-rotman-experience/our-community/people/florida-richard/" target="_blank">Richard Florida</a> is University Professor at the University of Toronto’s Rotman School of Management and Distinguished Scholar in Residence at the School of Cities.  
+			<br/><br/> <a href="https://discover.research.utoronto.ca/22831" target="_blank">Karen King</a> is a Senior Research Associate at the University of Toronto’s Rotman School of Management and School of Cities.</p> <br/> <br/>`,gr,Le;n=new mn({});function vr(b,F){return b[0]>1e3?Ni:Si}let Fe=vr(e),W=Fe(e),j=e[0]>1e3&&en();function br(b,F){return b[0]>1e3?Ii:Ai}let Oe=br(e),K=Oe(e);return ae=new Ri({}),{c(){t=m("meta"),r=u(),Cr(n.$$.fragment),i=u(),o=m("main"),l=m("div"),l.innerHTML=s,y=u(),a=m("div"),k=m("div"),k.innerHTML=d,p=u(),c=m("p"),c.innerHTML=_,$=u(),D=m("p"),D.textContent=Q,te=u(),H=m("div"),re=new ke(!1),S=u(),J=m("p"),J.innerHTML=Be,he=u(),X=m("p"),X.textContent=Ie,g=u(),E=m("p"),E.textContent=I,L=u(),pe=m("br"),Y=u(),Z=m("br"),ee=u(),N=m("h2"),N.innerHTML=nr,lt=u(),me=m("p"),me.textContent=ir,at=u(),xe=m("p"),xe.textContent=or,st=u(),ne=m("div"),W.c(),dt=u(),ie=m("div"),ie.innerHTML=lr,ft=u(),j&&j.c(),De=u(),oe=m("div"),oe.innerHTML=ar,yt=u(),le=m("div"),K.c(),kt=u(),z=m("div"),ue=m("p"),ue.textContent=sr,ct=u(),we=m("p"),we.textContent=dr,ht=u(),pt=m("br"),mt=u(),xt=m("br"),ut=u(),ge=m("h2"),ge.innerHTML=fr,wt=u(),ve=m("p"),ve.textContent=yr,gt=u(),vt=m("br"),bt=u(),Cr(ae.$$.fragment),qt=u(),be=m("p"),be.textContent=kr,Rt=u(),qe=m("p"),qe.textContent=cr,zt=u(),M=m("div"),Ut=m("br"),_t=u(),Mt=m("br"),Ct=u(),Re=m("h2"),Re.innerHTML=hr,Tt=u(),ze=m("p"),ze.textContent=pr,$t=u(),St=m("br"),Nt=u(),Ue=m("div"),Pe=new ke(!1),At=u(),_e=m("p"),_e.textContent=mr,It=u(),Me=m("p"),Me.textContent=xr,jt=u(),se=m("div"),se.innerHTML=ur,Ht=u(),Et=m("br"),Vt=u(),Bt=m("br"),Dt=u(),de=m("div"),de.innerHTML=wr,this.h()},l(b){const F=yn("svelte-gx8mnb",document.head);t=x(F,"META",{name:!0,content:!0}),F.forEach(v),r=w(b),Tr(n.$$.fragment,b),i=w(b),o=x(b,"MAIN",{});var q=T(o);l=x(q,"DIV",{class:!0,"data-svelte-h":!0}),R(l)!=="svelte-1zolqb"&&(l.innerHTML=s),y=w(q),a=x(q,"DIV",{class:!0});var U=T(a);k=x(U,"DIV",{class:!0,"data-svelte-h":!0}),R(k)!=="svelte-bpmaw8"&&(k.innerHTML=d),p=w(U),c=x(U,"P",{"data-svelte-h":!0}),R(c)!=="svelte-1eksgxp"&&(c.innerHTML=_),$=w(U),D=x(U,"P",{"data-svelte-h":!0}),R(D)!=="svelte-1t77ugo"&&(D.textContent=Q),te=w(U),H=x(U,"DIV",{class:!0});var qr=T(H);re=ce(qr,!1),qr.forEach(v),S=w(U),J=x(U,"P",{"data-svelte-h":!0}),R(J)!=="svelte-19a6248"&&(J.innerHTML=Be),he=w(U),X=x(U,"P",{"data-svelte-h":!0}),R(X)!=="svelte-14ier0z"&&(X.textContent=Ie),g=w(U),E=x(U,"P",{"data-svelte-h":!0}),R(E)!=="svelte-g7g5xn"&&(E.textContent=I),L=w(U),pe=x(U,"BR",{}),Y=w(U),Z=x(U,"BR",{}),ee=w(U),N=x(U,"H2",{"data-svelte-h":!0}),R(N)!=="svelte-nybcbj"&&(N.innerHTML=nr),lt=w(U),me=x(U,"P",{"data-svelte-h":!0}),R(me)!=="svelte-1p10g88"&&(me.textContent=ir),at=w(U),xe=x(U,"P",{"data-svelte-h":!0}),R(xe)!=="svelte-1eqwj9b"&&(xe.textContent=or),U.forEach(v),st=w(q),ne=x(q,"DIV",{class:!0});var Rr=T(ne);W.l(Rr),Rr.forEach(v),dt=w(q),ie=x(q,"DIV",{class:!0,"data-svelte-h":!0}),R(ie)!=="svelte-n43kn3"&&(ie.innerHTML=lr),ft=w(q),j&&j.l(q),De=w(q),oe=x(q,"DIV",{class:!0,"data-svelte-h":!0}),R(oe)!=="svelte-1cpjya1"&&(oe.innerHTML=ar),yt=w(q),le=x(q,"DIV",{class:!0});var zr=T(le);K.l(zr),zr.forEach(v),kt=w(q),z=x(q,"DIV",{class:!0});var C=T(z);ue=x(C,"P",{"data-svelte-h":!0}),R(ue)!=="svelte-ykso8v"&&(ue.textContent=sr),ct=w(C),we=x(C,"P",{"data-svelte-h":!0}),R(we)!=="svelte-1y4qbxk"&&(we.textContent=dr),ht=w(C),pt=x(C,"BR",{}),mt=w(C),xt=x(C,"BR",{}),ut=w(C),ge=x(C,"H2",{"data-svelte-h":!0}),R(ge)!=="svelte-1jjowcw"&&(ge.innerHTML=fr),wt=w(C),ve=x(C,"P",{"data-svelte-h":!0}),R(ve)!=="svelte-1miguzz"&&(ve.textContent=yr),gt=w(C),vt=x(C,"BR",{}),bt=w(C),Tr(ae.$$.fragment,C),qt=w(C),be=x(C,"P",{"data-svelte-h":!0}),R(be)!=="svelte-1jlmqam"&&(be.textContent=kr),Rt=w(C),qe=x(C,"P",{"data-svelte-h":!0}),R(qe)!=="svelte-ux2zf"&&(qe.textContent=cr),C.forEach(v),zt=w(q),M=x(q,"DIV",{class:!0});var A=T(M);Ut=x(A,"BR",{}),_t=w(A),Mt=x(A,"BR",{}),Ct=w(A),Re=x(A,"H2",{"data-svelte-h":!0}),R(Re)!=="svelte-6rs9pf"&&(Re.innerHTML=hr),Tt=w(A),ze=x(A,"P",{"data-svelte-h":!0}),R(ze)!=="svelte-1jhzsuq"&&(ze.textContent=pr),$t=w(A),St=x(A,"BR",{}),Nt=w(A),Ue=x(A,"DIV",{class:!0});var Ur=T(Ue);Pe=ce(Ur,!1),Ur.forEach(v),At=w(A),_e=x(A,"P",{"data-svelte-h":!0}),R(_e)!=="svelte-1cswclg"&&(_e.textContent=mr),It=w(A),Me=x(A,"P",{"data-svelte-h":!0}),R(Me)!=="svelte-1ss3ije"&&(Me.textContent=xr),A.forEach(v),jt=w(q),se=x(q,"DIV",{class:!0,"data-svelte-h":!0}),R(se)!=="svelte-3nzmf8"&&(se.innerHTML=ur),Ht=w(q),Et=x(q,"BR",{}),Vt=w(q),Bt=x(q,"BR",{}),Dt=w(q),de=x(q,"DIV",{class:!0,"data-svelte-h":!0}),R(de)!=="svelte-1ad574h"&&(de.innerHTML=wr),q.forEach(v),this.h()},h(){h(t,"name","viewport"),h(t,"content","width=device-width, initial-scale=1, minimum-scale=1"),h(l,"class","top-image"),h(k,"class","title"),re.a=null,h(H,"class","img350px svelte-tz82xe"),h(a,"class","text"),h(ne,"class","img1000px svelte-tz82xe"),h(ie,"class","text"),h(oe,"class","text"),h(le,"class","img1000px svelte-tz82xe"),h(z,"class","text"),Pe.a=null,h(Ue,"class","img350px svelte-tz82xe"),h(M,"class","text"),h(se,"class","text"),h(de,"class","text"),Qt(()=>e[1].call(o))},m(b,F){f(document.head,t),B(b,r,F),$r(n,b,F),B(b,i,F),B(b,o,F),f(o,l),f(o,y),f(o,a),f(a,k),f(a,p),f(a,c),f(a,$),f(a,D),f(a,te),f(a,H),re.m(zi,H),f(a,S),f(a,J),f(a,he),f(a,X),f(a,g),f(a,E),f(a,L),f(a,pe),f(a,Y),f(a,Z),f(a,ee),f(a,N),f(a,lt),f(a,me),f(a,at),f(a,xe),f(o,st),f(o,ne),W.m(ne,null),f(o,dt),f(o,ie),f(o,ft),j&&j.m(o,null),f(o,De),f(o,oe),f(o,yt),f(o,le),K.m(le,null),f(o,kt),f(o,z),f(z,ue),f(z,ct),f(z,we),f(z,ht),f(z,pt),f(z,mt),f(z,xt),f(z,ut),f(z,ge),f(z,wt),f(z,ve),f(z,gt),f(z,vt),f(z,bt),$r(ae,z,null),f(z,qt),f(z,be),f(z,Rt),f(z,qe),f(o,zt),f(o,M),f(M,Ut),f(M,_t),f(M,Mt),f(M,Ct),f(M,Re),f(M,Tt),f(M,ze),f(M,$t),f(M,St),f(M,Nt),f(M,Ue),Pe.m($i,Ue),f(M,At),f(M,_e),f(M,It),f(M,Me),f(o,jt),f(o,se),f(o,Ht),f(o,Et),f(o,Vt),f(o,Bt),f(o,Dt),f(o,de),gr=Yt(o,e[1].bind(o)),Le=!0},p(b,[F]){Fe!==(Fe=vr(b))&&(W.d(1),W=Fe(b),W&&(W.c(),W.m(ne,null))),b[0]>1e3?j||(j=en(),j.c(),j.m(o,De)):j&&(j.d(1),j=null),Oe!==(Oe=br(b))&&(K.d(1),K=Oe(b),K&&(K.c(),K.m(le,null)))},i(b){Le||(Sr(n.$$.fragment,b),Sr(ae.$$.fragment,b),Le=!0)},o(b){Nr(n.$$.fragment,b),Nr(ae.$$.fragment,b),Le=!1},d(b){b&&(v(r),v(i),v(o)),v(t),Ar(n,b),W.d(),j&&j.d(),K.d(),Ar(ae),gr()}}}function Hi(e,t,r){let n=1200;function i(){n=this.offsetWidth,r(0,n)}return[n,i]}class Di extends Jt{constructor(t){super(),Xt(this,t,Hi,ji,Kt,{})}}export{Di as component,Bi as universal};
