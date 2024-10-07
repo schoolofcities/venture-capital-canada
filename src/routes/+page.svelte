@@ -4,6 +4,7 @@
 
 	import PerCapitaBar from "../lib/PerCapitaBar.svelte";
 
+	import bubbleChange from "../assets/bubble-change.svg?raw";
 	import cartoInvestmentCanada from "../assets/carto-investment-canada.svg?raw";
 	import cartoInvestmentCanadaMobile from "../assets/carto-investment-canada-mobile.svg?raw";
 	import cartoInvestmentStates from "../assets/carto-investment-us.svg?raw";
@@ -51,6 +52,12 @@
 			<br>
 			<span id="drop-cap">V</span>enture capital is the financial fuel that powers innovation and economic growth. This unique form of equity financing — which exchanges capital for shares in the enterprises they provide — has fueled the rise of revolutionary companies like Intel in semiconductors, Apple in personal computing, Genentech in biotech, Google in search, Twitter/X in social media, ChatGPT in artificial intelligence, and many more. 
 		</p>
+		<p>
+			Venture capital in Canada exploded from C$3.1 billion in the three year period of 2009-2011 to $23.5 billion in 2019-2021 -- a nearly eightfold increase. But the benefits accrued to just a handful of cities who benefited from mega deals.
+		</p>
+		<div class="img350px">
+			{@html bubbleChange}
+		</div>
 		<p>
 			This study examines recent trends in the geography of venture capital across Canada. Our data on venture capital comes from <a href="https://pitchbook.com/" target="_blank">PitchBook</a>, a leading research firm that tracks venture capital investment. We group the data in multi-year periods, 2009-11 and 2019-21, to limit annual fluctuations that can occur because of outsized investments in individual firms and/or metros in any given year.
 		</p>
@@ -220,7 +227,7 @@
 .img350px {
 	margin: 0 auto;
 	position: relative;
-	height: 1100px;
+	/* height: 1100px; */
 	max-width: 350px;
 }
 
