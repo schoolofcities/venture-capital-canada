@@ -53,7 +53,7 @@
 			<span id="drop-cap">V</span>enture capital is the financial fuel that powers innovation and economic growth. This unique form of equity financing — which exchanges capital for shares in the enterprises they provide — has fueled the rise of revolutionary companies like Intel in semiconductors, Apple in personal computing, Genentech in biotech, Google in search, Twitter/X in social media, ChatGPT in artificial intelligence, and many more. 
 		</p>
 		<p>
-			Venture capital in Canada exploded from C$3.1 billion in the three year period of 2009-2011, to $23.5 billion in 2019-2021 — a nearly eightfold increase. But the benefits accrued to just a handful of cities who benefited from mega deals.
+			Venture capital in Canada exploded from USD$3.1 billion in the three year period of 2009-2011, to $23.5 billion in 2019-2021 — a nearly eightfold increase. But the benefits accrued to just a handful of cities who benefited from mega deals.
 		</p>
 		<div class="img350px">
 			{@html bubbleChange}
@@ -70,7 +70,7 @@
 		<br>
 		<br>
 		<!-- <Bubble/> -->
-		 <h2>The geography of venture capital <u>investment</u></h2>
+		 <h2>The geography of venture capital investment</h2>
 
 		 <p>
 			The figure below shows metros that had at least $100 million in venture capital investment from 2019 through 2021. These fourteen metros account for more than 90 percent of venture capital investment in Canada.
@@ -108,7 +108,7 @@
 
 	<div class="text">
 		<h2>
-			The geography of venture capital <u>deals</u>
+			The geography of venture capital deals
 		</h2>
 		<p>
 			We now turn to the geography of venture capital deals, i.e., individual venture capital investments in high tech startups. 
@@ -140,7 +140,7 @@
 		<br>
 
 		<h2>
-			The geography of <u>per capita investment</u>
+			The geography of per capita investment
 		</h2>
 		<p>
 			We now turn to venture capital investment on a per capita basis. Both of our previous measures – investments and venture capital deals – reflect the size of metro areas: larger metros are likely to have higher levels of investment simply by virtue of their larger size. To control for this, we now look at venture capital investment on a per capita basis. The pattern is rather different.
@@ -163,7 +163,7 @@
 		<br>
 		<br>
 		<h2>
-			Geographic <u>shifts</u> in venture capital investment
+			Geographic shifts in venture capital investment
 		</h2>
 		<p>
 			But which metropolitan areas have gained venture capital investment and where has it declined? This chart tracks the change in venture capital investment across metros for the period 2009-11 to 2019-21. There are clear winners and losers. 
